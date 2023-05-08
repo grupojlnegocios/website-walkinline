@@ -1,5 +1,11 @@
-import { HeaderTitle } from './style.styles'
+import { HeaderContainer, HeaderImg } from './style.styles'
+
+import logo from '../assets/images/logo.png'
 
 export const Header = () => {
-  return <HeaderTitle>Walkinline</HeaderTitle>
+  return (
+    <HeaderContainer>
+      <HeaderImg src={logo} alt="Logo" />
+    </HeaderContainer>
+  )
 }

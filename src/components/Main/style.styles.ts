@@ -140,7 +140,6 @@ export const SessaoTerceira = styled.section`
   justify-content: center;
   align-items: center;
   height: 69vh;
-  width: 100vw;
 `
 
 // Chamando ao Elemento Titulo 3

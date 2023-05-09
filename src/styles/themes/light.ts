@@ -14,5 +14,7 @@ export const lightTheme = {
 
   'blur-background': '#FFFFFF',
 
+  'tooltip-background': '#1D3557',
+
   black: '#000000',
 }

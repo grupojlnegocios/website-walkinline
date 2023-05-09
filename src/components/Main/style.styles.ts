@@ -9,6 +9,7 @@ export const Paragrafo = styled.p`
   text-align: justify;
   padding: 45px;
   max-width: 395px;
+  color: ${(props) => props.theme['current-text']};
 `
 
 export const SessaoPrincipal = styled.section`
@@ -25,9 +26,11 @@ export const SessaoPrincipalArea = styled.section`
 
 export const Parte1 = styled.h1`
   font-weight: 100;
+  color: ${(props) => props.theme['first-part-principal-title']};
 `
 
 export const Parte2 = styled.h1`
   font-weight: 400;
   white-space: pre-wrap;
+  color: ${(props) => props.theme['current-title']};
 `

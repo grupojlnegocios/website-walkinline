@@ -1,9 +1,16 @@
 export const lightTheme = {
   white: '#FFFFFF',
 
-  'blue-100': '#A8DADC' /* frases normais ou links */,
-  'blue-300': '#457B9D' /* frases marcantes */,
-  'blue-400': '#1D3557' /* frases marcantes */,
+  'body-background': '#FFFFFF',
+
+  'background-nav-links': '#1D3557',
+  'border-color-button': '#1D3557',
+  'button-background': '#1D3557',
+  'button-text': '#1D3557',
+
+  'first-part-principal-title': '#457B9D',
+  'current-title': '#1D3557',
+  'current-text': '#457B9D',
 
   black: '#000000',
 }

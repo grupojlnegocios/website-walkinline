@@ -4,6 +4,7 @@ import { Main } from './components/Main'
 
 import { GlobalStyle } from './styles/global'
 import { lightTheme } from './styles/themes/light'
+import { darkTheme } from './styles/themes/dark'
 
 function App() {
   return (

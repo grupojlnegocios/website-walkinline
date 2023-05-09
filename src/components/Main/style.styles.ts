@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Imagem from '../assets/images/rodovia.jpg'
+import Check from '../assets/images/check.svg'
 
 // Chamando ao Elemento Titulo
 
@@ -12,9 +13,9 @@ export const Titulo = styled.div`
 
 export const Paragrafo = styled.p`
   display: inline-block;
-  text-align: center;
+  text-align: justify;
   font-size: 20px;
-  padding: 45px;
+  padding: 35px;
   max-width: 455px;
   color: ${(props) => props.theme['current-text']};
 `
@@ -64,7 +65,7 @@ export const Button = styled.button`
   font-size: 20px;
   border-radius: 8px;
   border: 1px solid ${(props) => props.theme['border-color-button']};
-  padding: 18px 25px;
+  padding: 15px 25px;
   cursor: pointer;
   transition: background-color 0.8s ease;
 
@@ -97,6 +98,9 @@ export const SessaoSecundaria = styled.section`
     content: '';
   }
 `
+
+// Chamando ao Elemento Sessão Secundaria
+
 export const SessaoSecundariaArea = styled.div`
   z-index: 1;
   display: flex;
@@ -108,13 +112,97 @@ export const SessaoSecundariaArea = styled.div`
   gap: 2rem;
 `
 
+// Chamando ao Elemento Imagem
+
 export const MainImg = styled.img`
   width: 250px;
   height: auto;
 `
 
+// Chamando ao Elemento Paragrafo
+
 export const ParagrafoSecundario = styled.p`
   color: ${(props) => props.theme['current-text']};
   font-size: 20px;
   text-align: center;
+`
+// Chamando ao Elemento Sessão Terceira
+
+export const SessaoTerceira = styled.section`
+  justify-content: space-between;
+  margin-top: 2%;
+  background-size: cover;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+// Chamando ao Elemento Titulo 3
+
+export const Titulo3 = styled.h1`
+  font-size: 40px;
+  font-weight: 400;
+  color: ${(props) => props.theme['current-title']};
+  border-bottom: 2.5px solid ${(props) => props.theme['current-title']};
+`
+
+// Chamando ao Elemento Lista
+
+export const TextoLista = styled.div`
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+  padding-left: 575px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #292d30;
+  margin: 5px 0px;
+`
+
+// Chamando ao Elemento Listas
+
+export const Listas = styled.ul`
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  width: 100%;
+  display: block;
+`
+
+// Chamando ao Titulo da Lista
+
+export const Titulo4 = styled.h1`
+  color: ${(props) => props.theme['current-title']};
+  margin-bottom: 2rem;
+`
+
+// Chamando ao Elementos da Lista
+
+export const ListaV = styled.ul`
+  background: url(${Check});
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+  padding-left: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 5px 0px;
+`
+
+export const ImagemRastreio = styled.img`
+  position: absolute;
+  left: 60px;
+  top: -2%;
+  height: 315px;
+  width: auto;
 `

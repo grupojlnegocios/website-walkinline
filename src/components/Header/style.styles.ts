@@ -15,10 +15,8 @@ export const HeaderContainer = styled.header`
 
 export const HeaderImg = styled.img`
   height: 5rem;
-  margin-left: 3%;
 `
 export const Listas = styled.ul`
-  margin-right: 10%;
   display: flex;
   width: 100%;
   max-width: 500px;

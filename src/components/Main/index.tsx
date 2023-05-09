@@ -6,7 +6,12 @@ import {
   Parte1,
   Parte2,
   Button,
+  SessaoSecundaria,
+  // MainImg,
+  SessaoSecundariaArea,
 } from './style.styles'
+
+// import logo from '../assets/images/logo.png'
 
 export const Main = () => {
   return (
@@ -26,6 +31,11 @@ export const Main = () => {
           <Button> Monte sua Central ➝ </Button>
         </SessaoPrincipalArea>
       </SessaoPrincipal>
+      <SessaoSecundaria>
+        <SessaoSecundariaArea>
+          {/* <MainImg src={logo} alt="Logo" /> */}
+        </SessaoSecundariaArea>
+      </SessaoSecundaria>
     </main>
   )
 }

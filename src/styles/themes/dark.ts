@@ -12,5 +12,7 @@ export const darkTheme = {
   'current-title': '#457B9D',
   'current-text': '#FFFFFF',
 
+  'blur-background': '#000000',
+
   black: '#000000',
 }

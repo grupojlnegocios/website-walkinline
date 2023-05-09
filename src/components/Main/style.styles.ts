@@ -77,12 +77,13 @@ export const Button = styled.button`
 
 export const SessaoSecundaria = styled.section`
   background-image: url(${Imagem});
-  display: flex;
   justify-content: space-between;
   margin-top: 2%;
   background-size: cover;
   background-repeat: no-repeat;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 
   &::before {
@@ -95,8 +96,25 @@ export const SessaoSecundaria = styled.section`
     content: '';
   }
 `
-export const SessaoSecundariaArea = styled.section``
+export const SessaoSecundariaArea = styled.div`
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -100px;
+`
 
 export const MainImg = styled.img`
-  height: 100%;
+  width: 250px;
+  height: auto;
+`
+
+export const ParagrafoSecundario = styled.p`
+  width: 500px;
+  padding: 45px;
+`
+
+export const ParagrafoSecundario2 = styled.p`
+  width: 500px;
 `

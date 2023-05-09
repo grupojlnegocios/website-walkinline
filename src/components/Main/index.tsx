@@ -7,11 +7,13 @@ import {
   Parte2,
   Button,
   SessaoSecundaria,
-  // MainImg,
+  MainImg,
   SessaoSecundariaArea,
+  ParagrafoSecundario,
+  ParagrafoSecundario2,
 } from './style.styles'
 
-// import logo from '../assets/images/logo.png'
+import logo from '../assets/images/logo.png'
 
 export const Main = () => {
   return (
@@ -33,7 +35,17 @@ export const Main = () => {
       </SessaoPrincipal>
       <SessaoSecundaria>
         <SessaoSecundariaArea>
-          {/* <MainImg src={logo} alt="Logo" /> */}
+          <MainImg src={logo} alt="Logo" />
+          <ParagrafoSecundario>
+            O Walk in Line é uma moderna plataforma de rastreamento veicular
+            desenvolvida pela JL que possibilita que sua empresa ofereça um
+            serviço de qualidade pelo melhor custo benefício do mercado.
+          </ParagrafoSecundario>
+          <ParagrafoSecundario2>
+            O Walk in Line é uma moderna plataforma de rastreamento veicular
+            desenvolvida pela JL que possibilita que sua empresa ofereça um
+            serviço de qualidade pelo melhor custo benefício do mercado.
+          </ParagrafoSecundario2>
         </SessaoSecundariaArea>
       </SessaoSecundaria>
     </main>

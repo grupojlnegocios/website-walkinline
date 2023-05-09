@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Imagem from '../assets/images/rodovia.jpg'
 import Check from '../assets/images/check.svg'
+import Fundo from '../assets/images/fundo-parte4.jpg'
 
 // Chamando ao Elemento Titulo
 
@@ -92,7 +93,7 @@ export const SessaoSecundaria = styled.section`
     position: absolute;
     z-index: 1;
     width: 100%;
-    height: 85%;
+    height: 90%;
     background: ${(props) => props.theme['blur-background']};
     opacity: 0.6;
     content: '';
@@ -131,12 +132,15 @@ export const ParagrafoSecundario = styled.p`
 export const SessaoTerceira = styled.section`
   justify-content: space-between;
   margin-top: 2%;
+  margin-bottom: 10%;
   background-size: cover;
   flex-direction: column;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 69vh;
+  width: 100vw;
 `
 
 // Chamando ao Elemento Titulo 3
@@ -146,17 +150,14 @@ export const Titulo3 = styled.h1`
   font-weight: 400;
   color: ${(props) => props.theme['current-title']};
   border-bottom: 2.5px solid ${(props) => props.theme['current-title']};
+  gap: 2rem;
 `
 
 // Chamando ao Elemento Lista
 
 export const TextoLista = styled.div`
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   position: relative;
   justify-content: space-between;
-  margin: 0px;
   padding: 0px;
   list-style: none;
   background-repeat: no-repeat;
@@ -165,7 +166,6 @@ export const TextoLista = styled.div`
   padding-left: 575px;
   font-size: 18px;
   font-weight: normal;
-  color: #292d30;
   margin: 5px 0px;
 `
 
@@ -183,7 +183,8 @@ export const Listas = styled.ul`
 
 export const Titulo4 = styled.h1`
   color: ${(props) => props.theme['current-title']};
-  margin-bottom: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
 `
 
 // Chamando ao Elementos da Lista
@@ -198,11 +199,29 @@ export const ListaV = styled.ul`
   font-weight: normal;
   margin: 5px 0px;
 `
+// Chamando a imagem da lista
 
 export const ImagemRastreio = styled.img`
   position: absolute;
-  left: 60px;
+  width: 450px;
+  left: 75px;
   top: -2%;
-  height: 315px;
-  width: auto;
+  height: auto;
+`
+
+export const SessaoQuarta = styled.section`
+  background: url(${Fundo});
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0px 0px;
+`
+
+export const Paragrafo4 = styled.p`
+  color: ${(props) => props.theme['current-text']};
+  font-size: 20px;
+  text-align: center;
+  height: 85vh;
+  margin-top: 2rem;
 `

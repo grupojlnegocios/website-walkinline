@@ -17,6 +17,8 @@ import {
   ListaV,
   Titulo4,
   ImagemRastreio,
+  SessaoQuarta,
+  Paragrafo4,
 } from './style.styles'
 
 import logo from '../assets/images/logo.png'
@@ -85,6 +87,15 @@ export const Main = () => {
           </Listas>
         </TextoLista>
       </SessaoTerceira>
+      <SessaoQuarta>
+        <Titulo3>Plataformas</Titulo3>
+        <Paragrafo4>
+          O sistema <strong>Walk in Line</strong> possui uma versão web e uma
+          versão mobile com aplicativos para iOS e Android para sua empresa de
+          rastreamento, onde a Central e o seu cliente final monitoram seus
+          veículos e objetos rastreáveis de qualquer lugar e a qualquer momento.
+        </Paragrafo4>
+      </SessaoQuarta>
     </main>
   )
 }

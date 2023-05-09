@@ -10,7 +10,6 @@ import {
   MainImg,
   SessaoSecundariaArea,
   ParagrafoSecundario,
-  ParagrafoSecundario2,
 } from './style.styles'
 
 import logo from '../assets/images/logo.png'
@@ -24,6 +23,7 @@ export const Main = () => {
             <Parte1>Simplificamos a jornada de</Parte1>
             <Parte2>Rastreamento Veicular e Telemetria Avançada</Parte2>
           </Titulo>
+
           <Paragrafo>
             Oferecemos toda a estrutura e tecnologia para que empresas montem
             suas centrais de rastreamento e telemetria avançada, comecem a
@@ -36,16 +36,20 @@ export const Main = () => {
       <SessaoSecundaria>
         <SessaoSecundariaArea>
           <MainImg src={logo} alt="Logo" />
+
           <ParagrafoSecundario>
-            O Walk in Line é uma moderna plataforma de rastreamento veicular
-            desenvolvida pela JL que possibilita que sua empresa ofereça um
-            serviço de qualidade pelo melhor custo benefício do mercado.
+            O <strong>Walk in Line</strong> é uma moderna plataforma de
+            rastreamento veicular desenvolvida pela JL que possibilita que sua
+            empresa ofereça um serviço de qualidade pelo melhor custo benefício
+            do mercado.
           </ParagrafoSecundario>
-          <ParagrafoSecundario2>
-            O Walk in Line é uma moderna plataforma de rastreamento veicular
-            desenvolvida pela JL que possibilita que sua empresa ofereça um
-            serviço de qualidade pelo melhor custo benefício do mercado.
-          </ParagrafoSecundario2>
+
+          <ParagrafoSecundario>
+            O sistema permite as centrais e aos clientes finais acompanharem
+            seus veículos e demais objetos rastreáveis em tempo real através de
+            sistema WEB ou por aplicativo em seus smartphones. Entre em contato
+            e conheça mais.
+          </ParagrafoSecundario>
         </SessaoSecundariaArea>
       </SessaoSecundaria>
     </main>

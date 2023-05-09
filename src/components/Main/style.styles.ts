@@ -13,8 +13,9 @@ export const Titulo = styled.div`
 export const Paragrafo = styled.p`
   display: inline-block;
   text-align: center;
+  font-size: 20px;
   padding: 45px;
-  max-width: 395px;
+  max-width: 455px;
   color: ${(props) => props.theme['current-text']};
 `
 
@@ -84,15 +85,15 @@ export const SessaoSecundaria = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 85vh;
 
   &::before {
     position: absolute;
     z-index: 1;
     width: 100%;
-    height: 100%;
+    height: 85%;
     background: #fff;
-    opacity: 0.5;
+    opacity: 0.6;
     content: '';
   }
 `
@@ -103,6 +104,8 @@ export const SessaoSecundariaArea = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: -100px;
+  width: 60%;
+  gap: 2rem;
 `
 
 export const MainImg = styled.img`
@@ -111,10 +114,7 @@ export const MainImg = styled.img`
 `
 
 export const ParagrafoSecundario = styled.p`
-  width: 500px;
-  padding: 45px;
-`
-
-export const ParagrafoSecundario2 = styled.p`
-  width: 500px;
+  color: ${(props) => props.theme['current-text']};
+  font-size: 20px;
+  text-align: center;
 `

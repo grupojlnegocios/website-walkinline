@@ -10,7 +10,7 @@ export const darkTheme = {
 
   'first-part-principal-title': '#A8DADC',
   'current-title': '#457B9D',
-  'current-text': '#A8DADC',
+  'current-text': '#FFFFFF',
 
   black: '#000000',
 }

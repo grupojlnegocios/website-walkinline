@@ -10,7 +10,7 @@ export const lightTheme = {
 
   'first-part-principal-title': '#457B9D',
   'current-title': '#1D3557',
-  'current-text': '#457B9D',
+  'current-text': '#000000',
 
   black: '#000000',
 }

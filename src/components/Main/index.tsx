@@ -5,6 +5,7 @@ import {
   SessaoPrincipalArea,
   Parte1,
   Parte2,
+  Button,
 } from './style.styles'
 
 export const Main = () => {
@@ -22,6 +23,7 @@ export const Main = () => {
             escalar vendas no mercado de proteção veicular e segurança
             patrimonial.
           </Paragrafo>
+          <Button> Monte sua Central ➝ </Button>
         </SessaoPrincipalArea>
       </SessaoPrincipal>
     </main>

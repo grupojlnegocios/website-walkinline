@@ -93,7 +93,7 @@ export const SessaoSecundaria = styled.section`
     z-index: 1;
     width: 100%;
     height: 85%;
-    background: #fff;
+    background: ${(props) => props.theme['blur-background']};
     opacity: 0.6;
     content: '';
   }

@@ -12,5 +12,7 @@ export const lightTheme = {
   'current-title': '#1D3557',
   'current-text': '#000000',
 
+  'blur-background': '#FFFFFF',
+
   black: '#000000',
 }

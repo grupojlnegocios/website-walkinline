@@ -212,10 +212,10 @@ export const ImagemRastreio = styled.img`
 export const SessaoQuarta = styled.section`
   background: url(${Fundo});
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 25px 0px 0px;
 `
 
 export const Paragrafo4 = styled.p`

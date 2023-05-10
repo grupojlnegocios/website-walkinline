@@ -14,5 +14,7 @@ export const darkTheme = {
 
   'blur-background': '#000000',
 
+  'tooltip-background': '#A8DADC',
+
   black: '#000000',
 }

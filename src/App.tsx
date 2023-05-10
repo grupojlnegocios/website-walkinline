@@ -4,7 +4,7 @@ import { Main } from './components/Main'
 
 import { GlobalStyle } from './styles/global'
 import { lightTheme } from './styles/themes/light'
-import { darkTheme } from './styles/themes/dark'
+import { Contact } from './components/Contact'
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <Header />
       <Main />
 
+      <Contact />
       <GlobalStyle />
     </ThemeProvider>
   )

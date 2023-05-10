@@ -3,9 +3,9 @@ import styled from 'styled-components'
 export const ContactContainer = styled.div`
   display: inline-block;
   position: fixed;
-  top: 89%;
+  bottom: 80px;
   z-index: 1;
-  right: 1%;
+  right: 80px;
 `
 
 export const ContactIconArea = styled.div`
@@ -16,11 +16,12 @@ export const ContactIconArea = styled.div`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  position: absolute;
 `
 
 export const ContactToolTip = styled.div`
   position: absolute;
-  top: 25%;
+  bottom: -50px;
   right: 100%;
   width: 230px;
   background-color: ${(props) => props.theme['tooltip-background']};
@@ -36,7 +37,7 @@ export const ContactToolTip = styled.div`
     display: block;
     position: absolute;
     top: 35%;
-    right: -4%;
+    right: -3%;
     border: 8px solid transparent;
     border-width: 6px 0 6px 9px;
     border-left-color: ${(props) => props.theme['tooltip-background']};

@@ -18,11 +18,16 @@ import {
   Titulo4,
   ImagemRastreio,
   SessaoQuarta,
+  SubSessaoQuarta,
   Paragrafo4,
+  ImagemPlataforma,
+  SessaoQuinta,
+  SubSessaoQuinta,
 } from './style.styles'
 
 import logo from '../assets/images/logo.png'
 import Rastreio from '../assets/images/rastreio.png'
+import Plataforma from '../assets/images/Plataforma.png'
 
 export const Main = () => {
   return (
@@ -88,14 +93,35 @@ export const Main = () => {
         </TextoLista>
       </SessaoTerceira>
       <SessaoQuarta>
-        <Titulo3>Plataformas</Titulo3>
-        <Paragrafo4>
-          O sistema <strong>Walk in Line</strong> possui uma versão web e uma
-          versão mobile com aplicativos para iOS e Android para sua empresa de
-          rastreamento, onde a Central e o seu cliente final monitoram seus
-          veículos e objetos rastreáveis de qualquer lugar e a qualquer momento.
-        </Paragrafo4>
+        <SubSessaoQuarta>
+          <Titulo3>Plataformas</Titulo3>
+
+          <Paragrafo4>
+            O sistema <strong>Walk in Line</strong> possui uma{' '}
+            <strong>versão web</strong> e uma <strong>versão mobile</strong> com
+            aplicativos para <strong>iOS</strong> e <strong>Android</strong>{' '}
+            para sua empresa de rastreamento, onde a Central e o seu cliente
+            final monitoram seus veículos e objetos rastreáveis de qualquer
+            lugar e a qualquer momento.
+          </Paragrafo4>
+          <ImagemPlataforma src={Plataforma} alt="Rastreio" />
+        </SubSessaoQuarta>
       </SessaoQuarta>
+      <SessaoQuinta>
+        <SubSessaoQuinta>
+          <Titulo3>Planos</Titulo3>
+
+          <ParagrafoSecundario>
+            Ofereça um serviço personalizado para seus clientes, de acordo com a
+            necessidade de cada um, através dos planos do sistema{' '}
+            <strong>Walk in Line</strong>.
+          </ParagrafoSecundario>
+          <table>
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </SubSessaoQuinta>
+      </SessaoQuinta>
     </main>
   )
 }

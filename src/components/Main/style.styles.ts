@@ -3,6 +3,8 @@ import Imagem from '../assets/images/rodovia.jpg'
 import Check from '../assets/images/check.svg'
 import Fundo from '../assets/images/fundo-parte4.jpg'
 
+// Primeira Sessão começa aqui !
+
 // Chamando ao Elemento Titulo
 
 export const Titulo = styled.div`
@@ -127,6 +129,9 @@ export const ParagrafoSecundario = styled.p`
   font-size: 20px;
   text-align: center;
 `
+
+// Terceira Sessão começa aqui !
+
 // Chamando ao Elemento Sessão Terceira
 
 export const SessaoTerceira = styled.section`
@@ -208,19 +213,45 @@ export const ImagemRastreio = styled.img`
   height: auto;
 `
 
+// Quarta Sessão começa aqui !
+
 export const SessaoQuarta = styled.section`
   background: url(${Fundo});
+  height: 120vh;
+  margin-top: 2%;
   display: flex;
-  text-align: center;
+  justify-content: center;
+`
+
+export const SubSessaoQuarta = styled.div`
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-top: 35px;
+  width: 75%;
 `
 
 export const Paragrafo4 = styled.p`
   color: ${(props) => props.theme['current-text']};
   font-size: 20px;
   text-align: center;
-  height: 85vh;
-  margin-top: 2rem;
+  padding: 35px;
+`
+export const ImagemPlataforma = styled.img`
+  width: 700px;
+`
+
+export const SessaoQuinta = styled.section`
+  background: url(${Fundo});
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+`
+export const SubSessaoQuinta = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+  width: 75%;
+  gap: 2rem;
 `

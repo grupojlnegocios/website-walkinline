@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ContactContainer = styled.div`
   display: inline-block;
   position: fixed;
-  top: 91%;
+  top: 89%;
   z-index: 1;
   right: 1%;
 `

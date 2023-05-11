@@ -241,6 +241,8 @@ export const ImagemPlataforma = styled.img`
   width: 700px;
 `
 
+// Quinta Sessão começa aqui !
+
 export const SessaoQuinta = styled.section`
   background: url(${Fundo});
   background-repeat: no-repeat;
@@ -258,4 +260,36 @@ export const SubSessaoQuinta = styled.div`
 `
 export const RodapeTabela = styled.p`
   font-size: 12px;
+`
+
+// Sexta Sessão começa aqui !
+
+export const SessaoSexta = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+`
+
+export const SubSessaoSexta = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+`
+
+export const SessaoSetima = styled.section`
+  background: url(${Fundo});
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+export const SubSessaoSetima = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  gap: 2rem;
 `

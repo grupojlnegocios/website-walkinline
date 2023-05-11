@@ -24,12 +24,23 @@ import {
   SessaoQuinta,
   SubSessaoQuinta,
   RodapeTabela,
+  SessaoSexta,
+  SubSessaoSexta,
+  SessaoSetima,
+  SubSessaoSetima,
 } from './style.styles'
 
 import logo from '../assets/images/logo.png'
 import Rastreio from '../assets/images/rastreio.png'
 import Plataforma from '../assets/images/Plataforma.png'
 import { PlansTable } from './PlansTable'
+
+import AwesomeSlider from 'react-awesome-slider'
+import 'react-awesome-slider/dist/styles.css'
+import CarrosselUm from '../assets/images/carousel-1.png'
+import CarrosselDois from '../assets/images/carousel-2.png'
+import CarrosselTres from '../assets/images/carousel-3.png'
+import CarrosselQuatro from '../assets/images/carousel-4.png'
 
 export const Main = () => {
   return (
@@ -126,6 +137,55 @@ export const Main = () => {
           </RodapeTabela>
         </SubSessaoQuinta>
       </SessaoQuinta>
+      <SessaoSexta>
+        <SubSessaoSexta>
+          <Titulo3>Monte sua Central</Titulo3>
+          <ParagrafoSecundario>
+            Tudo que você precisa para abrir sua empresa de forma rápida e
+            fácil.
+          </ParagrafoSecundario>
+          <AwesomeSlider
+            // cssModule = {
+            //   --slider-height-porcentagem : 55% ;
+            //   --slider-transition-duration : 262ms ;
+            //   --espessura da seta orgânica : 10px ;
+            //   --organic-arrow-border-radius : 25px ;
+            //   --organic-arrow-height : 50px ;
+            //   --organic-arrow-color : #000000 ;
+            //   --largura do botão de controle : 10% ;
+            //   --altura do botão de controle : 25% ;
+            //   --control-button-background : transparente ;
+            //   --control-bullet-color : #000000 ;
+            //   --control-bullet-active-color : #000000 ;
+            //   --loader-bar-color : #000000 ;
+            //   --loader-bar-height : 5px ;
+
+            // }
+            media={[
+              {
+                source: CarrosselUm,
+              },
+              {
+                source: CarrosselDois,
+              },
+              {
+                source: CarrosselTres,
+              },
+              {
+                source: CarrosselQuatro,
+              },
+            ]}
+          />
+        </SubSessaoSexta>
+      </SessaoSexta>
+      <SessaoSetima>
+        <SubSessaoSetima>
+          <Titulo3>Contato</Titulo3>
+          <ParagrafoSecundario>
+            Preenchimento Obrigatório (*)
+          </ParagrafoSecundario>
+        </SubSessaoSetima>
+      </SessaoSetima>
     </main>
   )
 }

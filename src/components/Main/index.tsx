@@ -23,11 +23,13 @@ import {
   ImagemPlataforma,
   SessaoQuinta,
   SubSessaoQuinta,
+  RodapeTabela,
 } from './style.styles'
 
 import logo from '../assets/images/logo.png'
 import Rastreio from '../assets/images/rastreio.png'
 import Plataforma from '../assets/images/Plataforma.png'
+import { PlansTable } from './PlansTable'
 
 export const Main = () => {
   return (
@@ -116,10 +118,12 @@ export const Main = () => {
             necessidade de cada um, através dos planos do sistema{' '}
             <strong>Walk in Line</strong>.
           </ParagrafoSecundario>
-          <table>
-            <thead></thead>
-            <tbody></tbody>
-          </table>
+
+          <PlansTable />
+          <RodapeTabela>
+            * Valor condicional ao número total de veículos rastreados no
+            sistema.*
+          </RodapeTabela>
         </SubSessaoQuinta>
       </SessaoQuinta>
     </main>

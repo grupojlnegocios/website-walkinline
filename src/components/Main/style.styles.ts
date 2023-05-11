@@ -217,7 +217,7 @@ export const ImagemRastreio = styled.img`
 
 export const SessaoQuarta = styled.section`
   background: url(${Fundo});
-  height: 120vh;
+  height: 135vh;
   margin-top: 2%;
   display: flex;
   justify-content: center;
@@ -243,7 +243,8 @@ export const ImagemPlataforma = styled.img`
 
 export const SessaoQuinta = styled.section`
   background: url(${Fundo});
-  height: 120vh;
+  background-repeat: no-repeat;
+  height: 1005;
   display: flex;
   justify-content: center;
 `
@@ -254,4 +255,7 @@ export const SubSessaoQuinta = styled.div`
   margin-top: 35px;
   width: 75%;
   gap: 2rem;
+`
+export const RodapeTabela = styled.p`
+  font-size: 12px;
 `

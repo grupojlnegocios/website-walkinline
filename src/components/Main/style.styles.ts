@@ -110,7 +110,7 @@ export const SessaoSecundariaArea = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: -100px;
+  margin-top: -25px;
   width: 60%;
   gap: 2rem;
 `
@@ -245,7 +245,8 @@ export const ImagemPlataforma = styled.img`
 
 export const SessaoQuinta = styled.section`
   background: url(${Fundo});
-  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
   height: 1005;
   display: flex;
   justify-content: center;
@@ -277,6 +278,7 @@ export const SubSessaoSexta = styled.div`
   align-items: center;
   gap: 2rem;
 `
+// Setima Sessão começa aqui !
 
 export const SessaoSetima = styled.section`
   background: url(${Fundo});
@@ -292,4 +294,70 @@ export const SubSessaoSetima = styled.div`
   align-items: center;
   margin-top: 60px;
   gap: 2rem;
+`
+
+export const SessaoFormulario = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+`
+
+export const FormularioArea = styled.div``
+
+export const SessaoFormularioInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+`
+
+export const ParagrafoSetimaSec = styled.p`
+  display: flex;
+  align-items: start;
+  padding: 1rem;
+  max-width: 545px;
+  font-size: 18px;
+`
+
+// Footer Sessão começa aqui !
+
+export const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+export const SubFooter = styled.footer`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${(props) => props.theme['button-background']};
+  height: 100px;
+  width: 100%;
+  gap: 25px;
+`
+
+export const TextoFooter = styled.a`
+  color: ${(props) => props.theme.white};
+  font-size: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+`
+
+export const FooterImg = styled.img`
+  width: 95px;
+  height: auto;
+`
+
+export const SubFooterDois = styled.footer`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+`
+
+export const ParagrafoFooter = styled.p`
+  font-size: 12px;
+  margin-bottom: 1rem;
 `

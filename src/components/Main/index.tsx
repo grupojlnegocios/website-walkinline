@@ -28,15 +28,28 @@ import {
   SubSessaoSexta,
   SessaoSetima,
   SubSessaoSetima,
+  ParagrafoSetimaSec,
+  Footer,
+  ParagrafoFooter,
+  SubFooter,
+  SubFooterDois,
+  FooterImg,
+  TextoFooter,
+  SessaoFormulario,
+  FormularioArea,
+  SessaoFormularioInfo,
 } from './style.styles'
 
 import logo from '../assets/images/logo.png'
+import logoBranca from '../assets/images/logo-branca.png'
 import Rastreio from '../assets/images/rastreio.png'
 import Plataforma from '../assets/images/Plataforma.png'
 import { PlansTable } from './PlansTable'
+import { Forms } from './Forms'
 
 import AwesomeSlider from 'react-awesome-slider'
 import 'react-awesome-slider/dist/styles.css'
+
 import CarrosselUm from '../assets/images/carousel-1.png'
 import CarrosselDois from '../assets/images/carousel-2.png'
 import CarrosselTres from '../assets/images/carousel-3.png'
@@ -145,22 +158,6 @@ export const Main = () => {
             fácil.
           </ParagrafoSecundario>
           <AwesomeSlider
-            // cssModule = {
-            //   --slider-height-porcentagem : 55% ;
-            //   --slider-transition-duration : 262ms ;
-            //   --espessura da seta orgânica : 10px ;
-            //   --organic-arrow-border-radius : 25px ;
-            //   --organic-arrow-height : 50px ;
-            //   --organic-arrow-color : #000000 ;
-            //   --largura do botão de controle : 10% ;
-            //   --altura do botão de controle : 25% ;
-            //   --control-button-background : transparente ;
-            //   --control-bullet-color : #000000 ;
-            //   --control-bullet-active-color : #000000 ;
-            //   --loader-bar-color : #000000 ;
-            //   --loader-bar-height : 5px ;
-
-            // }
             media={[
               {
                 source: CarrosselUm,
@@ -178,14 +175,53 @@ export const Main = () => {
           />
         </SubSessaoSexta>
       </SessaoSexta>
+
       <SessaoSetima>
         <SubSessaoSetima>
           <Titulo3>Contato</Titulo3>
+
           <ParagrafoSecundario>
             Preenchimento Obrigatório (*)
           </ParagrafoSecundario>
+          <SessaoFormulario>
+            <FormularioArea>
+              <Forms />
+            </FormularioArea>
+            <SessaoFormularioInfo>
+              <ParagrafoSetimaSec>
+                <strong>
+                  Preencha e receba nosso contato para MONTAR a sua EMPRESA DE
+                  RASTREAMENTO.
+                </strong>
+              </ParagrafoSetimaSec>
+              <ParagrafoSetimaSec>
+                Entre em contato conosco através do formulário ao lado ou pelo
+                telefone abaixo. Montaremos sua central em minutos!
+              </ParagrafoSetimaSec>
+              <ParagrafoSetimaSec>
+                Av. das Nações Unidas, 18801 15° Andar - Santo Amaro,{''}
+                São Paulo - SP, 04753-100
+              </ParagrafoSetimaSec>
+            </SessaoFormularioInfo>
+          </SessaoFormulario>
         </SubSessaoSetima>
       </SessaoSetima>
+
+      <Footer>
+        <SubFooter>
+          <TextoFooter href="#" target="_blanck">
+            Desenvolvido por:
+          </TextoFooter>
+          <FooterImg src={logoBranca} alt="LogoTipo" />
+        </SubFooter>
+
+        <SubFooterDois>
+          <ParagrafoFooter>
+            <strong>Walk in Line</strong> © Copyright - Todos os direitos
+            reservados
+          </ParagrafoFooter>
+        </SubFooterDois>
+      </Footer>
     </main>
   )
 }

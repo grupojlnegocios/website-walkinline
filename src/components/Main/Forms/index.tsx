@@ -1,10 +1,11 @@
 import { useState, FormEvent } from 'react'
-import { Input, Button } from './style.styles'
+import { Input, InputMessage, Button } from './style.styles'
 
 export function Forms() {
   const [nome, setNome] = useState('')
   const [numero, setNumero] = useState('')
   const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -27,7 +28,6 @@ export function Forms() {
           type="text"
           placeholder="Numero"
           id="numero"
-          value={numero}
           onChange={(event) => setNumero(event.target.value)}
         />
       </div>
@@ -36,8 +36,15 @@ export function Forms() {
           type="email"
           placeholder="E-mail"
           id="email"
-          value={email}
           onChange={(event) => setEmail(event.target.value)}
+        />
+      </div>
+      <div>
+        <InputMessage
+          placeholder="Mensagem"
+          id="message"
+          value={message}
+          onChange={(event) => setMessage(event.target.value)}
         />
       </div>
       <Button type="submit"> Enviar </Button>

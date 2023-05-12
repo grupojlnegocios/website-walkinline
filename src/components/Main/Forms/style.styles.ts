@@ -7,14 +7,19 @@ export const Input = styled.input`
   padding: 1rem;
 `
 
+export const InputMessage = styled.textarea`
+  width: 445px;
+  height: 160px;
+  margin: 4px;
+  padding: 1rem;
+`
+
 export const Button = styled.button`
   background-color: ${(props) => props.theme['button-background']};
   color: ${(props) => props.theme.white};
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 35px 10px;
-  margin-top: 32px;
+  margin-left: 21rem;
+  margin-top: 20px;
   font-size: 20px;
   border-radius: 8px;
   border: 1px solid ${(props) => props.theme['border-color-button']};

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Imagem from '../assets/images/rodovia.jpg'
 import Check from '../assets/images/check.svg'
 import Fundo from '../assets/images/fundo-parte4.jpg'
+import FundoInicio from '../assets/images/foto-sitewalkinline.png'
 
 // Primeira Sessão começa aqui !
 
@@ -26,16 +27,19 @@ export const Paragrafo = styled.p`
 // Chamando ao Elemento Sessão Principal
 
 export const SessaoPrincipal = styled.section`
+  background-image: url(${FundoInicio});
+  background-size: cover;
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
 `
 
 // Chamando ao Elemento Sessão Principal Area
 
 export const SessaoPrincipalArea = styled.section`
+  z-index: 1;
   position: relative;
   max-width: 50%;
   text-align: center;
@@ -65,6 +69,7 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   margin: auto;
+  margin-bottom: 2rem;
   font-size: 20px;
   border-radius: 8px;
   border: 1px solid ${(props) => props.theme['border-color-button']};
@@ -83,7 +88,6 @@ export const Button = styled.button`
 export const SessaoSecundaria = styled.section`
   background-image: url(${Imagem});
   justify-content: space-between;
-  margin-top: 2%;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -93,9 +97,10 @@ export const SessaoSecundaria = styled.section`
 
   &::before {
     position: absolute;
+    background-size: cover;
     z-index: 1;
     width: 100%;
-    height: 90%;
+    height: 85%;
     background: ${(props) => props.theme['blur-background']};
     opacity: 0.6;
     content: '';
@@ -107,6 +112,7 @@ export const SessaoSecundaria = styled.section`
 export const SessaoSecundariaArea = styled.div`
   z-index: 1;
   display: flex;
+  background-size: cover;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -128,6 +134,7 @@ export const ParagrafoSecundario = styled.p`
   color: ${(props) => props.theme['current-text']};
   font-size: 20px;
   text-align: center;
+  margin-bottom: 2rem;
 `
 
 // Terceira Sessão começa aqui !
@@ -136,9 +143,9 @@ export const ParagrafoSecundario = styled.p`
 
 export const SessaoTerceira = styled.section`
   justify-content: space-between;
+  background-size: cover;
   margin-top: 2%;
   margin-bottom: 10%;
-  background-size: cover;
   flex-direction: column;
   background-repeat: no-repeat;
   display: flex;
@@ -217,7 +224,7 @@ export const ImagemRastreio = styled.img`
 
 export const SessaoQuarta = styled.section`
   background: url(${Fundo});
-  height: 135vh;
+  background-size: cover;
   margin-top: 2%;
   display: flex;
   justify-content: center;
@@ -299,7 +306,6 @@ export const SubSessaoSetima = styled.div`
 export const SessaoFormulario = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 2rem;
 `
 
@@ -309,15 +315,21 @@ export const SessaoFormularioInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px;
+  gap: 1rem;
 `
 
 export const ParagrafoSetimaSec = styled.p`
-  display: flex;
   align-items: start;
   padding: 1rem;
   max-width: 545px;
   font-size: 18px;
+`
+
+export const TelefoneWpp = styled.p`
+  align-items: start;
+  padding: 1rem;
+  max-width: 230px;
+  font-size: 25px;
 `
 
 // Footer Sessão começa aqui !

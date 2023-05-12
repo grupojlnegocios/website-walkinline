@@ -1,10 +1,19 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
+  z-index: 4;
+  background-color: #1d35578f;
+  position: fixed !important;
+  padding: 1.25rem 0;
+  max-width: 100%;
+  width: 100%;
+`
+
+export const HeaderDiv = styled.div`
+  max-width: 90%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
-  padding: 1.25rem 0;
-  max-width: 90%;
   margin: auto;
 `
 
@@ -24,7 +33,7 @@ export const ListaItens = styled.li``
 
 export const ListaLink = styled.a`
   text-decoration: none;
-  color: ${(props) => props.theme['background-nav-links']};
+  color: ${(props) => props.theme.white};
   font-family: Sans-serif;
   font-size: 15px;
 `

@@ -38,6 +38,7 @@ import {
   SessaoFormulario,
   FormularioArea,
   SessaoFormularioInfo,
+  TelefoneWpp,
 } from './style.styles'
 
 import logo from '../assets/images/logo.png'
@@ -181,28 +182,36 @@ export const Main = () => {
           <Titulo3>Contato</Titulo3>
 
           <ParagrafoSecundario>
-            Preenchimento Obrigatório (*)
+            <strong>Preenchimento Obrigatório (*)</strong>
           </ParagrafoSecundario>
           <SessaoFormulario>
+            <SessaoFormularioInfo>
+              <ParagrafoSetimaSec>
+                Preencha todos os campos e entraremos em contato para{' '}
+                <strong>MONTAR</strong> a sua{' '}
+                <strong>EMPRESA DE RASTREAMENTO.</strong>
+              </ParagrafoSetimaSec>
+
+              <ParagrafoSetimaSec>
+                Entre em contato conosco através do formulário ou pelo telefone
+                abaixo! Montaremos sua central em apenas alguns minutos!
+              </ParagrafoSetimaSec>
+
+              <TelefoneWpp>
+                <strong>(11) 99999-9999</strong>
+              </TelefoneWpp>
+
+              <ParagrafoSetimaSec>
+                <strong>
+                  Av. das Nações Unidas, 18801 15° Andar - Santo Amaro, São
+                  Paulo - SP, 04753-100
+                </strong>
+              </ParagrafoSetimaSec>
+            </SessaoFormularioInfo>
+
             <FormularioArea>
               <Forms />
             </FormularioArea>
-            <SessaoFormularioInfo>
-              <ParagrafoSetimaSec>
-                <strong>
-                  Preencha e receba nosso contato para MONTAR a sua EMPRESA DE
-                  RASTREAMENTO.
-                </strong>
-              </ParagrafoSetimaSec>
-              <ParagrafoSetimaSec>
-                Entre em contato conosco através do formulário ao lado ou pelo
-                telefone abaixo. Montaremos sua central em minutos!
-              </ParagrafoSetimaSec>
-              <ParagrafoSetimaSec>
-                Av. das Nações Unidas, 18801 15° Andar - Santo Amaro,{''}
-                São Paulo - SP, 04753-100
-              </ParagrafoSetimaSec>
-            </SessaoFormularioInfo>
           </SessaoFormulario>
         </SubSessaoSetima>
       </SessaoSetima>

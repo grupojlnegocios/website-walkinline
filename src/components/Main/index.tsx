@@ -38,15 +38,20 @@ import {
   SessaoFormulario,
   FormularioArea,
   SessaoFormularioInfo,
+  Contatos,
   TelefoneWpp,
+  EmailContato,
 } from './style.styles'
 
 import logo from '../assets/images/logo.png'
 import logoBranca from '../assets/images/logo-branca.png'
-import Rastreio from '../assets/images/rastreio.png'
+import Rastreio from '../assets/images/foto-veiculos.png'
 import Plataforma from '../assets/images/Plataforma.png'
 import { PlansTable } from './PlansTable'
 import { Forms } from './Forms'
+
+import { FaWhatsapp } from 'react-icons/fa'
+import { GrMail } from 'react-icons/gr'
 
 import AwesomeSlider from 'react-awesome-slider'
 import 'react-awesome-slider/dist/styles.css'
@@ -196,10 +201,17 @@ export const Main = () => {
                 Entre em contato conosco através do formulário ou pelo telefone
                 abaixo! Montaremos sua central em apenas alguns minutos!
               </ParagrafoSetimaSec>
+              <Contatos>
+                <TelefoneWpp>
+                  <strong>(11) 99999-9999</strong>
+                  <FaWhatsapp size={30} color={'35C42C'}></FaWhatsapp>
+                </TelefoneWpp>
+              </Contatos>
 
-              <TelefoneWpp>
-                <strong>(11) 99999-9999</strong>
-              </TelefoneWpp>
+              <EmailContato>
+                <strong>walkinline@gmail.com</strong>
+                <GrMail size={30} color={'#1D3557'}></GrMail>
+              </EmailContato>
 
               <ParagrafoSetimaSec>
                 <strong>

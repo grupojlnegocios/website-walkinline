@@ -40,16 +40,20 @@ export const SessaoPrincipal = styled.section`
 
 export const SessaoPrincipalArea = styled.section`
   z-index: 1;
-  position: relative;
   max-width: 50%;
   text-align: center;
+  background-color: rgb(255 255 255 / 60%);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-bottom: 2rem;
 `
 
 // Chamando ao Elemento Titulo parte 1
 
 export const Parte1 = styled.h1`
   font-weight: 100;
-  color: ${(props) => props.theme['first-part-principal-title']};
+  color: ${(props) => props.theme['current-title']};
 `
 
 // Chamando ao Elemento Titulo parte 2
@@ -325,11 +329,20 @@ export const ParagrafoSetimaSec = styled.p`
   font-size: 18px;
 `
 
+export const Contatos = styled.div``
+
 export const TelefoneWpp = styled.p`
-  align-items: start;
-  padding: 1rem;
-  max-width: 230px;
+  display: flex;
   font-size: 25px;
+  margin-left: 1rem;
+  gap: 7px;
+`
+
+export const EmailContato = styled.p`
+  display: flex;
+  font-size: 25px;
+  margin-left: 1rem;
+  gap: 7px;
 `
 
 // Footer Sessão começa aqui !

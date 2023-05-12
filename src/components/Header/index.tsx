@@ -8,23 +8,41 @@ import {
   HeaderDiv,
 } from './style.styles'
 
-import logo from '../assets/images/logo-branca.png'
+import { useState, useEffect } from 'react'
 
+import logo from '../assets/images/logo-branca.png'
 export const Header = () => {
+  const [backgroundOnTop, setBackgroundOnTop] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setBackgroundOnTop(true)
+      } else {
+        setBackgroundOnTop(false)
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <HeaderContainer>
+    <HeaderContainer background={backgroundOnTop}>
       <HeaderDiv>
         <HeaderImg src={logo} alt="Logo" />
         <Listas>
           <ListaItens>
-            <ListaLink href="#">Quem Somos</ListaLink>
+            <ListaLink href="#quem-somos">Quem Somos</ListaLink>
           </ListaItens>
+
           <ListaItens>
-            <ListaLink href="#">Nossos Serviços</ListaLink>
+            <ListaLink href="#planos">Planos</ListaLink>
           </ListaItens>
+
           <ListaItens>
-            <ListaLink href="#">Planos</ListaLink>
+            <ListaLink href="#nosso-diferencial">Nossos Serviços</ListaLink>
           </ListaItens>
+
           <ListaItens>
             <Button> Monte sua Central </Button>
           </ListaItens>

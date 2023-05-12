@@ -81,7 +81,7 @@ export const Main = () => {
           <Button> Monte sua Central ➝ </Button>
         </SessaoPrincipalArea>
       </SessaoPrincipal>
-      <SessaoSecundaria>
+      <SessaoSecundaria id="quem-somos">
         <SessaoSecundariaArea>
           <MainImg src={logo} alt="Logo" />
 
@@ -100,7 +100,7 @@ export const Main = () => {
           </ParagrafoSecundario>
         </SessaoSecundariaArea>
       </SessaoSecundaria>
-      <SessaoTerceira>
+      <SessaoTerceira id="nosso-diferencial">
         <Titulo3>Diferencial</Titulo3>
 
         <Paragrafo>
@@ -139,7 +139,7 @@ export const Main = () => {
           <ImagemPlataforma src={Plataforma} alt="Rastreio" />
         </SubSessaoQuarta>
       </SessaoQuarta>
-      <SessaoQuinta>
+      <SessaoQuinta id="planos">
         <SubSessaoQuinta>
           <Titulo3>Planos</Titulo3>
 
@@ -156,7 +156,7 @@ export const Main = () => {
           </RodapeTabela>
         </SubSessaoQuinta>
       </SessaoQuinta>
-      <SessaoSexta>
+      <SessaoSexta id="monte-sua-central">
         <SubSessaoSexta>
           <Titulo3>Monte sua Central</Titulo3>
           <ParagrafoSecundario>
@@ -209,8 +209,8 @@ export const Main = () => {
               </Contatos>
 
               <EmailContato>
-                <strong>walkinline@gmail.com</strong>
-                <GrMail size={30} color={'#1D3557'}></GrMail>
+                <strong>contato@walkinline.com.br</strong>
+                <GrMail size={25} color={'#1D3557'}></GrMail>
               </EmailContato>
 
               <ParagrafoSetimaSec>

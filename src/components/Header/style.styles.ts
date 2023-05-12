@@ -1,12 +1,18 @@
 import styled from 'styled-components'
 
-export const HeaderContainer = styled.header`
+interface HeaderProps {
+  background: boolean
+}
+
+export const HeaderContainer = styled.header<HeaderProps>`
   z-index: 4;
-  background-color: #1d35578f;
+  background-color: ${(props) =>
+    props.background === true ? '#1d35578f' : 'transparent'};
   position: fixed !important;
   padding: 1.25rem 0;
   max-width: 100%;
   width: 100%;
+  transition: 0.5s ease;
 `
 
 export const HeaderDiv = styled.div`
@@ -15,10 +21,12 @@ export const HeaderDiv = styled.div`
   display: flex;
   justify-content: space-between;
   margin: auto;
+  height: 3rem;
 `
 
 export const HeaderImg = styled.img`
-  height: 5rem;
+  height: 4rem;
+  margin-top: -0.5rem;
 `
 export const Listas = styled.ul`
   display: flex;

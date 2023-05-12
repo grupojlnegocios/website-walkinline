@@ -340,6 +340,7 @@ export const TelefoneWpp = styled.p`
 
 export const EmailContato = styled.p`
   display: flex;
+  align-items: center;
   font-size: 25px;
   margin-left: 1rem;
   gap: 7px;

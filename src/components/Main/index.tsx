@@ -29,12 +29,6 @@ import {
   SessaoSetima,
   SubSessaoSetima,
   ParagrafoSetimaSec,
-  Footer,
-  ParagrafoFooter,
-  SubFooter,
-  SubFooterDois,
-  FooterImg,
-  TextoFooter,
   SessaoFormulario,
   FormularioArea,
   SessaoFormularioInfo,
@@ -44,7 +38,6 @@ import {
 } from './style.styles'
 
 import logo from '../assets/images/logo.png'
-import logoBranca from '../assets/images/logo-branca.png'
 import Rastreio from '../assets/images/foto-veiculos.png'
 import Plataforma from '../assets/images/Plataforma.png'
 import { PlansTable } from './PlansTable'
@@ -124,7 +117,8 @@ export const Main = () => {
           </Listas>
         </TextoLista>
       </SessaoTerceira>
-      <SessaoQuarta>
+
+      <SessaoQuarta id="plataforma">
         <SubSessaoQuarta>
           <Titulo3>Plataformas</Titulo3>
 
@@ -139,6 +133,7 @@ export const Main = () => {
           <ImagemPlataforma src={Plataforma} alt="Rastreio" />
         </SubSessaoQuarta>
       </SessaoQuarta>
+
       <SessaoQuinta id="planos">
         <SubSessaoQuinta>
           <Titulo3>Planos</Titulo3>
@@ -182,7 +177,7 @@ export const Main = () => {
         </SubSessaoSexta>
       </SessaoSexta>
 
-      <SessaoSetima>
+      <SessaoSetima id="contato">
         <SubSessaoSetima>
           <Titulo3>Contato</Titulo3>
 
@@ -227,22 +222,6 @@ export const Main = () => {
           </SessaoFormulario>
         </SubSessaoSetima>
       </SessaoSetima>
-
-      <Footer>
-        <SubFooter>
-          <TextoFooter href="#" target="_blanck">
-            Desenvolvido por:
-          </TextoFooter>
-          <FooterImg src={logoBranca} alt="LogoTipo" />
-        </SubFooter>
-
-        <SubFooterDois>
-          <ParagrafoFooter>
-            <strong>Walk in Line</strong> © Copyright - Todos os direitos
-            reservados
-          </ParagrafoFooter>
-        </SubFooterDois>
-      </Footer>
     </main>
   )
 }

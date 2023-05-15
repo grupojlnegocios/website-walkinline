@@ -36,7 +36,7 @@ export const HeaderImg = styled.img`
 export const Listas = styled.ul`
   display: flex;
   width: 100%;
-  max-width: 500px;
+  max-width: 35rem;
   justify-content: space-between;
   align-items: center;
   list-style: none;

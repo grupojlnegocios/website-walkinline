@@ -49,11 +49,19 @@ export const Header = () => {
           </ListaItens>
 
           <ListaItens>
+            <ListaLink href="#nosso-diferencial">Diferencial</ListaLink>
+          </ListaItens>
+
+          <ListaItens>
+            <ListaLink href="#plataforma">Plataforma</ListaLink>
+          </ListaItens>
+
+          <ListaItens>
             <ListaLink href="#planos">Planos</ListaLink>
           </ListaItens>
 
           <ListaItens>
-            <ListaLink href="#nosso-diferencial">Nossos Serviços</ListaLink>
+            <ListaLink href="#contato">Contatos</ListaLink>
           </ListaItens>
 
           <ListaItens>

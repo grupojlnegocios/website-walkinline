@@ -181,7 +181,6 @@ export const Main = () => {
           />
         </SubSessaoSexta>
       </SessaoSexta>
-
       <SessaoSetima>
         <SubSessaoSetima>
           <Titulo3>Contato</Titulo3>
@@ -227,7 +226,6 @@ export const Main = () => {
           </SessaoFormulario>
         </SubSessaoSetima>
       </SessaoSetima>
-
       <Footer>
         <SubFooter>
           <TextoFooter href="#" target="_blanck">

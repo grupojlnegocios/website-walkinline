@@ -7,13 +7,18 @@ interface HeaderProps {
 export const HeaderContainer = styled.header<HeaderProps>`
   z-index: 4;
   background-color: ${(props) =>
-    props.background === true ? '#1d35578f' : 'transparent'};
+    props.background === true ? '#1d3557de' : 'transparent'};
   position: fixed !important;
   padding: 1.25rem 0;
   max-width: 100%;
   width: 100%;
   transition: 0.5s ease;
 `
+
+// export const paddingOnTop = styled.header<HeaderProps>`
+//   padding: ${(props) =>
+//     props.background === true ? 1rem };
+//
 
 export const HeaderDiv = styled.div`
   max-width: 90%;

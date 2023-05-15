@@ -9,8 +9,8 @@ import {
 } from './style.styles'
 
 import { useState, useEffect } from 'react'
-
 import logo from '../assets/images/logo-branca.png'
+
 export const Header = () => {
   const [backgroundOnTop, setBackgroundOnTop] = useState(false)
 
@@ -26,6 +26,19 @@ export const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // const [paddingOnTop, setPaddingOnTop] = useState(false)
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 0) {
+  //       setPaddingOnTop(true)
+  //     } else {
+  //       setPaddingOnTop(false)
+  //     }
+  //   }
+  //   window.addEventListener('scroll', handleScroll)
+  //   return () => window.removeEventListener('scroll', handleScroll)
+  // }, [])
   return (
     <HeaderContainer background={backgroundOnTop}>
       <HeaderDiv>

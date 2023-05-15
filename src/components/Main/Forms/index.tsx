@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react'
+import { useState } from 'react'
 import { Input, InputMessage, Button } from './style.styles'
 
 export function Forms() {
@@ -7,8 +7,7 @@ export function Forms() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
+  const handleSubmit = () => {
     console.log(`Nome: ${nome}, Número: ${numero}, Email: ${email}`)
   }
 
@@ -47,7 +46,9 @@ export function Forms() {
           onChange={(event) => setMessage(event.target.value)}
         />
       </div>
-      <Button type="submit"> Enviar </Button>
+      <Button type="submit" onClick={handleSubmit}>
+        Enviar
+      </Button>
     </form>
   )
 }

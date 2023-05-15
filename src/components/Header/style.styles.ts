@@ -36,7 +36,7 @@ export const HeaderImg = styled.img`
 export const Listas = styled.ul`
   display: flex;
   width: 100%;
-  max-width: 35rem;
+  max-width: 42rem;
   justify-content: space-between;
   align-items: center;
   list-style: none;
@@ -51,17 +51,24 @@ export const ListaLink = styled.a`
   font-size: 15px;
 `
 
-export const Button = styled.button`
+export const Button = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-decoration: none;
   font-size: 15px;
   border-radius: 8px;
+  background-color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme['button-text']};
   border: 1px solid ${(props) => props.theme['border-color-button']};
   padding: 10px 15px;
   cursor: pointer;
-  transition: background-color 0.5s ease;
-  color: ${(props) => props.theme['button-text']};
+  transition: background-color 0.8s ease;
 
   &:hover {
     background-color: ${(props) => props.theme['button-background']};
     color: ${(props) => props.theme.white};
+    border: 1px solid ${(props) => props.theme.white};
   }
 `

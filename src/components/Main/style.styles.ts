@@ -9,8 +9,9 @@ import FundoInicio from '../assets/images/foto-sitewalkinline.png'
 // Chamando ao Elemento Titulo
 
 export const Titulo = styled.div`
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
+  margin-top: 1rem;
 `
 
 // Chamando ao Elemento Paragrafo
@@ -18,9 +19,10 @@ export const Titulo = styled.div`
 export const Paragrafo = styled.p`
   display: inline-block;
   text-align: justify;
-  font-size: 20px;
-  padding: 35px;
-  max-width: 455px;
+  font-size: 19px;
+  padding: 16px;
+  max-width: 27rem;
+  margin-bottom: 1rem;
   color: ${(props) => props.theme['current-text']};
 `
 
@@ -28,6 +30,7 @@ export const Paragrafo = styled.p`
 
 export const SessaoPrincipal = styled.section`
   background-image: url(${FundoInicio});
+  padding: 2rem;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -38,12 +41,13 @@ export const SessaoPrincipal = styled.section`
 
 // Chamando ao Elemento Sessão Principal Area
 
-export const SessaoPrincipalArea = styled.section`
+export const SessaoPrincipalArea = styled.div`
   z-index: 1;
   max-width: 50%;
+  margin-top: 5rem;
   text-align: center;
   background-color: rgb(255 255 255 / 60%);
-  padding: 10px 20px;
+  padding: 2px 0;
   border-radius: 8px;
   text-decoration: none;
 `
@@ -65,9 +69,7 @@ export const Parte2 = styled.h1`
 
 // Chamando ao Elemento Botão
 
-export const Button = styled.button`
-  background-color: ${(props) => props.theme['button-background']};
-  color: ${(props) => props.theme.white};
+export const Button = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,8 +77,12 @@ export const Button = styled.button`
   margin-bottom: 2rem;
   font-size: 20px;
   border-radius: 8px;
+  text-decoration: none;
+  background-color: ${(props) => props.theme['button-background']};
+  color: ${(props) => props.theme.white};
   border: 1px solid ${(props) => props.theme['border-color-button']};
-  padding: 15px 25px;
+  padding: 16px 0;
+  width: 15rem;
   cursor: pointer;
   transition: background-color 0.8s ease;
 
@@ -127,7 +133,7 @@ export const SessaoSecundariaArea = styled.div`
 // Chamando ao Elemento Imagem
 
 export const MainImg = styled.img`
-  width: 250px;
+  width: 16rem;
   height: auto;
 `
 
@@ -155,16 +161,18 @@ export const SessaoTerceira = styled.section`
   justify-content: center;
   align-items: center;
   height: 69vh;
+  padding: 2rem;
 `
 
 // Chamando ao Elemento Titulo 3
 
 export const Titulo3 = styled.h1`
+  display: flex;
   font-size: 40px;
   font-weight: 400;
   color: ${(props) => props.theme['current-title']};
   border-bottom: 2.5px solid ${(props) => props.theme['current-title']};
-  gap: 2rem;
+  margin-bottom: 1rem;
 `
 
 // Chamando ao Elemento Lista
@@ -177,7 +185,7 @@ export const TextoLista = styled.div`
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 20px;
-  padding-left: 575px;
+  padding-left: 35rem;
   font-size: 18px;
   font-weight: normal;
   margin: 5px 0px;
@@ -208,7 +216,7 @@ export const ListaV = styled.ul`
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 20px;
-  padding-left: 30px;
+  padding-left: 2rem;
   font-size: 18px;
   font-weight: normal;
   margin: 5px 0px;
@@ -217,8 +225,8 @@ export const ListaV = styled.ul`
 
 export const ImagemRastreio = styled.img`
   position: absolute;
-  width: 450px;
-  left: 75px;
+  width: 28rem;
+  left: 4rem;
   top: -2%;
   height: auto;
 `
@@ -227,6 +235,7 @@ export const ImagemRastreio = styled.img`
 
 export const SessaoQuarta = styled.section`
   background: url(${Fundo});
+  padding: 2rem;
   background-size: cover;
   margin-top: 2%;
   display: flex;
@@ -276,6 +285,7 @@ export const RodapeTabela = styled.p`
 // Sexta Sessão começa aqui !
 
 export const SessaoSexta = styled.section`
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -291,6 +301,7 @@ export const SubSessaoSexta = styled.div`
 // Setima Sessão começa aqui !
 
 export const SessaoSetima = styled.section`
+  padding: 2rem;
   background: url(${Fundo});
   margin-top: 55px;
   display: flex;

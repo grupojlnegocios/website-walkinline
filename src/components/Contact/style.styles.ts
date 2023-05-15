@@ -17,6 +17,10 @@ export const ContactIconArea = styled.div`
   align-items: center;
   cursor: pointer;
   position: absolute;
+
+  :hover {
+    background-color: ${(props) => props.theme['#1f845a']};
+  }
 `
 
 export const ContactToolTip = styled.div`
@@ -40,7 +44,8 @@ export const ContactToolTip = styled.div`
     right: -3%;
     border: 8px solid transparent;
     border-width: 6px 0 6px 9px;
-    border-left-color: ${(props) => props.theme['tooltip-background']};
+
+    color: ${(props) => props.theme['#1f845a']};
   }
 
   ${ContactContainer}:hover & {

@@ -16,7 +16,7 @@ export function Forms() {
       <div>
         <Input
           type="text"
-          placeholder="Nome"
+          placeholder="Nome *"
           id="nome"
           value={nome}
           onChange={(event) => setNome(event.target.value)}
@@ -25,7 +25,7 @@ export function Forms() {
       <div>
         <Input
           type="text"
-          placeholder="Numero"
+          placeholder="Celular *"
           id="numero"
           onChange={(event) => setNumero(event.target.value)}
         />
@@ -33,7 +33,7 @@ export function Forms() {
       <div>
         <Input
           type="email"
-          placeholder="E-mail"
+          placeholder="E-mail *"
           id="email"
           onChange={(event) => setEmail(event.target.value)}
         />

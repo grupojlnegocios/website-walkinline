@@ -71,9 +71,10 @@ export const Main = () => {
             patrimonial.
           </Paragrafo>
 
-          <Button> Monte sua Central ➝ </Button>
+          <Button href="#monte-sua-central"> Monte sua Central ➝ </Button>
         </SessaoPrincipalArea>
       </SessaoPrincipal>
+
       <SessaoSecundaria id="quem-somos">
         <SessaoSecundariaArea>
           <MainImg src={logo} alt="Logo" />
@@ -151,6 +152,7 @@ export const Main = () => {
           </RodapeTabela>
         </SubSessaoQuinta>
       </SessaoQuinta>
+
       <SessaoSexta id="monte-sua-central">
         <SubSessaoSexta>
           <Titulo3>Monte sua Central</Titulo3>

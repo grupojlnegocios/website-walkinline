@@ -65,7 +65,7 @@ export const Header = () => {
           </ListaItens>
 
           <ListaItens>
-            <Button> Monte sua Central </Button>
+            <Button href="#monte-sua-central"> Monte sua Central </Button>
           </ListaItens>
         </Listas>
       </HeaderDiv>

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { IoCloseSharp } from 'react-icons/io5'
 interface HeaderProps {
   background: boolean
 }
@@ -13,6 +14,7 @@ export const HeaderContainer = styled.header<HeaderProps>`
   max-width: 100%;
   width: 100%;
   transition: 0.5s ease;
+  /* box-shadow: 0px 2px 11px 1px black; */
 `
 
 // export const paddingOnTop = styled.header<HeaderProps>`
@@ -71,4 +73,21 @@ export const Button = styled.a`
     color: ${(props) => props.theme.white};
     border: 1px solid ${(props) => props.theme.white};
   }
+`
+export const HamburgerMenuIcon = styled(GiHamburgerMenu)`
+  width: 40px;
+  height: auto;
+  color: white;
+  display: none;
+  @media screen and (max-width: 950px) {
+    display: block;
+    ${ListaItens} :after {
+      display: none;
+    }
+  }
+`
+
+export const CloseSharp = styled(IoCloseSharp)`
+  color: white;
+  display: none;
 `

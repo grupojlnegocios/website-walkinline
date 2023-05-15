@@ -18,9 +18,9 @@ export const Titulo = styled.div`
 
 export const Paragrafo = styled.p`
   display: inline-block;
-  text-align: justify;
+  text-align: center;
   font-size: 19px;
-  padding: 16px;
+  padding: 10px;
   max-width: 27rem;
   margin-bottom: 1rem;
   color: ${(props) => props.theme['current-text']};
@@ -43,11 +43,10 @@ export const SessaoPrincipal = styled.section`
 
 export const SessaoPrincipalArea = styled.div`
   z-index: 1;
-  max-width: 50%;
+  max-width: 70%;
   margin-top: 5rem;
   text-align: center;
   background-color: rgb(255 255 255 / 60%);
-  padding: 2px 0;
   border-radius: 8px;
   text-decoration: none;
 `
@@ -257,7 +256,7 @@ export const Paragrafo4 = styled.p`
   padding: 35px;
 `
 export const ImagemPlataforma = styled.img`
-  width: 700px;
+  width: 47rem;
 `
 
 // Quinta Sessão começa aqui !

@@ -39,7 +39,7 @@ import {
 
 import logo from '../assets/images/logo.png'
 import Rastreio from '../assets/images/foto-veiculos.png'
-import Plataforma from '../assets/images/Plataforma.png'
+import Plataforma from '../assets/images/foto-sistema.png'
 import { PlansTable } from './PlansTable'
 import { Forms } from './Forms'
 
@@ -65,10 +65,11 @@ export const Main = () => {
           </Titulo>
 
           <Paragrafo>
-            Oferecemos toda a estrutura e tecnologia para que empresas montem
-            suas centrais de rastreamento e telemetria avançada, comecem a
-            escalar vendas no mercado de proteção veicular e segurança
-            patrimonial.
+            Disponibilizamos toda a infraestrutura e tecnologia necessária para
+            que as empresas possam estabelecer suas próprias plataformas de
+            rastreamento e telemetria de última geração, iniciando uma
+            trajetória de crescimento nas vendas do mercado de proteção veicular
+            e segurança patrimonial.
           </Paragrafo>
 
           <Button href="#monte-sua-central"> Monte sua Central ➝ </Button>

@@ -6,6 +6,8 @@ import {
   Button,
   HeaderImg,
   HeaderDiv,
+  HamburgerMenuIcon,
+  CloseSharp,
 } from './style.styles'
 
 import { useState, useEffect } from 'react'
@@ -43,6 +45,7 @@ export const Header = () => {
     <HeaderContainer background={backgroundOnTop}>
       <HeaderDiv>
         <HeaderImg src={logo} alt="Logo" />
+
         <Listas>
           <ListaItens>
             <ListaLink href="#quem-somos">Quem Somos</ListaLink>
@@ -68,6 +71,8 @@ export const Header = () => {
             <Button href="#monte-sua-central"> Monte sua Central </Button>
           </ListaItens>
         </Listas>
+        <HamburgerMenuIcon />
+        <CloseSharp />
       </HeaderDiv>
     </HeaderContainer>
   )

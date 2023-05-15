@@ -29,11 +29,11 @@ export const Paragrafo = styled.p`
 export const SessaoPrincipal = styled.section`
   background-image: url(${FundoInicio});
   background-size: cover;
-  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 `
 
 // Chamando ao Elemento Sessão Principal Area
@@ -46,7 +46,6 @@ export const SessaoPrincipalArea = styled.section`
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
-  margin-bottom: 2rem;
 `
 
 // Chamando ao Elemento Titulo parte 1

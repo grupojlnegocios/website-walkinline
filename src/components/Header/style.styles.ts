@@ -49,6 +49,12 @@ export const ListaLink = styled.a`
   color: ${(props) => props.theme.white};
   font-family: Sans-serif;
   font-size: 15px;
+
+  &:hover {
+    text-decoration: underline;
+    font-size: 15.5px;
+    display: block;
+  }
 `
 
 export const Button = styled.a`
@@ -80,6 +86,12 @@ export const HamburgerMenuIcon = styled(GiHamburgerMenu)`
   cursor: pointer;
   @media (max-width: 950px) {
     display: ${(props) => (props.isVisible === true ? 'none' : 'block')};
+  }
+
+  &:hover {
+    color: white;
+    width: 46px;
+    height: auto;
   }
 `
 export const BotaoAbrirNavBar = styled.button`

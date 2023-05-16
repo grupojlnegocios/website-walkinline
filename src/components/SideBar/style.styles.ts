@@ -22,21 +22,14 @@ export const BarraLateralArea = styled.div<BarraLateralProps>`
 
 export const Listas = styled.ul`
   width: 100%;
-
-  /* @media screen and (min-width: 950px) {
-    display: none;
-    background-color: ${(props) => props.theme['button-background']};
-    background-color: blue;
-  } */
 `
 
 export const ListaItens = styled.li`
   display: flex;
   align-items: center;
   justify-content: center;
-  align-content: center;
   list-style: none;
-  padding: 1rem;
+  padding: 15px;
   border: 1px solid transparent;
 `
 
@@ -95,6 +88,7 @@ export const CloseSharp = styled(IoCloseSharp)`
     display: none;
   }
   &:hover {
+    transform: scale(00.5s);
     cursor: pointer;
     color: #bb1b1b;
     transition: color 0.5s ease;

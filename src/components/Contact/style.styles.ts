@@ -4,7 +4,7 @@ export const ContactContainer = styled.div`
   display: inline-block;
   position: fixed;
   bottom: 80px;
-  z-index: 1;
+  z-index: 20;
   right: 80px;
 `
 

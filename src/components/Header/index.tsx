@@ -7,8 +7,9 @@ import {
   HeaderImg,
   HeaderDiv,
   HamburgerMenuIcon,
-  CloseSharp,
 } from './style.styles'
+
+import { SideBar } from '../SideBar'
 
 import { useState, useEffect } from 'react'
 import logo from '../assets/images/logo-branca.png'
@@ -71,8 +72,8 @@ export const Header = () => {
             <Button href="#monte-sua-central"> Monte sua Central </Button>
           </ListaItens>
         </Listas>
+        <SideBar />
         <HamburgerMenuIcon />
-        <CloseSharp />
       </HeaderDiv>
     </HeaderContainer>
   )

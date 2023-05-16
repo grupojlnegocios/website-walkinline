@@ -13,6 +13,7 @@ export const lightTheme = {
   'current-text': '#000000',
 
   'blur-background': '#FFFFFF',
+  'blur-background-sidebar': '#1d3557f2',
 
   'tooltip-background': '#1D3557',
 

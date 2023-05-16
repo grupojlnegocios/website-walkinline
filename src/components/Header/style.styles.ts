@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { IoCloseSharp } from 'react-icons/io5'
+
 interface HeaderProps {
   background: boolean
 }
@@ -85,9 +85,4 @@ export const HamburgerMenuIcon = styled(GiHamburgerMenu)`
       display: none;
     }
   }
-`
-
-export const CloseSharp = styled(IoCloseSharp)`
-  color: white;
-  display: none;
 `

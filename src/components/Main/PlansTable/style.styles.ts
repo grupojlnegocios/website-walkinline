@@ -8,7 +8,7 @@ export const Tabela = styled.table`
 
 export const CabecaTabela = styled.thead`
   th {
-    padding: 7px 20px;
+    padding: 20px 20px;
   }
 `
 

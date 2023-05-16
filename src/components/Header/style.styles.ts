@@ -79,7 +79,7 @@ export const HamburgerMenuIcon = styled(GiHamburgerMenu)`
   display: none;
   cursor: pointer;
   @media (max-width: 950px) {
-    display: block;
+    display: ${(props) => (props.isVisible === true ? 'none' : 'block')};
   }
 `
 export const BotaoAbrirNavBar = styled.button`

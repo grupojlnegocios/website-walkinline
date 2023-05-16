@@ -19,6 +19,7 @@ export const Header = () => {
   // Função de sumir o background Header quando sobe
   const [backgroundOnTop, setBackgroundOnTop] = useState(false)
   const [NavBarTop, setNavBarTop] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,13 +35,13 @@ export const Header = () => {
 
   function abrirMenu() {
     setNavBarTop(true)
+    setIsVisible(true)
   }
 
   function fecharMenu() {
     setNavBarTop(false)
+    setIsVisible(false)
   }
-
-  /// //////////////////////////////////////////////////////////////////////
 
   return (
     <HeaderContainer background={backgroundOnTop}>
@@ -74,7 +75,7 @@ export const Header = () => {
         </Listas>
         <SideBar navbar={NavBarTop} fecharMenu={fecharMenu} />
         <BotaoAbrirNavBar>
-          <HamburgerMenuIcon onClick={abrirMenu} />
+          <HamburgerMenuIcon isVisible={isVisible} onClick={abrirMenu} />
         </BotaoAbrirNavBar>
       </HeaderDiv>
     </HeaderContainer>

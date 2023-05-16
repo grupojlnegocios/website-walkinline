@@ -44,7 +44,11 @@ export const Listas = styled.ul`
   list-style: none;
 `
 
-export const ListaItens = styled.li``
+export const ListaItens = styled.li`
+  @media (max-width: 950px) {
+    display: none;
+  }
+`
 
 export const ListaLink = styled.a`
   text-decoration: none;
@@ -79,10 +83,8 @@ export const HamburgerMenuIcon = styled(GiHamburgerMenu)`
   height: auto;
   color: white;
   display: none;
-  @media screen and (max-width: 950px) {
+  cursor: pointer;
+  @media (max-width: 950px) {
     display: block;
-    ${ListaItens} :after {
-      display: none;
-    }
   }
 `

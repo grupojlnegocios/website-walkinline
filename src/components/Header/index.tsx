@@ -7,6 +7,7 @@ import {
   HeaderImg,
   HeaderDiv,
   HamburgerMenuIcon,
+  BotaoAbrirNavBar,
 } from './style.styles'
 
 import { SideBar } from '../SideBar'
@@ -15,7 +16,9 @@ import { useState, useEffect } from 'react'
 import logo from '../assets/images/logo-branca.png'
 
 export const Header = () => {
+  // Função de sumir o background Header quando sobe
   const [backgroundOnTop, setBackgroundOnTop] = useState(false)
+  const [NavBarTop, setNavBarTop] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,19 +32,16 @@ export const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // const [paddingOnTop, setPaddingOnTop] = useState(false)
+  function abrirMenu() {
+    setNavBarTop(true)
+  }
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 0) {
-  //       setPaddingOnTop(true)
-  //     } else {
-  //       setPaddingOnTop(false)
-  //     }
-  //   }
-  //   window.addEventListener('scroll', handleScroll)
-  //   return () => window.removeEventListener('scroll', handleScroll)
-  // }, [])
+  function fecharMenu() {
+    setNavBarTop(false)
+  }
+
+  /// //////////////////////////////////////////////////////////////////////
+
   return (
     <HeaderContainer background={backgroundOnTop}>
       <HeaderDiv>
@@ -72,8 +72,10 @@ export const Header = () => {
             <Button href="#monte-sua-central"> Monte sua Central </Button>
           </ListaItens>
         </Listas>
-        <SideBar />
-        <HamburgerMenuIcon />
+        <SideBar navbar={NavBarTop} fecharMenu={fecharMenu} />
+        <BotaoAbrirNavBar>
+          <HamburgerMenuIcon onClick={abrirMenu} />
+        </BotaoAbrirNavBar>
       </HeaderDiv>
     </HeaderContainer>
   )

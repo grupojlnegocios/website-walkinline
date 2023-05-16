@@ -5,12 +5,26 @@ import {
   Button,
   CloseSharp,
   BarraLateralArea,
+  AreaBotaoClose,
+  FecharNavBar,
 } from './style.styles'
 
-export function SideBar() {
+interface SideBarProps {
+  navbar: boolean
+  fecharMenu: () => void
+}
+
+export function SideBar({ navbar, fecharMenu }: SideBarProps) {
+  function handleCloseSharpIconClick() {
+    fecharMenu()
+  }
   return (
-    <BarraLateralArea>
-      <CloseSharp />
+    <BarraLateralArea isOpen={navbar}>
+      <AreaBotaoClose>
+        <FecharNavBar>
+          <CloseSharp onClick={handleCloseSharpIconClick} />
+        </FecharNavBar>
+      </AreaBotaoClose>
 
       <Listas>
         <ListaItens>

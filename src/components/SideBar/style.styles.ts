@@ -1,13 +1,17 @@
 import styled from 'styled-components'
 import { IoCloseSharp } from 'react-icons/io5'
 
-export const BarraLateralArea = styled.div`
-  display: none;
+interface BarraLateralProps {
+  isOpen: boolean
+}
+
+export const BarraLateralArea = styled.div<BarraLateralProps>`
+  display: ${(props) => (props.isOpen === true ? 'flex' : 'none')};
   flex-direction: column;
   align-items: center;
   background-color: ${(props) => props.theme['blur-background-sidebar']};
   z-index: 5;
-  width: 250px;
+  width: ${(props) => (props.isOpen === true ? '250px' : '0px')};
   height: 100vh;
   position: fixed;
   top: 0;
@@ -18,6 +22,7 @@ export const BarraLateralArea = styled.div`
 
 export const Listas = styled.ul`
   width: 100%;
+
   /* @media screen and (min-width: 950px) {
     display: none;
     background-color: ${(props) => props.theme['button-background']};
@@ -73,16 +78,30 @@ export const Button = styled.a`
   }
 `
 
-export const CloseSharp = styled(IoCloseSharp)`
+export const AreaBotaoClose = styled.div`
   display: flex;
-  color: white;
-  width: auto;
-  height: 2rem;
-  margin-left: 12rem;
+  margin: 1rem;
+  justify-content: end;
+  width: 90%;
+`
 
+export const CloseSharp = styled(IoCloseSharp)`
+  @media (max-width: 950px) {
+    color: white;
+    width: auto;
+    height: 2rem;
+  }
+  @media (min-width: 950px) {
+    display: none;
+  }
   &:hover {
     cursor: pointer;
     color: #bb1b1b;
     transition: color 0.5s ease;
   }
+`
+
+export const FecharNavBar = styled.button`
+  background-color: transparent;
+  border: 0px;
 `

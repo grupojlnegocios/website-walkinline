@@ -6,7 +6,7 @@ interface HeaderProps {
 }
 
 export const HeaderContainer = styled.header<HeaderProps>`
-  z-index: 4;
+  z-index: 11;
   background-color: ${(props) =>
     props.background === true ? '#1d3557de' : 'transparent'};
   position: fixed !important;
@@ -14,13 +14,7 @@ export const HeaderContainer = styled.header<HeaderProps>`
   max-width: 100%;
   width: 100%;
   transition: 0.5s ease;
-  /* box-shadow: 0px 2px 11px 1px black; */
 `
-
-// export const paddingOnTop = styled.header<HeaderProps>`
-//   padding: ${(props) =>
-//     props.background === true ? 1rem };
-//
 
 export const HeaderDiv = styled.div`
   max-width: 90%;
@@ -87,4 +81,8 @@ export const HamburgerMenuIcon = styled(GiHamburgerMenu)`
   @media (max-width: 950px) {
     display: block;
   }
+`
+export const BotaoAbrirNavBar = styled.button`
+  background-color: transparent;
+  border: 0px;
 `

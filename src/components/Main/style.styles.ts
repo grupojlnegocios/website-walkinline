@@ -12,6 +12,16 @@ export const Titulo = styled.div`
   font-size: 35px;
   text-align: center;
   margin-top: 1rem;
+
+  @media (max-width: 960px) {
+    font-size: 28px;
+  }
+  @media (max-width: 785px) {
+    font-size: 25px;
+  }
+  @media (max-width: 710px) {
+    font-size: 22px;
+  }
 `
 
 // Chamando ao Elemento Paragrafo
@@ -24,6 +34,16 @@ export const Paragrafo = styled.p`
   max-width: 27rem;
   margin-bottom: 1rem;
   color: ${(props) => props.theme['current-text']};
+
+  @media (max-width: 960px) {
+    font-size: 15px;
+  }
+  @media (max-width: 785px) {
+    font-size: 10px;
+  }
+  @media (max-width: 785px) {
+    font-size: 8px;
+  }
 `
 
 // Chamando ao Elemento Sessão Principal
@@ -134,6 +154,16 @@ export const SessaoSecundariaArea = styled.div`
 export const MainImg = styled.img`
   width: 16rem;
   height: auto;
+
+  @media (max-width: 960px) {
+    width: 13rem;
+  }
+  @media (max-width: 785px) {
+    width: 10rem;
+  }
+  @media (max-width: 785px) {
+    width: 8rem;
+  }
 `
 
 // Chamando ao Elemento Paragrafo
@@ -143,6 +173,16 @@ export const ParagrafoSecundario = styled.p`
   font-size: 20px;
   text-align: center;
   margin-bottom: 2rem;
+
+  @media (max-width: 960px) {
+    font-size: 15px;
+  }
+  @media (max-width: 785px) {
+    font-size: 10px;
+  }
+  @media (max-width: 785px) {
+    font-size: 8px;
+  }
 `
 
 // Terceira Sessão começa aqui !

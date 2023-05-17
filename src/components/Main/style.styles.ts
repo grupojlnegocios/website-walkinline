@@ -28,6 +28,10 @@ export const SessaoPrincipalArea = styled.div`
   background-color: rgb(255 255 255 / 60%);
   border-radius: 8px;
   text-decoration: none;
+
+  @media (max-width: 710px) {
+    margin-top: 4rem;
+  }
 `
 
 // Chamando ao Elemento Titulo
@@ -388,12 +392,21 @@ export const SubSessaoQuinta = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 35px;
   width: 75%;
   gap: 2rem;
 `
 export const RodapeTabela = styled.p`
-  font-size: 12px;
+  font-size: 0.75rem;
+
+  @media (max-width: 960px) {
+    font-size: 0.6rem;
+  }
+  @media (max-width: 785px) {
+    font-size: 0.5rem;
+  }
+  @media (max-width: 710px) {
+    font-size: 0.4rem;
+  }
 `
 
 // Sexta Sessão começa aqui !
@@ -403,7 +416,6 @@ export const SessaoSexta = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 35px;
 `
 
 export const SubSessaoSexta = styled.div`
@@ -427,14 +439,23 @@ export const SubSessaoSetima = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
-  gap: 2rem;
+  gap: 1rem;
+
+  @media (max-width: 710px) {
+    gap: 0rem;
+    align-items: center;
+    justify-content: center;
+  }
 `
 
 export const SessaoFormulario = styled.div`
   display: flex;
   flex-direction: row;
   gap: 2rem;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
 `
 
 export const FormularioArea = styled.div``
@@ -444,28 +465,71 @@ export const SessaoFormularioInfo = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
+
+  @media (max-width: 960px) {
+    gap: 0rem;
+  }
 `
 
 export const ParagrafoSetimaSec = styled.p`
   align-items: start;
   padding: 1rem;
-  max-width: 545px;
-  font-size: 18px;
+  max-width: 21.8rem;
+  font-size: 1.12rem;
+
+  @media (max-width: 960px) {
+    max-width: 21rem;
+    font-size: 1rem;
+  }
+  @media (max-width: 785px) {
+    max-width: 20.5rem;
+    font-size: 0.5rem;
+  }
+  @media (max-width: 710px) {
+    max-width: 20rem;
+    font-size: 0.5rem;
+  }
 `
 
 export const Contatos = styled.div``
 
 export const TelefoneWpp = styled.p`
   display: flex;
-  font-size: 25px;
+  font-size: 1.5rem;
   margin-left: 1rem;
   gap: 7px;
+
+  @media (max-width: 960px) {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  @media (max-width: 785px) {
+    font-size: 0.5rem;
+    margin-left: 1rem;
+  }
+  @media (max-width: 710px) {
+    font-size: 0.25rem;
+    margin-left: 1rem;
+  }
 `
 
 export const EmailContato = styled.p`
   display: flex;
   align-items: center;
-  font-size: 25px;
+  font-size: 1.5rem;
   margin-left: 1rem;
   gap: 7px;
+
+  @media (max-width: 960px) {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  @media (max-width: 785px) {
+    font-size: 0.5rem;
+    margin-left: 1rem;
+  }
+  @media (max-width: 710px) {
+    font-size: 0.25rem;
+    margin-left: 1rem;
+  }
 `

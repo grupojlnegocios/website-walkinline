@@ -203,13 +203,13 @@ export const Main = () => {
               <Contatos>
                 <TelefoneWpp>
                   <strong>(11) 99999-9999</strong>
-                  <FaWhatsapp size={30} color={'35C42C'}></FaWhatsapp>
+                  <FaWhatsapp size={0} color={'35C42C'}></FaWhatsapp>
                 </TelefoneWpp>
               </Contatos>
 
               <EmailContato>
                 <strong>contato@walkinline.com.br</strong>
-                <GrMail size={25} color={'#1D3557'}></GrMail>
+                <GrMail size={0} color={'#1D3557'}></GrMail>
               </EmailContato>
 
               <ParagrafoSetimaSec>

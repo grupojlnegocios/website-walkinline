@@ -258,8 +258,11 @@ export const ImagemRastreio = styled.img`
   @media (max-width: 785px) {
     width: 20rem;
   }
-  @media (max-width: 710px) {
+  @media (max-width: 500px) {
     width: 15rem;
+  }
+  @media (max-width: 345px) {
+    width: 8rem;
   }
 `
 
@@ -319,12 +322,10 @@ export const ListaV = styled.ul`
 // Quarta Sessão começa aqui !
 
 export const SessaoQuarta = styled.section`
-  background: url(${Fundo});
-  padding: 2rem;
-  background-size: cover;
-  margin-top: 2%;
   display: flex;
   justify-content: center;
+  background: url(${Fundo});
+  background-size: cover;
 `
 
 export const SubSessaoQuarta = styled.div`
@@ -335,23 +336,41 @@ export const SubSessaoQuarta = styled.div`
   width: 75%;
 `
 
+// Paragrafo da Quarta Section
+
 export const Paragrafo4 = styled.p`
   color: ${(props) => props.theme['current-text']};
-  font-size: 20px;
+  font-size: 1.18rem;
   text-align: center;
   padding: 35px;
+
+  @media (max-width: 960px) {
+    font-size: 0.93rem;
+    padding: 1rem 2rem;
+  }
+  @media (max-width: 785px) {
+    font-size: 0.62rem;
+    padding: 1rem 2rem;
+  }
+  @media (max-width: 710px) {
+    font-size: 0.5rem;
+    padding: 1rem 2rem;
+  }
 `
 export const ImagemPlataforma = styled.img`
   width: 38rem;
 
-  @media (max-width: 590px) {
+  @media (max-width: 960px) {
     width: 32rem;
   }
-  @media (max-width: 365px) {
+  @media (max-width: 785px) {
     width: 23rem;
   }
-  @media (max-width: 330px) {
+  @media (max-width: 365px) {
     width: 19rem;
+  }
+  @media (max-width: 345px) {
+    width: 15rem;
   }
 `
 

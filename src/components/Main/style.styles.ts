@@ -61,12 +61,15 @@ export const Paragrafo = styled.p`
 
   @media (max-width: 960px) {
     font-size: 0.93rem;
+    padding: 1rem 2rem;
   }
   @media (max-width: 785px) {
     font-size: 0.62rem;
+    padding: 1rem 2rem;
   }
   @media (max-width: 710px) {
     font-size: 0.5rem;
+    padding: 1rem 2rem;
   }
 `
 
@@ -237,7 +240,7 @@ export const Titulo3 = styled.h1`
 
 export const TextoLista = styled.div`
   display: flex;
-  justify-content: center;
+  align-items: center;
 
   @media (max-width: 960px) {
     flex-direction: column;
@@ -248,6 +251,16 @@ export const TextoLista = styled.div`
 
 export const ImagemRastreio = styled.img`
   width: 28rem;
+
+  @media (max-width: 960px) {
+    width: 24rem;
+  }
+  @media (max-width: 785px) {
+    width: 20rem;
+  }
+  @media (max-width: 710px) {
+    width: 15rem;
+  }
 `
 
 // Chamando ao Elemento Listas
@@ -263,9 +276,22 @@ export const Listas = styled.ul`
 // Chamando ao Titulo da Lista
 
 export const Titulo4 = styled.h1`
+  display: flex;
+  font-size: 2rem;
   color: ${(props) => props.theme['current-title']};
   font-weight: 400;
   margin-bottom: 1rem;
+
+  @media (max-width: 960px) {
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  @media (max-width: 785px) {
+    font-size: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
 `
 
 // Chamando ao Elementos da Lista
@@ -274,11 +300,20 @@ export const ListaV = styled.ul`
   background: url(${Check});
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 20px;
+  background-size: 1.25rem;
   padding-left: 2rem;
-  font-size: 18px;
+  font-size: 1.18rem;
   font-weight: normal;
   margin: 5px 0px;
+
+  @media (max-width: 960px) {
+    font-size: 0.93rem;
+    background-size: 1rem;
+  }
+  @media (max-width: 785px) {
+    font-size: 0.62rem;
+    background-size: 0.5rem;
+  }
 `
 
 // Quarta Sessão começa aqui !

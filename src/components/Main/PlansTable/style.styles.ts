@@ -13,13 +13,10 @@ export const CabecaTabela = styled.thead`
   }
 
   @media (max-width: 960px) {
-    padding: 17px 17px;
   }
   @media (max-width: 785px) {
-    padding: 14px 14px;
   }
   @media (max-width: 710px) {
-    padding: 10px 10px;
   }
 `
 

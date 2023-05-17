@@ -13,7 +13,7 @@ export const Contact = () => {
   return (
     <ContactContainer onClick={handleClick}>
       <ContactIconArea>
-        <FaWhatsapp size={50} color="#FFF"></FaWhatsapp>
+        <FaWhatsapp size={40} color="#FFF"></FaWhatsapp>
       </ContactIconArea>
       <ContactToolTip>
         <p>Fale com nossos consultores!</p>

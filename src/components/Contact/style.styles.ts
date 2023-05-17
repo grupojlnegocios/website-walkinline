@@ -5,11 +5,11 @@ export const ContactContainer = styled.div`
   position: fixed;
   bottom: 80px;
   z-index: 20;
-  right: 80px;
+  right: 75px;
 `
 
 export const ContactIconArea = styled.div`
-  padding: 0.6rem;
+  padding: 0.5rem;
   background-color: #0cc243;
   border-radius: 50%;
   display: flex;

@@ -316,6 +316,7 @@ export const ListaV = styled.ul`
   @media (max-width: 960px) {
     font-size: 0.93rem;
     background-size: 1rem;
+    margin: 6px 15px;
   }
   @media (max-width: 785px) {
     font-size: 0.62rem;
@@ -454,6 +455,7 @@ export const SessaoFormulario = styled.div`
   gap: 2rem;
 
   @media (max-width: 960px) {
+    align-items: center;
     flex-direction: column;
   }
 `

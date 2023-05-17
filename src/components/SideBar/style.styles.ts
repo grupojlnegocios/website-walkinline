@@ -11,7 +11,7 @@ export const BarraLateralArea = styled.div<BarraLateralProps>`
   align-items: center;
   background-color: ${(props) => props.theme['blur-background-sidebar']};
   z-index: 5;
-  width: ${(props) => (props.isOpen === true ? '250px' : '0px')};
+  width: ${(props) => (props.isOpen === true ? '230px' : '0px')};
   height: 100vh;
   position: fixed;
   top: 0;
@@ -35,7 +35,7 @@ export const ListaItens = styled.li`
   align-items: center;
   justify-content: center;
   list-style: none;
-  padding: 15px;
+  padding: 10px;
   border: 1px solid transparent;
 `
 

@@ -41,6 +41,7 @@ import logo from '../assets/images/logo.png'
 import Rastreio from '../assets/images/foto-veiculos.png'
 import Plataforma from '../assets/images/foto-sistema.png'
 import { PlansTable } from './PlansTable'
+import { TableMobile } from './TableMobile'
 import { Forms } from './Forms'
 
 import { FaWhatsapp } from 'react-icons/fa'
@@ -148,6 +149,7 @@ export const Main = () => {
           </ParagrafoSecundario>
 
           <PlansTable />
+          <TableMobile />
           <RodapeTabela>
             * Valor condicional ao número total de veículos rastreados no
             sistema.*

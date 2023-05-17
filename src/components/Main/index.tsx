@@ -95,6 +95,7 @@ export const Main = () => {
           </ParagrafoSecundario>
         </SessaoSecundariaArea>
       </SessaoSecundaria>
+
       <SessaoTerceira id="nosso-diferencial">
         <Titulo3>Diferencial</Titulo3>
 
@@ -106,9 +107,9 @@ export const Main = () => {
 
         <TextoLista>
           <ImagemRastreio src={Rastreio} alt="Rastreio" />
-          <Titulo4>Vantagens</Titulo4>
 
           <Listas>
+            <Titulo4>Vantagens</Titulo4>
             <ListaV>Mais de 70 rastreadores homologados</ListaV>
             <ListaV>Aceita customizações e integrações</ListaV>
             <ListaV>Equipe de suporte altamente qualificada</ListaV>

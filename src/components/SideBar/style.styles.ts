@@ -18,6 +18,12 @@ export const BarraLateralArea = styled.div<BarraLateralProps>`
   right: 0;
   bottom: 0;
   transition: 0.5s ease;
+
+  // Faz com que a Barra Lateral suma da tela quando aparece o header em cima
+
+  @media (min-width: 951px) {
+    display: none;
+  }
 `
 
 export const Listas = styled.ul`

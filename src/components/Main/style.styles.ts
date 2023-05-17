@@ -6,21 +6,45 @@ import FundoInicio from '../assets/images/foto-sitewalkinline.png'
 
 // Primeira Sessão começa aqui !
 
+// Chamando ao Elemento Sessão Principal
+
+export const SessaoPrincipal = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(${FundoInicio});
+  padding: 1rem;
+  background-size: cover;
+  height: 100vh;
+`
+
+// Chamando ao Elemento Sessão Principal Area
+
+export const SessaoPrincipalArea = styled.div`
+  display: inline-table;
+  max-width: 70%;
+  margin-top: 5rem;
+  text-align: center;
+  background-color: rgb(255 255 255 / 60%);
+  border-radius: 8px;
+  text-decoration: none;
+`
+
 // Chamando ao Elemento Titulo
 
 export const Titulo = styled.div`
-  font-size: 35px;
+  font-size: 2rem;
   text-align: center;
   margin-top: 1rem;
 
   @media (max-width: 960px) {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   @media (max-width: 785px) {
-    font-size: 25px;
+    font-size: 1.5prem;
   }
   @media (max-width: 710px) {
-    font-size: 22px;
+    font-size: 1.3rem;
   }
 `
 
@@ -29,46 +53,21 @@ export const Titulo = styled.div`
 export const Paragrafo = styled.p`
   display: inline-block;
   text-align: center;
-  font-size: 19px;
+  font-size: 1.18rem;
   padding: 10px;
   max-width: 27rem;
   margin-bottom: 1rem;
   color: ${(props) => props.theme['current-text']};
 
   @media (max-width: 960px) {
-    font-size: 15px;
+    font-size: 0.93rem;
   }
   @media (max-width: 785px) {
-    font-size: 10px;
+    font-size: 0.62rem;
   }
-  @media (max-width: 785px) {
-    font-size: 8px;
+  @media (max-width: 710px) {
+    font-size: 0.5rem;
   }
-`
-
-// Chamando ao Elemento Sessão Principal
-
-export const SessaoPrincipal = styled.section`
-  background-image: url(${FundoInicio});
-  padding: 2rem;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-`
-
-// Chamando ao Elemento Sessão Principal Area
-
-export const SessaoPrincipalArea = styled.div`
-  z-index: 1;
-  max-width: 70%;
-  margin-top: 5rem;
-  text-align: center;
-  background-color: rgb(255 255 255 / 60%);
-  border-radius: 8px;
-  text-decoration: none;
 `
 
 // Chamando ao Elemento Titulo parte 1
@@ -94,7 +93,7 @@ export const Button = styled.a`
   justify-content: center;
   margin: auto;
   margin-bottom: 2rem;
-  font-size: 20px;
+  font-size: 1.25rem;
   border-radius: 8px;
   text-decoration: none;
   background-color: ${(props) => props.theme['button-background']};
@@ -109,6 +108,25 @@ export const Button = styled.a`
     background-color: ${(props) => props.theme.white};
     color: ${(props) => props.theme['button-background']};
     border: 1px solid ${(props) => props.theme['button-background']};
+  }
+
+  @media (max-width: 960px) {
+    font-size: 1rem;
+    padding: 15px 0;
+    width: 13rem;
+    border-radius: 8px;
+  }
+  @media (max-width: 785px) {
+    font-size: 1rem;
+    padding: 13px 0;
+    width: 11rem;
+    border-radius: 6px;
+  }
+  @media (max-width: 710px) {
+    font-size: 0.55rem;
+    padding: 11px 0;
+    width: 9rem;
+    border-radius: 5px;
   }
 `
 // Segunda Sessão começa aqui !
@@ -140,16 +158,14 @@ export const SessaoSecundaria = styled.section`
 export const SessaoSecundariaArea = styled.div`
   z-index: 1;
   display: flex;
-  background-size: cover;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-top: -25px;
-  width: 60%;
+  width: 55%;
   gap: 2rem;
 `
 
-// Chamando ao Elemento Imagem
+// Imagem da Logo da Segunda Sessão
 
 export const MainImg = styled.img`
   width: 16rem;
@@ -161,7 +177,7 @@ export const MainImg = styled.img`
   @media (max-width: 785px) {
     width: 10rem;
   }
-  @media (max-width: 785px) {
+  @media (max-width: 710px) {
     width: 8rem;
   }
 `
@@ -170,18 +186,18 @@ export const MainImg = styled.img`
 
 export const ParagrafoSecundario = styled.p`
   color: ${(props) => props.theme['current-text']};
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
   margin-bottom: 2rem;
 
   @media (max-width: 960px) {
-    font-size: 15px;
+    font-size: 0.93rem;
   }
   @media (max-width: 785px) {
-    font-size: 10px;
+    font-size: 0.62rem;
   }
-  @media (max-width: 785px) {
-    font-size: 8px;
+  @media (max-width: 710px) {
+    font-size: 0.5rem;
   }
 `
 
@@ -190,16 +206,9 @@ export const ParagrafoSecundario = styled.p`
 // Chamando ao Elemento Sessão Terceira
 
 export const SessaoTerceira = styled.section`
-  justify-content: space-between;
-  background-size: cover;
-  margin-top: 2%;
-  margin-bottom: 10%;
-  flex-direction: column;
-  background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 69vh;
+  flex-direction: column;
   padding: 2rem;
 `
 
@@ -212,22 +221,33 @@ export const Titulo3 = styled.h1`
   color: ${(props) => props.theme['current-title']};
   border-bottom: 2.5px solid ${(props) => props.theme['current-title']};
   margin-bottom: 1rem;
+  margin-top: 1rem;
+  @media (max-width: 960px) {
+    font-size: 35px;
+  }
+  @media (max-width: 785px) {
+    font-size: 30px;
+  }
+  @media (max-width: 710px) {
+    font-size: 25px;
+  }
 `
 
 // Chamando ao Elemento Lista
 
 export const TextoLista = styled.div`
-  position: relative;
-  justify-content: space-between;
-  padding: 0px;
-  list-style: none;
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 20px;
-  padding-left: 35rem;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 5px 0px;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`
+
+// Chamando a imagem da lista
+
+export const ImagemRastreio = styled.img`
+  width: 28rem;
 `
 
 // Chamando ao Elemento Listas
@@ -260,15 +280,6 @@ export const ListaV = styled.ul`
   font-weight: normal;
   margin: 5px 0px;
 `
-// Chamando a imagem da lista
-
-export const ImagemRastreio = styled.img`
-  position: absolute;
-  width: 28rem;
-  left: 4rem;
-  top: -2%;
-  height: auto;
-`
 
 // Quarta Sessão começa aqui !
 
@@ -296,7 +307,17 @@ export const Paragrafo4 = styled.p`
   padding: 35px;
 `
 export const ImagemPlataforma = styled.img`
-  width: 47rem;
+  width: 38rem;
+
+  @media (max-width: 590px) {
+    width: 32rem;
+  }
+  @media (max-width: 365px) {
+    width: 23rem;
+  }
+  @media (max-width: 330px) {
+    width: 19rem;
+  }
 `
 
 // Quinta Sessão começa aqui !

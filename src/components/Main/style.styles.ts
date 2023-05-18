@@ -30,7 +30,7 @@ export const SessaoPrincipalArea = styled.div`
   text-decoration: none;
 
   @media (max-width: 710px) {
-    margin-top: 4rem;
+    max-width: 95%;
   }
 `
 
@@ -64,15 +64,7 @@ export const Paragrafo = styled.p`
   color: ${(props) => props.theme['current-text']};
 
   @media (max-width: 960px) {
-    font-size: 0.93rem;
-    padding: 1rem 2rem;
-  }
-  @media (max-width: 785px) {
-    font-size: 0.62rem;
-    padding: 1rem 2rem;
-  }
-  @media (max-width: 710px) {
-    font-size: 0.5rem;
+    font-size: 1.15rem;
     padding: 1rem 2rem;
   }
 `
@@ -129,28 +121,21 @@ export const Button = styled.a`
     width: 11rem;
     border-radius: 6px;
   }
-  @media (max-width: 710px) {
-    font-size: 0.55rem;
-    padding: 11px 0;
-    width: 9rem;
-    border-radius: 5px;
-  }
 `
 // Segunda Sessão começa aqui !
 
 export const SessaoSecundaria = styled.section`
   background-image: url(${Imagem});
-  justify-content: space-between;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 85vh;
+  width: auto;
 
   &::before {
     position: absolute;
-    background-size: cover;
     z-index: 1;
     width: 100%;
     height: 85%;
@@ -170,6 +155,11 @@ export const SessaoSecundariaArea = styled.div`
   margin-top: -25px;
   width: 55%;
   gap: 2rem;
+  width: fit-content;
+
+  @media (max-width: 960px) {
+    gap: 1rem;
+  }
 `
 
 // Imagem da Logo da Segunda Sessão
@@ -180,12 +170,11 @@ export const MainImg = styled.img`
 
   @media (max-width: 960px) {
     width: 13rem;
+    margin-bottom: 1rem;
   }
   @media (max-width: 785px) {
     width: 10rem;
-  }
-  @media (max-width: 710px) {
-    width: 8rem;
+    margin-bottom: 1rem;
   }
 `
 
@@ -199,12 +188,12 @@ export const ParagrafoSecundario = styled.p`
 
   @media (max-width: 960px) {
     font-size: 0.93rem;
+    padding: 0px 30px;
   }
   @media (max-width: 785px) {
-    font-size: 0.62rem;
-  }
-  @media (max-width: 710px) {
-    font-size: 0.5rem;
+    font-size: 0.85rem;
+    margin-bottom: 0rem;
+    padding: 0px 30px;
   }
 `
 
@@ -235,9 +224,6 @@ export const Titulo3 = styled.h1`
   @media (max-width: 785px) {
     font-size: 30px;
   }
-  @media (max-width: 710px) {
-    font-size: 25px;
-  }
 `
 
 // Chamando ao Elemento Lista
@@ -265,9 +251,6 @@ export const ImagemRastreio = styled.img`
   @media (max-width: 500px) {
     width: 15rem;
   }
-  @media (max-width: 345px) {
-    width: 8rem;
-  }
 `
 
 // Chamando ao Elemento Listas
@@ -294,11 +277,6 @@ export const Titulo4 = styled.h1`
     justify-content: center;
     margin-top: 1rem;
   }
-  @media (max-width: 785px) {
-    font-size: 1rem;
-    justify-content: center;
-    margin-top: 1rem;
-  }
 `
 
 // Chamando ao Elementos da Lista
@@ -317,10 +295,6 @@ export const ListaV = styled.ul`
     font-size: 0.93rem;
     background-size: 1rem;
     margin: 6px 15px;
-  }
-  @media (max-width: 785px) {
-    font-size: 0.62rem;
-    background-size: 0.5rem;
   }
 `
 

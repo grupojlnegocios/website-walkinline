@@ -46,7 +46,7 @@ export const ListaItens = styled.li`
 
 export const ListaLink = styled.a`
   text-decoration: none;
-  color: ${(props) => props.theme.white};
+  color: #d2d2d2;
   font-family: Sans-serif;
   font-size: 15px;
 
@@ -54,6 +54,8 @@ export const ListaLink = styled.a`
     text-decoration: underline;
     font-size: 15.5px;
     display: block;
+    color: white;
+    transition: color 0.5s ease;
   }
 `
 
@@ -81,7 +83,7 @@ export const Button = styled.a`
 export const HamburgerMenuIcon = styled(GiHamburgerMenu)`
   width: 40px;
   height: auto;
-  color: white;
+  color: #cdcdcd;
   display: none;
   cursor: pointer;
   @media (max-width: 950px) {
@@ -92,6 +94,7 @@ export const HamburgerMenuIcon = styled(GiHamburgerMenu)`
     color: white;
     width: 46px;
     height: auto;
+    transition: color 0.4s ease-in;
   }
 `
 export const BotaoAbrirNavBar = styled.button`

@@ -1,28 +1,40 @@
-import { Tabela } from './style.styles'
+import { Tabela, Tabela1, Tabela2, Tabela3 } from './style.styles'
 
 import { AiFillCheckCircle } from 'react-icons/ai'
 import { CgMoreO } from 'react-icons/cg'
 
+import { useState } from 'react'
+
 export const TableMobile = () => {
+  const [TableOpen, setTableOpen] = useState('closed')
+
+  function AbrirTabela() {
+    setTableOpen('opened')
+  }
+
   return (
     <Tabela>
       <tbody>
         <tr>
           <td>
-            <a href="#">
-              <div>
-                <h3>Walk in line Basico</h3>
-                <h4>R$2,50*/Veículo</h4>
-              </div>
-              <div>
-                <CgMoreO size={30}></CgMoreO>
-              </div>
+            <a>
+              <button onClick={AbrirTabela}>
+                <div>
+                  <h3>Walk in line Basico</h3>
+                  <h4>R$2,50*/Veículo</h4>
+                </div>
+                <div>
+                  <CgMoreO size={30}></CgMoreO>
+                </div>
+              </button>
             </a>
           </td>
         </tr>
-        <tr>
+        <Tabela1 TableOpen={TableOpen}>
           <td>
-            <h4>Recursos e Funcionalidades</h4>
+            <h4>Recursos e </h4>
+            <h4>Funcionalidades</h4>
+
             <table>
               <tbody>
                 <tr></tr>
@@ -352,7 +364,7 @@ export const TableMobile = () => {
               </tbody>
             </table>
           </td>
-        </tr>
+        </Tabela1>
 
         <tr>
           <td>
@@ -367,9 +379,10 @@ export const TableMobile = () => {
             </a>
           </td>
         </tr>
-        <tr>
+        <Tabela2>
           <td>
-            <h4>Recursos e Funcionalidades</h4>
+            <h4>Recursos e</h4>
+            <h4>Funcionalidades</h4>
             <table>
               <tbody>
                 <tr></tr>
@@ -699,7 +712,7 @@ export const TableMobile = () => {
               </tbody>
             </table>
           </td>
-        </tr>
+        </Tabela2>
 
         <tr>
           <td>
@@ -714,9 +727,10 @@ export const TableMobile = () => {
             </a>
           </td>
         </tr>
-        <tr>
+        <Tabela3>
           <td>
-            <h4>Recursos e Funcionalidades</h4>
+            <h4>Recursos e</h4>
+            <h4>Funcionalidades</h4>
             <table>
               <tbody>
                 <tr></tr>
@@ -1250,7 +1264,7 @@ export const TableMobile = () => {
               </tbody>
             </table>
           </td>
-        </tr>
+        </Tabela3>
       </tbody>
     </Tabela>
   )

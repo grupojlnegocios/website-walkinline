@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Tabela = styled.table`
   display: flex;
   background: #fff;
-  width: 65%;
   border-collapse: collapse;
 
   div {
@@ -14,9 +13,16 @@ export const Tabela = styled.table`
   }
 
   tr td {
-    display: flex;
     border-top: 1px solid #ddd;
     padding: 8px;
     flex-direction: column;
+  }
+
+  a {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
   }
 `

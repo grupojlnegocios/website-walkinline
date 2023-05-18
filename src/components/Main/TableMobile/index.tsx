@@ -2,6 +2,7 @@ import {} from '../PlansTable/style.styles'
 import { Tabela } from './style.styles'
 
 import { AiFillCheckCircle } from 'react-icons/ai'
+import { CgMoreO } from 'react-icons/cg'
 
 export const TableMobile = () => {
   return (
@@ -15,7 +16,7 @@ export const TableMobile = () => {
                 <h4>R$2,50*/Veículo</h4>
               </div>
               <div>
-                <div>+</div>
+                <CgMoreO size={30}></CgMoreO>
               </div>
             </a>
           </td>
@@ -31,10 +32,6 @@ export const TableMobile = () => {
                     <p>
                       <strong>Monitoramento Online </strong>
                     </p>
-                    <AiFillCheckCircle
-                      size={16}
-                      color="#40B40E"
-                    ></AiFillCheckCircle>
                   </td>
                   <td>
                     <AiFillCheckCircle
@@ -366,7 +363,7 @@ export const TableMobile = () => {
                 <h4>R$2,50*/Veículo</h4>
               </div>
               <div>
-                <div>+</div>
+                <CgMoreO size={30}></CgMoreO>
               </div>
             </a>
           </td>
@@ -713,7 +710,7 @@ export const TableMobile = () => {
                 <h4>R$5,00*/Veículo</h4>
               </div>
               <div>
-                <div>+</div>
+                <CgMoreO size={30}></CgMoreO>
               </div>
             </a>
           </td>

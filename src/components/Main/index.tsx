@@ -35,6 +35,7 @@ import {
   Contatos,
   TelefoneWpp,
   EmailContato,
+  Carousel,
 } from './style.styles'
 
 import logo from '../assets/images/logo.png'
@@ -47,7 +48,6 @@ import { Forms } from './Forms'
 import { FaWhatsapp } from 'react-icons/fa'
 import { GrMail } from 'react-icons/gr'
 
-import AwesomeSlider from 'react-awesome-slider'
 import 'react-awesome-slider/dist/styles.css'
 
 import CarrosselUm from '../assets/images/carousel-1.png'
@@ -164,7 +164,7 @@ export const Main = () => {
             Tudo que você precisa para abrir sua empresa de forma rápida e
             fácil.
           </ParagrafoSecundario>
-          <AwesomeSlider
+          <Carousel
             media={[
               {
                 source: CarrosselUm,

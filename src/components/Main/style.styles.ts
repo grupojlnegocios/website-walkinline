@@ -3,6 +3,7 @@ import Imagem from '../assets/images/rodovia.jpg'
 import Check from '../assets/images/check.svg'
 import Fundo from '../assets/images/fundo-parte4.jpg'
 import FundoInicio from '../assets/images/foto-sitewalkinline.png'
+import AwesomeSlider from 'react-awesome-slider'
 
 // Primeira Sessão começa aqui !
 
@@ -488,5 +489,14 @@ export const EmailContato = styled.p`
   @media (max-width: 960px) {
     font-size: 1rem;
     margin-left: 1rem;
+  }
+`
+
+export const Carousel = styled(AwesomeSlider)`
+  width: 75%;
+  nav {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
   }
 `

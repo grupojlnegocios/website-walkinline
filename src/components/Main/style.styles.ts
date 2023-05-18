@@ -15,7 +15,6 @@ export const SessaoPrincipal = styled.section`
   background-image: url(${FundoInicio});
   padding: 1rem;
   background-size: cover;
-  height: 100vh;
 `
 
 // Chamando ao Elemento Sessão Principal Area
@@ -132,11 +131,9 @@ export const SessaoSecundaria = styled.section`
   justify-content: center;
   align-items: center;
   height: 85vh;
-  width: auto;
 
   &::before {
     position: absolute;
-    z-index: 1;
     width: 100%;
     height: 85%;
     background: ${(props) => props.theme['blur-background']};
@@ -150,12 +147,12 @@ export const SessaoSecundaria = styled.section`
 export const SessaoSecundariaArea = styled.div`
   z-index: 1;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: -25px;
-  width: 55%;
-  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
   width: fit-content;
+  max-height: fit-content;
+  gap: 2rem;
 
   @media (max-width: 960px) {
     gap: 1rem;
@@ -167,6 +164,7 @@ export const SessaoSecundariaArea = styled.div`
 export const MainImg = styled.img`
   width: 16rem;
   height: auto;
+  overflow: hidden;
 
   @media (max-width: 960px) {
     width: 13rem;
@@ -185,6 +183,7 @@ export const ParagrafoSecundario = styled.p`
   font-size: 1.25rem;
   text-align: center;
   margin-bottom: 2rem;
+  float: left;
 
   @media (max-width: 960px) {
     font-size: 0.93rem;
@@ -374,13 +373,7 @@ export const RodapeTabela = styled.p`
   font-size: 0.75rem;
 
   @media (max-width: 960px) {
-    font-size: 0.6rem;
-  }
-  @media (max-width: 785px) {
-    font-size: 0.5rem;
-  }
-  @media (max-width: 710px) {
-    font-size: 0.4rem;
+    font-size: 0.7rem;
   }
 `
 

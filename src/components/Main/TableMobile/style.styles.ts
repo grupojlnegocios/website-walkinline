@@ -5,23 +5,18 @@ export const Tabela = styled.table`
   background: #fff;
   width: 65%;
   border-collapse: collapse;
-`
 
-export const CabecaTabela = styled.thead`
-  th {
-    padding: 20px 20px;
+  div {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    /* border-top: 1px solid #ddd; */
   }
-`
 
-export const LinhaCabeca = styled.tr``
-
-export const CorpoTabela = styled.tbody`
   tr td {
-    align-items: center;
+    display: flex;
     border-top: 1px solid #ddd;
-    padding: 8px 68px;
-    align-content: center;
+    padding: 8px;
+    flex-direction: column;
   }
 `
-
-export const LinhaTabela = styled.td``

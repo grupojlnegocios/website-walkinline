@@ -15,6 +15,11 @@ export const SessaoPrincipal = styled.section`
   background-image: url(${FundoInicio});
   padding: 1rem;
   background-size: cover;
+  height: 100vh;
+
+  @media (max-width: 960px) {
+    height: 150vh;
+  }
 `
 
 // Chamando ao Elemento Sessão Principal Area
@@ -23,6 +28,7 @@ export const SessaoPrincipalArea = styled.div`
   display: inline-table;
   max-width: 70%;
   margin-top: 5rem;
+  margin-bottom: 2rem;
   text-align: center;
   background-color: rgb(255 255 255 / 60%);
   border-radius: 8px;
@@ -39,12 +45,15 @@ export const Titulo = styled.div`
   font-size: 2rem;
   text-align: center;
   margin-top: 1rem;
+  padding: 5px 35px;
 
   @media (max-width: 960px) {
     font-size: 1.75rem;
+    padding: 2px 17px;
   }
   @media (max-width: 785px) {
     font-size: 1.5prem;
+    padding: 0px 10px;
   }
   @media (max-width: 710px) {
     font-size: 1.3rem;
@@ -152,7 +161,7 @@ export const SessaoSecundariaArea = styled.div`
   justify-content: center;
   width: fit-content;
   max-height: fit-content;
-  gap: 2rem;
+  gap: 3rem;
 
   @media (max-width: 960px) {
     gap: 1rem;
@@ -165,6 +174,7 @@ export const MainImg = styled.img`
   width: 16rem;
   height: auto;
   overflow: hidden;
+  margin-bottom: 1rem;
 
   @media (max-width: 960px) {
     width: 13rem;
@@ -184,15 +194,16 @@ export const ParagrafoSecundario = styled.p`
   text-align: center;
   margin-bottom: 2rem;
   float: left;
+  padding: 0px 185px;
 
   @media (max-width: 960px) {
     font-size: 0.93rem;
-    padding: 0px 30px;
+    padding: 0px 35px;
   }
   @media (max-width: 785px) {
     font-size: 0.85rem;
     margin-bottom: 0rem;
-    padding: 0px 30px;
+    padding: 0px 35px;
   }
 `
 

@@ -1,4 +1,3 @@
-import {} from '../PlansTable/style.styles'
 import { Tabela } from './style.styles'
 
 import { AiFillCheckCircle } from 'react-icons/ai'
@@ -12,7 +11,7 @@ export const TableMobile = () => {
           <td>
             <a href="#">
               <div>
-                <h3>iTrack Mini</h3>
+                <h3>Walk in line Basico</h3>
                 <h4>R$2,50*/Veículo</h4>
               </div>
               <div>
@@ -359,7 +358,7 @@ export const TableMobile = () => {
           <td>
             <a href="#">
               <div>
-                <h3>iTrack Mini</h3>
+                <h3>Walk in Line Médio</h3>
                 <h4>R$2,50*/Veículo</h4>
               </div>
               <div>
@@ -706,7 +705,7 @@ export const TableMobile = () => {
           <td>
             <a href="#">
               <div>
-                <h3>iTrack Full</h3>
+                <h3>Walk in Line Full</h3>
                 <h4>R$5,00*/Veículo</h4>
               </div>
               <div>

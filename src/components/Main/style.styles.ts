@@ -163,6 +163,7 @@ export const SessaoSecundariaArea = styled.div`
   width: fit-content;
   max-height: fit-content;
   gap: 3rem;
+  margin-block: auto;
 
   @media (max-width: 960px) {
     gap: 1rem;

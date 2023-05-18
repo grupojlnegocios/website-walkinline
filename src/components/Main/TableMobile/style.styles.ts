@@ -15,7 +15,6 @@ export const Tabela = styled.table`
   tr td {
     border-top: 1px solid #ddd;
     padding: 8px;
-    flex-direction: column;
   }
 
   a {
@@ -24,5 +23,10 @@ export const Tabela = styled.table`
     justify-content: space-between;
     text-decoration: none;
     color: black;
+  }
+
+  td h4 {
+    display: flex;
+    justify-content: center;
   }
 `

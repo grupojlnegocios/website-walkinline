@@ -44,7 +44,7 @@ export const InputMessage = styled.textarea`
   }
   @media (max-width: 710px) {
     width: 15rem;
-    height: 1rem;
+    height: 4rem;
   }
 `
 

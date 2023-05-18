@@ -56,7 +56,7 @@ export const Titulo = styled.div`
 export const Paragrafo = styled.p`
   display: inline-block;
   text-align: center;
-  font-size: 1.18rem;
+  font-size: 1rem;
   padding: 10px;
   max-width: 27rem;
   margin-bottom: 1rem;
@@ -450,14 +450,6 @@ export const ParagrafoSetimaSec = styled.p`
     max-width: 21rem;
     font-size: 1rem;
   }
-  @media (max-width: 785px) {
-    max-width: 20.5rem;
-    font-size: 0.5rem;
-  }
-  @media (max-width: 710px) {
-    max-width: 20rem;
-    font-size: 0.5rem;
-  }
 `
 
 export const Contatos = styled.div``
@@ -471,14 +463,7 @@ export const TelefoneWpp = styled.p`
   @media (max-width: 960px) {
     font-size: 1rem;
     margin-left: 1rem;
-  }
-  @media (max-width: 785px) {
-    font-size: 0.5rem;
-    margin-left: 1rem;
-  }
-  @media (max-width: 710px) {
-    font-size: 0.25rem;
-    margin-left: 1rem;
+    margin-bottom: 10px;
   }
 `
 
@@ -491,14 +476,6 @@ export const EmailContato = styled.p`
 
   @media (max-width: 960px) {
     font-size: 1rem;
-    margin-left: 1rem;
-  }
-  @media (max-width: 785px) {
-    font-size: 0.5rem;
-    margin-left: 1rem;
-  }
-  @media (max-width: 710px) {
-    font-size: 0.25rem;
     margin-left: 1rem;
   }
 `

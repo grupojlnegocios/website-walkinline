@@ -485,7 +485,6 @@ Error generating stack: `+s.message+`
   background: url(${ba});
   background-size: cover;
   padding: 2rem;
-  height: 1005;
   display: flex;
   justify-content: center;
 `,d0=R.div`
@@ -678,6 +677,8 @@ Error generating stack: `+s.message+`
   height: 3.4rem;
   margin: 0.25rem;
   padding: 1rem;
+  background-color: white;
+  border: 1px solid #626262;
 
   @media (max-width: 960px) {
     font-size: 0.7rem;
@@ -700,6 +701,8 @@ Error generating stack: `+s.message+`
   height: 10rem;
   margin: 0.25rem;
   padding: 1rem;
+  background-color: white;
+  border: 1px solid #626262;
 
   @media (max-width: 960px) {
     font-size: 0.7rem;

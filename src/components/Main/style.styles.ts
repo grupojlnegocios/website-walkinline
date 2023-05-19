@@ -209,7 +209,7 @@ export const ParagrafoSecundario = styled.p`
 
   @media (max-width: 960px) {
     font-size: 1.15rem;
-    padding: 0px 35px;
+    padding: 0px 0px;
   }
 `
 
@@ -341,7 +341,7 @@ export const Paragrafo4 = styled.p`
 
   @media (max-width: 960px) {
     font-size: 1.15rem;
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
   }
 `
 export const ImagemPlataforma = styled.img`

@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+    
   }
 
   :focus {
@@ -14,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background: ${(props) => props.theme['body-background']};
+    
   }
 
   body, input, textarea, button {
@@ -21,4 +23,28 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-size: 1rem;
   }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #ddd; 
+    border-radius: 8px;
+    opacity: 0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ccc; 
+    opacity: 1;
+}
 `

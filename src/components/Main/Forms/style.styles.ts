@@ -19,8 +19,8 @@ export const Input = styled.input`
     margin: 0.15rem;
   }
   @media (max-width: 710px) {
-    width: 15rem;
-    height: 1rem;
+    width: 17rem;
+    height: 3rem;
   }
 `
 
@@ -43,8 +43,8 @@ export const InputMessage = styled.textarea`
     margin: 0.14rem;
   }
   @media (max-width: 710px) {
-    width: 15rem;
-    height: 4rem;
+    width: 17rem;
+    height: 5rem;
   }
 `
 

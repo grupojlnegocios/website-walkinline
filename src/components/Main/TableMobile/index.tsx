@@ -1,4 +1,11 @@
-import { Tabela, Tabela1, Tabela2, Tabela3 } from './style.styles'
+import {
+  Tabela,
+  Tabela1,
+  Tabela2,
+  Tabela3,
+  CabecaTabela,
+  Botao,
+} from './style.styles'
 
 import { AiFillCheckCircle } from 'react-icons/ai'
 import { CgMoreO } from 'react-icons/cg'
@@ -6,31 +13,54 @@ import { CgMoreO } from 'react-icons/cg'
 import { useState } from 'react'
 
 export const TableMobile = () => {
-  const [TableOpen, setTableOpen] = useState('closed')
+  const [TableOpen1, setTableOpen1] = useState('closed')
+  const [TableOpen2, setTableOpen2] = useState('closed')
+  const [TableOpen3, setTableOpen3] = useState('closed')
 
-  function AbrirTabela() {
-    setTableOpen('opened')
+  function AbrirTabela(tabela: number) {
+    if (tabela === 1) {
+      if (TableOpen1 === 'closed') {
+        setTableOpen1('opened')
+      } else {
+        setTableOpen1('closed')
+      }
+    }
+
+    if (tabela === 2) {
+      if (TableOpen2 === 'closed') {
+        setTableOpen2('opened')
+      } else {
+        setTableOpen2('closed')
+      }
+    }
+
+    if (tabela === 3) {
+      if (TableOpen3 === 'closed') {
+        setTableOpen3('opened')
+      } else {
+        setTableOpen3('closed')
+      }
+    }
   }
 
   return (
     <Tabela>
       <tbody>
-        <tr>
+        <CabecaTabela>
           <td>
-            <a>
-              <button onClick={AbrirTabela}>
-                <div>
-                  <h3>Walk in line Basico</h3>
-                  <h4>R$2,50*/Veículo</h4>
-                </div>
-                <div>
-                  <CgMoreO size={30}></CgMoreO>
-                </div>
-              </button>
+            <a onClick={() => AbrirTabela(1)}>
+              <div>
+                <h3>Walk in line Basico</h3>
+                <h4>R$2,50*/Veículo</h4>
+              </div>
+              <Botao>
+                <CgMoreO size={30}></CgMoreO>
+              </Botao>
             </a>
           </td>
-        </tr>
-        <Tabela1 TableOpen={TableOpen}>
+        </CabecaTabela>
+
+        <Tabela1 TableOpen={TableOpen1}>
           <td>
             <h4>Recursos e </h4>
             <h4>Funcionalidades</h4>
@@ -366,20 +396,21 @@ export const TableMobile = () => {
           </td>
         </Tabela1>
 
-        <tr>
+        <CabecaTabela>
           <td>
-            <a href="#">
+            <a onClick={() => AbrirTabela(2)}>
               <div>
                 <h3>Walk in Line Médio</h3>
                 <h4>R$2,50*/Veículo</h4>
               </div>
-              <div>
+              <Botao>
                 <CgMoreO size={30}></CgMoreO>
-              </div>
+              </Botao>
             </a>
           </td>
-        </tr>
-        <Tabela2>
+        </CabecaTabela>
+
+        <Tabela2 TableOpen={TableOpen2}>
           <td>
             <h4>Recursos e</h4>
             <h4>Funcionalidades</h4>
@@ -714,20 +745,21 @@ export const TableMobile = () => {
           </td>
         </Tabela2>
 
-        <tr>
+        <CabecaTabela>
           <td>
-            <a href="#">
+            <a onClick={() => AbrirTabela(3)}>
               <div>
-                <h3>Walk in Line Full</h3>
+                <h3>Walk in Line Mega</h3>
                 <h4>R$5,00*/Veículo</h4>
               </div>
-              <div>
+              <Botao>
                 <CgMoreO size={30}></CgMoreO>
-              </div>
+              </Botao>
             </a>
           </td>
-        </tr>
-        <Tabela3>
+        </CabecaTabela>
+
+        <Tabela3 TableOpen={TableOpen3}>
           <td>
             <h4>Recursos e</h4>
             <h4>Funcionalidades</h4>

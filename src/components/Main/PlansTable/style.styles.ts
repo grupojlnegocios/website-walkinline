@@ -1,10 +1,14 @@
 import styled from 'styled-components'
 
 export const Tabela = styled.table`
-  display: none;
+  display: table;
   background: #fff;
   width: 65%;
   border-collapse: collapse;
+
+  @media (max-width: 770px) {
+    display: none;
+  }
 `
 
 export const CabecaTabela = styled.thead`

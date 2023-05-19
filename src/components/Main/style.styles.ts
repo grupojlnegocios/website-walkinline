@@ -18,7 +18,16 @@ export const SessaoPrincipal = styled.section`
   background-size: cover;
   height: 100vh;
 
-  @media (max-width: 960px) {
+  @media (max-width: 770px) {
+    height: 115vh;
+  }
+  @media (max-width: 426px) {
+    height: 125vh;
+  }
+  @media (max-width: 376px) {
+    height: 135vh;
+  }
+  @media (max-width: 325px) {
     height: 150vh;
   }
 `
@@ -28,7 +37,7 @@ export const SessaoPrincipal = styled.section`
 export const SessaoPrincipalArea = styled.div`
   display: inline-table;
   max-width: 70%;
-  margin-top: 5rem;
+  margin-top: 9rem;
   margin-bottom: 2rem;
   text-align: center;
   background-color: rgb(255 255 255 / 60%);

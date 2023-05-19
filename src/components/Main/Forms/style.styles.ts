@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+`
+
 export const Input = styled.input`
   font-size: 1rem;
   width: 27.8rem;
@@ -56,8 +62,6 @@ export const Button = styled.button`
   background-color: ${(props) => props.theme['button-background']};
   color: ${(props) => props.theme.white};
   margin: 35px 10px;
-  margin-left: 21rem;
-  margin-top: 20px;
   font-size: 20px;
   border-radius: 8px;
   border: 1px solid ${(props) => props.theme['border-color-button']};
@@ -72,20 +76,13 @@ export const Button = styled.button`
   }
 
   @media (max-width: 960px) {
-    margin-left: 18rem;
-    margin-top: 16px;
     font-size: 16px;
     padding: 13px 23px;
     border-radius: 6px;
   }
   @media (max-width: 785px) {
-    margin-left: 16rem;
-    margin-top: 14px;
     font-size: 13px;
     padding: 10px 20px;
     border-radius: 5px;
-  }
-  @media (max-width: 710px) {
-    margin-left: 10rem;
   }
 `

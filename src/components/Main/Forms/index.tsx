@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Input, InputMessage, Button } from './style.styles'
+import { Form, Input, InputMessage, Button } from './style.styles'
 
 export function Forms() {
   const [nome, setNome] = useState('')
@@ -14,7 +14,7 @@ export function Forms() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit}>
       <div>
         <Input
           type="text"
@@ -51,6 +51,6 @@ export function Forms() {
       <Button type="submit" onClick={handleSubmit}>
         Enviar
       </Button>
-    </form>
+    </Form>
   )
 }

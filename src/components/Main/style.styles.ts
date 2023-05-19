@@ -405,6 +405,8 @@ export const SubSessaoSexta = styled.div`
 export const SessaoSetima = styled.section`
   padding: 2rem;
   background: url(${Fundo});
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-top: 55px;
   display: flex;
   flex-direction: column;

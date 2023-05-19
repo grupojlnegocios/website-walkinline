@@ -35,7 +35,7 @@ export const ListaItens = styled.li`
   align-items: center;
   justify-content: center;
   list-style: none;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid transparent;
 `
 

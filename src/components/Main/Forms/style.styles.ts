@@ -6,6 +6,8 @@ export const Input = styled.input`
   height: 3.4rem;
   margin: 0.25rem;
   padding: 1rem;
+  background-color: white;
+  border: 1px solid #626262;
 
   @media (max-width: 960px) {
     font-size: 0.7rem;
@@ -30,6 +32,8 @@ export const InputMessage = styled.textarea`
   height: 10rem;
   margin: 0.25rem;
   padding: 1rem;
+  background-color: white;
+  border: 1px solid #626262;
 
   @media (max-width: 960px) {
     font-size: 0.7rem;

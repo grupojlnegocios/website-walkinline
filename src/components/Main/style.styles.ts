@@ -367,7 +367,6 @@ export const SessaoQuinta = styled.section`
   background: url(${Fundo});
   background-size: cover;
   padding: 2rem;
-  height: 1005;
   display: flex;
   justify-content: center;
 `

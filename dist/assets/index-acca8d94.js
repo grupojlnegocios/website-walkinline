@@ -372,7 +372,7 @@ Error generating stack: `+s.message+`
 
   @media (max-width: 960px) {
     font-size: 1.15rem;
-    padding: 0px 35px;
+    padding: 0px 0px;
   }
 `,t0=R.section`
   display: flex;
@@ -464,7 +464,7 @@ Error generating stack: `+s.message+`
 
   @media (max-width: 960px) {
     font-size: 1.15rem;
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
   }
 `,c0=R.img`
   width: 38rem;
@@ -758,6 +758,7 @@ Error generating stack: `+s.message+`
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+    
   }
 
   :focus {
@@ -766,6 +767,7 @@ Error generating stack: `+s.message+`
 
   body {
     background: ${e=>e.theme["body-background"]};
+    
   }
 
   body, input, textarea, button {
@@ -773,6 +775,30 @@ Error generating stack: `+s.message+`
     font-weight: 400;
     font-size: 1rem;
   }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #ddd; 
+    border-radius: 8px;
+    opacity: 0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ccc; 
+    opacity: 1;
+}
 `,G0={white:"#FFFFFF","body-background":"#FFFFFF","background-nav-links":"#1D3557","border-color-button":"#1D3557","button-background":"#1D3557","button-text":"#1D3557","first-part-principal-title":"#457B9D","current-title":"#1D3557","current-text":"#000000","blur-background":"#FFFFFF","blur-background-sidebar":"#1d3557f2","tooltip-background":"#1D3557",black:"#000000"},Oa=R.div`
   display: inline-block;
   position: fixed;

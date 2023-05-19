@@ -201,19 +201,14 @@ export const MainImg = styled.img`
 
 export const ParagrafoSecundario = styled.p`
   color: ${(props) => props.theme['current-text']};
-  font-size: 1.25rem;
+  font-size: 1.18rem;
   text-align: center;
   margin-bottom: 2rem;
   float: left;
   padding: 0px 185px;
 
   @media (max-width: 960px) {
-    font-size: 0.93rem;
-    padding: 0px 35px;
-  }
-  @media (max-width: 785px) {
-    font-size: 0.85rem;
-    margin-bottom: 0rem;
+    font-size: 1.15rem;
     padding: 0px 35px;
   }
 `
@@ -345,7 +340,7 @@ export const Paragrafo4 = styled.p`
   padding: 35px;
 
   @media (max-width: 960px) {
-    font-size: 1rem;
+    font-size: 1.15rem;
     padding: 1rem 2rem;
   }
 `

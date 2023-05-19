@@ -372,7 +372,7 @@ Error generating stack: `+s.message+`
 
   @media (max-width: 960px) {
     font-size: 1.15rem;
-    padding: 0px 0px;
+    padding: 0px 15px;
   }
 `,t0=R.section`
   display: flex;
@@ -691,8 +691,8 @@ Error generating stack: `+s.message+`
     margin: 0.15rem;
   }
   @media (max-width: 710px) {
-    width: 15rem;
-    height: 1rem;
+    width: 17rem;
+    height: 3rem;
   }
 `,A0=R.textarea`
   font-size: 1rem;
@@ -713,8 +713,8 @@ Error generating stack: `+s.message+`
     margin: 0.14rem;
   }
   @media (max-width: 710px) {
-    width: 15rem;
-    height: 4rem;
+    width: 17rem;
+    height: 5rem;
   }
 `,$0=R.button`
   background-color: ${e=>e.theme["button-background"]};

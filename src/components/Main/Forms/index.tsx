@@ -8,7 +8,9 @@ export function Forms() {
   const [message, setMessage] = useState('')
 
   const handleSubmit = () => {
-    console.log(`Nome: ${nome}, Número: ${numero}, Email: ${email}`)
+    console.log(
+      `Nome: ${nome}, Número: ${numero}, Email: ${email}, Mensagem: ${message}`,
+    )
   }
 
   return (

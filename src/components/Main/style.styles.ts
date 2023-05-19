@@ -345,15 +345,7 @@ export const Paragrafo4 = styled.p`
   padding: 35px;
 
   @media (max-width: 960px) {
-    font-size: 0.93rem;
-    padding: 1rem 2rem;
-  }
-  @media (max-width: 785px) {
-    font-size: 0.62rem;
-    padding: 1rem 2rem;
-  }
-  @media (max-width: 710px) {
-    font-size: 0.5rem;
+    font-size: 1rem;
     padding: 1rem 2rem;
   }
 `

@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { FormEvent, useState } from 'react'
 import { Form, Input, InputMessage, Button } from './style.styles'
+import { api } from './axios'
 
 export function Forms() {
   const [nome, setNome] = useState('')
@@ -7,10 +8,23 @@ export function Forms() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
-  const handleSubmit = () => {
-    console.log(
-      `Nome: ${nome}, Número: ${numero}, Email: ${email}, Mensagem: ${message}`,
-    )
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+    const data = {
+      nome,
+      numero,
+      email,
+      message,
+    }
+    const response = await api.post('/contact/', data)
+    console.log(response.status)
+
+    if (response.status >= 200) {
+      alert('Tudo certo!')
+    } else {
+      alert('Deu Ruim')
+    }
   }
 
   return (
@@ -29,6 +43,7 @@ export function Forms() {
           type="text"
           placeholder="Celular *"
           id="numero"
+          value={numero}
           onChange={(event) => setNumero(event.target.value)}
         />
       </div>
@@ -37,6 +52,7 @@ export function Forms() {
           type="email"
           placeholder="E-mail *"
           id="email"
+          value={email}
           onChange={(event) => setEmail(event.target.value)}
         />
       </div>
@@ -48,9 +64,7 @@ export function Forms() {
           onChange={(event) => setMessage(event.target.value)}
         />
       </div>
-      <Button type="submit" onClick={handleSubmit}>
-        Enviar
-      </Button>
+      <Button type="submit">Enviar</Button>
     </Form>
   )
 }

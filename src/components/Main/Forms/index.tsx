@@ -3,34 +3,79 @@ import { Form, Input, InputMessage, Button } from './style.styles'
 import { api } from './axios'
 import { Loader } from '../../Loader'
 
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 export function Forms() {
   const [name, setName] = useState('')
-  const [number, setNumber] = useState('')
+  const [cellphone, setCellPhone] = useState('')
   const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
-
+  const [message, setMessage] = useState(
+    'Olá, gostaria de montar minha central.',
+  )
   const [showLoader, setShowLoader] = useState(false)
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+
     setShowLoader(true)
-    console.log({ name, number, email, message })
+
+    console.log({ name, cellphone, email, message })
 
     const data = {
       name,
-      number,
+      cellphone,
       email,
       message,
     }
-    const response = await api.post('/contact/', data)
+    api
+      .post('/contact/', data, {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+      })
+      .then((response: any) => {
+        if (response.status === 200) {
+          toast.success('Email enviado com sucesso!', {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+          })
+        }
+      })
+      .catch((error: any) => {
+        if (error.response.status === 400) {
+          toast.warn('Email não enviado!', {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+          })
+        } else if (error.response.status === 500) {
+          toast.error('Erro!', {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+          })
+        }
+        console.log(error.response)
+      })
 
     setShowLoader(false)
-    if (response.status >= 200) {
-      alert('Tudo certo!')
-    } else {
-      alert('Deu Ruim')
-    }
-    console.log(response.data)
   }
 
   return (
@@ -61,11 +106,11 @@ export function Forms() {
         <div>
           <Input
             type="text"
-            placeholder="Celular *"
+            placeholder="(00) 00000-0000 *"
             id="numero"
-            value={number}
+            value={cellphone}
             required
-            onChange={(event) => setNumber(event.target.value)}
+            onChange={(event) => setCellPhone(event.target.value)}
           />
         </div>
 
@@ -90,6 +135,19 @@ export function Forms() {
         </div>
 
         <Button type="submit">Enviar</Button>
+
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+        />
       </Form>
 
       {showLoader && <Loader />}

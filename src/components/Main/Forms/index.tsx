@@ -61,16 +61,19 @@ export function Forms() {
             theme: 'colored',
           })
         } else if (error.response.status === 500) {
-          toast.error('Erro!', {
-            position: 'top-right',
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: 'colored',
-          })
+          toast.error(
+            'Erro ao enviar o Email, tente enviar novamente mais tarde!',
+            {
+              position: 'top-right',
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: 'colored',
+            },
+          )
         }
         console.log(error.response)
       })
@@ -80,10 +83,7 @@ export function Forms() {
 
   return (
     <>
-      <Form
-        /* action="contato@walkinline.com.br" method="POST" */
-        onSubmit={handleSubmit}
-      >
+      <Form onSubmit={handleSubmit}>
         <div>
           <input
             type="hidden"

@@ -38,6 +38,10 @@ export const ContactToolTip = styled.div`
   transition: 0.5s ease;
   opacity: 0;
 
+  @media (max-width: 430px) {
+    display: none;
+  }
+
   ::after {
     content: '';
     display: block;

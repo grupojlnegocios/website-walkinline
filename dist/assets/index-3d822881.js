@@ -894,6 +894,7 @@ Error generating stack: `+s.message+`
 
   @media (max-width: 430px) {
     display: none;
+    width: 150px;
   }
 
   ::after {

@@ -892,6 +892,10 @@ Error generating stack: `+s.message+`
   transition: 0.5s ease;
   opacity: 0;
 
+  @media (max-width: 430px) {
+    display: none;
+  }
+
   ::after {
     content: '';
     display: block;

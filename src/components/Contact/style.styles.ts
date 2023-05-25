@@ -40,6 +40,7 @@ export const ContactToolTip = styled.div`
 
   @media (max-width: 430px) {
     display: none;
+    width: 150px;
   }
 
   ::after {

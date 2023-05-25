@@ -5,6 +5,8 @@ import Fundo from '../assets/images/fundo-parte4.jpg'
 import FundoInicio from '../assets/images/foto-sitewalkinline.png'
 import AwesomeSlider from 'react-awesome-slider'
 
+import { BsFillArrowUpCircleFill } from 'react-icons/bs'
+
 // Primeira Sessão começa aqui !
 
 // Chamando ao Elemento Sessão Principal
@@ -496,5 +498,31 @@ export const Carousel = styled(AwesomeSlider)`
     margin-top: 5px;
     display: flex;
     align-items: center;
+  }
+`
+
+export const BotaoUp = styled.button`
+  border: 0;
+  display: inline-block;
+  position: fixed;
+  bottom: 80px;
+  z-index: 20;
+  left: 25px;
+`
+export const BotaoSobe = styled(BsFillArrowUpCircleFill)`
+  display: ${(props) => (props.background === true ? 'block' : 'none')};
+
+  position: fixed;
+  color: #1d3557;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-color: white;
+  transition: color 0.8s, background-color 0.8s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    background-color: #1d3557;
+    border: 3px solid #1d3557;
   }
 `

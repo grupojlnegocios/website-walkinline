@@ -36,6 +36,8 @@ import {
   TelefoneWpp,
   EmailContato,
   Carousel,
+  BotaoUp,
+  BotaoSobe,
 } from './style.styles'
 
 import logo from '../assets/images/logo.png'
@@ -55,7 +57,23 @@ import CarrosselDois from '../assets/images/carousel-2.png'
 import CarrosselTres from '../assets/images/carousel-3.png'
 import CarrosselQuatro from '../assets/images/carousel-4.png'
 
+import { useState, useEffect } from 'react'
+
 export const Main = () => {
+  const [buttonOnTop, setButtonOnTop] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setButtonOnTop(true)
+      } else {
+        setButtonOnTop(false)
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <main>
       <SessaoPrincipal>
@@ -228,6 +246,10 @@ export const Main = () => {
           </SessaoFormulario>
         </SubSessaoSetima>
       </SessaoSetima>
+
+      <BotaoUp>
+        <BotaoSobe size={55} background={buttonOnTop} />
+      </BotaoUp>
     </main>
   )
 }

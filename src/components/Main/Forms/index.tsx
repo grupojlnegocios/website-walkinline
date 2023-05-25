@@ -48,6 +48,7 @@ export function Forms() {
           })
         }
       })
+
       .catch((error: any) => {
         if (error.response.status === 400) {
           toast.warn('Email não enviado!', {
@@ -75,7 +76,6 @@ export function Forms() {
             },
           )
         }
-        console.log(error.response)
       })
 
     setShowLoader(false)

@@ -36,6 +36,7 @@ export const Listas = styled.ul`
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  line-height: 1.6;
 `
 
 export const ListaItens = styled.li`
@@ -48,14 +49,14 @@ export const ListaLink = styled.a`
   text-decoration: none;
   color: #d2d2d2;
   font-family: Sans-serif;
-  font-size: 15px;
+  font-size: 17px;
+  line-height: 1.6;
+  transition: color 0.5s ease;
 
   &:hover {
     text-decoration: underline;
-    font-size: 15.5px;
     display: block;
     color: white;
-    transition: color 0.5s ease;
   }
 `
 

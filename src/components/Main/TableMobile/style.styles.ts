@@ -9,7 +9,7 @@ export const Tabela = styled.table`
   background: #fff;
   border-collapse: collapse;
   justify-content: space-around;
-  width: 320px;
+  width: 20rem;
 
   @media (max-width: 770px) {
     display: flex;
@@ -27,7 +27,7 @@ export const Tabela = styled.table`
     text-decoration: none;
     color: black;
     cursor: pointer;
-    gap: 2rem;
+    gap: 5rem;
 
     width: 100%;
   }

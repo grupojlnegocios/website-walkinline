@@ -7,6 +7,10 @@ import AwesomeSlider from 'react-awesome-slider'
 
 import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 
+interface HeaderProps {
+  opacidade: boolean
+  cursor: boolean
+}
 // Primeira Sessão começa aqui !
 
 // Chamando ao Elemento Sessão Principal
@@ -501,24 +505,26 @@ export const Carousel = styled(AwesomeSlider)`
   }
 `
 
-export const BotaoUp = styled.button`
+export const BotaoUp = styled.button<HeaderProps>`
+  z-index: 20;
   border: 0;
   display: inline-block;
   position: fixed;
-  bottom: 80px;
-  z-index: 20;
+  bottom: 5rem;
   left: 25px;
+
+  transition: 0.3s ease;
+  cursor: ${(props) => (props.cursor === true ? 'pointer' : 'default')};
+  opacity: ${(props) => (props.opacidade === true ? '1' : '0')};
 `
 export const BotaoSobe = styled(BsFillArrowUpCircleFill)`
-  display: ${(props) => (props.background === true ? 'block' : 'none')};
-
+  display: block;
   position: fixed;
   color: #1d3557;
   border-radius: 50%;
   border: 3px solid white;
   background-color: white;
-  transition: color 0.8s, background-color 0.8s ease;
-  cursor: pointer;
+  transition: 0.9s ease;
 
   &:hover {
     color: white;

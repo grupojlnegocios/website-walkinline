@@ -61,18 +61,25 @@ import { useState, useEffect } from 'react'
 
 export const Main = () => {
   const [buttonOnTop, setButtonOnTop] = useState(false)
+  const [cursor, setCursor] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setButtonOnTop(true)
+        setCursor(true)
       } else {
         setButtonOnTop(false)
+        setCursor(false)
       }
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  function subirTela() {
+    document.documentElement.scrollTop = 0
+  }
 
   return (
     <main>
@@ -247,8 +254,8 @@ export const Main = () => {
         </SubSessaoSetima>
       </SessaoSetima>
 
-      <BotaoUp>
-        <BotaoSobe size={55} background={buttonOnTop} />
+      <BotaoUp opacidade={buttonOnTop} cursor={cursor}>
+        <BotaoSobe size={55} onClick={subirTela} />
       </BotaoUp>
     </main>
   )

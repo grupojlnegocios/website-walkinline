@@ -10,6 +10,7 @@ import {
   MainImg,
   SessaoSecundariaArea,
   ParagrafoSecundario,
+  ParagrafoSecundario2,
   SessaoTerceira,
   Titulo3,
   TextoLista,
@@ -107,18 +108,24 @@ export const Main = () => {
           <MainImg src={logo} alt="Logo" />
 
           <ParagrafoSecundario>
-            O <strong>Walk in Line</strong> é uma moderna plataforma de
-            rastreamento veicular desenvolvida pela JL que possibilita que sua
-            empresa ofereça um serviço de qualidade pelo melhor custo benefício
-            do mercado.
+            <strong>Walk in Line</strong> é uma moderna plataforma de
+            rastreamento veicular desenvolvida pelo <strong>Grupo JL</strong>{' '}
+            que possibilita que sua empresa ofereça um serviço de qualidade pelo
+            melhor custo benefício do mercado.
           </ParagrafoSecundario>
 
-          <ParagrafoSecundario>
-            O sistema permite as centrais e aos clientes finais acompanharem
-            seus veículos e demais objetos rastreáveis em tempo real através de
-            sistema WEB ou por aplicativo em seus smartphones.{' '}
-            <strong>Entre em contato e conheça mais.</strong>
-          </ParagrafoSecundario>
+          <ParagrafoSecundario2>
+            O sistema permite que centrais de monitoramento e clientes finais
+            acompanhem seus veículos e ativos rastreaveis em tempo real!
+          </ParagrafoSecundario2>
+          <ParagrafoSecundario2>
+            Tudo isso via WEB e ou Aplicativos Mobiles.
+            <u>
+              <strong>
+                Entre em contato agora mesmo com nosso time de especialistas.
+              </strong>
+            </u>
+          </ParagrafoSecundario2>
         </SessaoSecundariaArea>
       </SessaoSecundaria>
 
@@ -126,9 +133,9 @@ export const Main = () => {
         <Titulo3>Diferencial</Titulo3>
 
         <Paragrafo>
-          A <strong>JL</strong> oferece as melhores opções do mercado para
-          facilitar e desenvolver o seu negócio através do sistema{' '}
-          <strong>Walk in Line</strong>.
+          A <strong>walk in line</strong> oferece as melhores opções do mercado
+          para facilitar e desenvolver o seu negocio através do nosso{' '}
+          <u>software inteligente</u>!
         </Paragrafo>
 
         <TextoLista>

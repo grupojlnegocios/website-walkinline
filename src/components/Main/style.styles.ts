@@ -42,11 +42,11 @@ export const SessaoPrincipal = styled.section`
 
 export const SessaoPrincipalArea = styled.div`
   display: inline-table;
-  max-width: 70%;
-  margin-top: 9rem;
+  max-width: 65%;
+  margin-top: 6.5rem;
   margin-bottom: 2rem;
   text-align: center;
-  background-color: rgb(255 255 255 / 60%);
+  background-color: rgb(255 255 255 / 70%);
   border-radius: 8px;
   text-decoration: none;
 
@@ -81,9 +81,10 @@ export const Titulo = styled.div`
 export const Paragrafo = styled.p`
   display: inline-block;
   text-align: center;
-  font-size: 1rem;
-  padding: 10px;
-  max-width: 27rem;
+  font-size: 1.5rem;
+  padding: 7px;
+  max-width: 41rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   color: ${(props) => props.theme['current-text']};
 
@@ -177,12 +178,7 @@ export const SessaoSecundariaArea = styled.div`
   justify-content: center;
   width: fit-content;
   max-height: fit-content;
-  gap: 3rem;
   margin-block: auto;
-
-  @media (max-width: 960px) {
-    gap: 1rem;
-  }
 `
 
 // Imagem da Logo da Segunda Sessão
@@ -191,7 +187,7 @@ export const MainImg = styled.img`
   width: 16rem;
   height: auto;
   overflow: hidden;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 
   @media (max-width: 960px) {
     width: 13rem;
@@ -207,14 +203,27 @@ export const MainImg = styled.img`
 
 export const ParagrafoSecundario = styled.p`
   color: ${(props) => props.theme['current-text']};
-  font-size: 1.18rem;
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 2rem;
   float: left;
-  padding: 0px 185px;
+  padding: 0px 175px;
 
   @media (max-width: 960px) {
-    font-size: 1.15rem;
+    font-size: 1rem;
+    padding: 0px 15px;
+  }
+`
+
+export const ParagrafoSecundario2 = styled.p`
+  color: ${(props) => props.theme['current-text']};
+  font-size: 1.5rem;
+  text-align: center;
+  float: left;
+  padding: 0px 175px;
+
+  @media (max-width: 960px) {
+    font-size: 1rem;
     padding: 0px 15px;
   }
 `
@@ -234,7 +243,7 @@ export const SessaoTerceira = styled.section`
 
 export const Titulo3 = styled.h1`
   display: flex;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 400;
   color: ${(props) => props.theme['current-title']};
   border-bottom: 2.5px solid ${(props) => props.theme['current-title']};

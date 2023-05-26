@@ -50,8 +50,8 @@ export const TableMobile = () => {
           <td>
             <a onClick={() => AbrirTabela(1)}>
               <div>
-                <h3>Walk in line Basico</h3>
-                <h4>R$2,50*/Veículo</h4>
+                <h3>Walk in line Básico</h3>
+                <h4>R$2,50 / Veículo</h4>
               </div>
               <Botao>
                 <CgMoreO size={30}></CgMoreO>
@@ -401,7 +401,7 @@ export const TableMobile = () => {
             <a onClick={() => AbrirTabela(2)}>
               <div>
                 <h3>Walk in Line Médio</h3>
-                <h4>R$2,50*/Veículo</h4>
+                <h4>R$4,00 / Veículo</h4>
               </div>
               <Botao>
                 <CgMoreO size={30}></CgMoreO>
@@ -750,7 +750,7 @@ export const TableMobile = () => {
             <a onClick={() => AbrirTabela(3)}>
               <div>
                 <h3>Walk in Line Mega</h3>
-                <h4>R$5,00*/Veículo</h4>
+                <h4>R$5,00/Veículo</h4>
               </div>
               <Botao>
                 <CgMoreO size={30}></CgMoreO>

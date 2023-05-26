@@ -205,12 +205,11 @@ export const ParagrafoSecundario = styled.p`
   color: ${(props) => props.theme['current-text']};
   font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 2rem;
   float: left;
   padding: 0px 175px;
 
   @media (max-width: 960px) {
-    font-size: 1rem;
+    font-size: 1.15rem;
     padding: 0px 15px;
   }
 `
@@ -218,12 +217,14 @@ export const ParagrafoSecundario = styled.p`
 export const ParagrafoSecundario2 = styled.p`
   color: ${(props) => props.theme['current-text']};
   font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
   float: left;
   padding: 0px 175px;
 
   @media (max-width: 960px) {
-    font-size: 1rem;
+    font-size: 1.15rem;
     padding: 0px 15px;
   }
 `
@@ -350,7 +351,7 @@ export const SubSessaoQuarta = styled.div`
 
 export const Paragrafo4 = styled.p`
   color: ${(props) => props.theme['current-text']};
-  font-size: 1.18rem;
+  font-size: 1.5rem;
   text-align: center;
   padding: 35px;
 
@@ -360,7 +361,7 @@ export const Paragrafo4 = styled.p`
   }
 `
 export const ImagemPlataforma = styled.img`
-  width: 38rem;
+  width: 50rem;
 
   @media (max-width: 960px) {
     width: 32rem;
@@ -438,6 +439,19 @@ export const SubSessaoSetima = styled.div`
     gap: 0rem;
     align-items: center;
     justify-content: center;
+  }
+`
+export const ParagrafoContato = styled.p`
+  color: ${(props) => props.theme['current-text']};
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  float: left;
+  padding: 0px 175px;
+
+  @media (max-width: 960px) {
+    font-size: 1.15rem;
+    padding: 0px 15px;
   }
 `
 

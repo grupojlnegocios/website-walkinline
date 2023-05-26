@@ -34,6 +34,7 @@ import {
   FormularioArea,
   SessaoFormularioInfo,
   Contatos,
+  ParagrafoContato,
   TelefoneWpp,
   EmailContato,
   Carousel,
@@ -114,12 +115,12 @@ export const Main = () => {
             melhor custo benefício do mercado.
           </ParagrafoSecundario>
 
-          <ParagrafoSecundario2>
+          <ParagrafoSecundario>
             O sistema permite que centrais de monitoramento e clientes finais
             acompanhem seus veículos e ativos rastreaveis em tempo real!
-          </ParagrafoSecundario2>
+          </ParagrafoSecundario>
           <ParagrafoSecundario2>
-            Tudo isso via WEB e ou Aplicativos Mobiles.
+            Tudo isso via WEB / Aplicativos Mobiles.<br></br>
             <u>
               <strong>
                 Entre em contato agora mesmo com nosso time de especialistas.
@@ -154,17 +155,17 @@ export const Main = () => {
         </TextoLista>
       </SessaoTerceira>
 
-      <SessaoQuarta id="plataforma">
+      <SessaoQuarta id="software">
         <SubSessaoQuarta>
-          <Titulo3>Plataformas</Titulo3>
+          <Titulo3>Software</Titulo3>
 
           <Paragrafo4>
-            O sistema <strong>Walk in Line</strong> possui uma{' '}
-            <strong>versão web</strong> e uma <strong>versão mobile</strong> com
-            aplicativos para <strong>iOS</strong> e <strong>Android</strong>{' '}
-            para sua empresa de rastreamento, onde a Central e o seu cliente
-            final monitoram seus veículos e objetos rastreáveis de qualquer
-            lugar e a qualquer momento.
+            O software da <strong>Walk in Line</strong> possui uma{' '}
+            <strong>versão web</strong> e uma <strong>versão mobile</strong>,
+            tanto <strong>iOS</strong> como <strong>Android</strong> para sua
+            empresa de rastreamento, onde a central e o seu cliente final
+            monitoram seus ativos rastreáveis de qualquer lugar e a qualquer
+            momento.
           </Paragrafo4>
           <ImagemPlataforma src={Plataforma} alt="Rastreio" />
         </SubSessaoQuarta>
@@ -219,9 +220,9 @@ export const Main = () => {
         <SubSessaoSetima>
           <Titulo3>Contato</Titulo3>
 
-          <ParagrafoSecundario>
+          <ParagrafoContato>
             <strong>Preenchimento Obrigatório (*)</strong>
-          </ParagrafoSecundario>
+          </ParagrafoContato>
           <SessaoFormulario>
             <SessaoFormularioInfo>
               <ParagrafoSetimaSec>

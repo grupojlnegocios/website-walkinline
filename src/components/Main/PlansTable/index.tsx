@@ -12,18 +12,18 @@ export const PlansTable = () => {
           </th>
 
           <th>
-            <h3>WalkinLine Mini</h3>
-            <h4>R$2,50*/Veículo</h4>
+            <h3>WalkinLine Básico</h3>
+            <h4>R$2,50/Veículo</h4>
           </th>
 
           <th>
-            <h3>WalkinLine Lite</h3>
-            <h4>R$4,00*/Veículo</h4>
+            <h3>WalkinLine Médio</h3>
+            <h4>R$4,00/Veículo</h4>
           </th>
 
           <th>
-            <h3>WalkinLine Full</h3>
-            <h4>R$5,00*/Veículo</h4>
+            <h3>WalkinLine Mega</h3>
+            <h4>R$5,00/Veículo</h4>
           </th>
         </LinhaCabeca>
       </CabecaTabela>

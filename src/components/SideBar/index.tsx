@@ -36,7 +36,7 @@ export function SideBar({ navbar, fecharMenu }: SideBarProps) {
         </ListaItens>
 
         <ListaItens>
-          <ListaLink href="#plataforma">Plataforma</ListaLink>
+          <ListaLink href="#software">Software</ListaLink>
         </ListaItens>
 
         <ListaItens>

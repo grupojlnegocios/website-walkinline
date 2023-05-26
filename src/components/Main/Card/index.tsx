@@ -5,7 +5,7 @@ import { AiFillCar } from 'react-icons/ai'
 import { SlOrganization } from 'react-icons/sl'
 import { GiSmartphone } from 'react-icons/gi'
 
-import { CardBackground } from './style.styles'
+import { CardBackground, CardText, Img } from './style.styles'
 
 interface CardProps {
   icon: string
@@ -37,11 +37,12 @@ export const Card = ({ icon, title, description }: CardProps) => {
 
   return (
     <CardBackground>
-      {item}
-      <div>
+      <Img>{item}</Img>
+
+      <CardText>
         <h1>{title}</h1>
         <p>{description}</p>
-      </div>
+      </CardText>
     </CardBackground>
   )
 }

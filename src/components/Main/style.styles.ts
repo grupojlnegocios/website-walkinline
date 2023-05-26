@@ -335,8 +335,10 @@ export const ListaV = styled.ul`
 export const SessaoQuarta = styled.section`
   display: flex;
   justify-content: center;
+  flex-direction: column;
   background: url(${Fundo});
   background-size: cover;
+  align-items: center;
 `
 
 export const SubSessaoQuarta = styled.div`
@@ -361,7 +363,7 @@ export const Paragrafo4 = styled.p`
   }
 `
 export const ImagemPlataforma = styled.img`
-  width: 50rem;
+  width: 40rem;
 
   @media (max-width: 960px) {
     width: 32rem;
@@ -554,4 +556,13 @@ export const BotaoSobe = styled(BsFillArrowUpCircleFill)`
     background-color: #1d3557;
     border: 3px solid #1d3557;
   }
+`
+
+// Nova section do Software
+
+export const SegundaSessaoQuarta = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `

@@ -750,7 +750,7 @@ export const TableMobile = () => {
             <a onClick={() => AbrirTabela(3)}>
               <div>
                 <h3>Walk in Line Mega</h3>
-                <h4>R$5,00/Veículo</h4>
+                <h4>R$5,00 / Veículo</h4>
               </div>
               <Botao>
                 <CgMoreO size={30}></CgMoreO>

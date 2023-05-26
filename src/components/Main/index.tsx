@@ -22,6 +22,7 @@ import {
   SubSessaoQuarta,
   Paragrafo4,
   ImagemPlataforma,
+  SegundaSessaoQuarta,
   SessaoQuinta,
   SubSessaoQuinta,
   RodapeTabela,
@@ -40,11 +41,13 @@ import {
   Carousel,
   BotaoUp,
   BotaoSobe,
+  // FundoSection,
 } from './style.styles'
 
 import logo from '../assets/images/logo.png'
 import Rastreio from '../assets/images/foto-veiculos.png'
 import Plataforma from '../assets/images/foto-sistema.png'
+// import FundoCar from '../assets/images/fundo-carro.png'
 import { PlansTable } from './PlansTable'
 import { TableMobile } from './TableMobile'
 import { Forms } from './Forms'
@@ -60,6 +63,7 @@ import CarrosselTres from '../assets/images/carousel-3.png'
 import CarrosselQuatro from '../assets/images/carousel-4.png'
 
 import { useState, useEffect } from 'react'
+import { Card } from './Card'
 
 export const Main = () => {
   const [buttonOnTop, setButtonOnTop] = useState(false)
@@ -169,6 +173,58 @@ export const Main = () => {
           </Paragrafo4>
           <ImagemPlataforma src={Plataforma} alt="Rastreio" />
         </SubSessaoQuarta>
+
+        <SegundaSessaoQuarta>
+          {/* <FundoSection src={FundoCar} alt="Fundo com carro" /> */}
+          <Card
+            icon={'simcard'}
+            title={'SimCard'}
+            description={
+              'Defheoin fobenwfeowfihneo iefnewofn iefnoewf ewihfnowefneiewhfno'
+            }
+          />
+
+          <Card
+            icon={'equipamento'}
+            title={'Equipamentos'}
+            description={
+              'Defheoin fobenwfeowfihneo iefnewofn iefnoewf ewihfnowefneiewhfno'
+            }
+          />
+
+          <Card
+            icon={'entidade'}
+            title={'Entidades'}
+            description={
+              'Defheoin fobenwfeowfihneo iefnewofn iefnoewf ewihfnowefneiewhfno'
+            }
+          />
+
+          <Card
+            icon={'veiculo'}
+            title={'Veiculos'}
+            description={
+              'Defheoin fobenwfeowfihneo iefnewofn iefnoewf ewihfnowefneiewhfno'
+            }
+          />
+
+          <Card
+            icon={'os'}
+            title={'Organização'}
+            description={
+              'Defheoin fobenwfeowfihneo iefnewofn iefnoewf ewihfnowefneiewhfno'
+            }
+          />
+
+          <Card
+            icon={'app'}
+            title={'Aplicativo'}
+            description={
+              'Defheoin fobenwfeowfihneo iefnewofn iefnoewf ewihfnowefneiewhfno'
+            }
+          />
+        </SegundaSessaoQuarta>
+        {/* Fim da div */}
       </SessaoQuarta>
 
       <SessaoQuinta id="planos">

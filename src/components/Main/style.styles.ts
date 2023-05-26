@@ -210,7 +210,7 @@ export const ParagrafoSecundario = styled.p`
 
   @media (max-width: 960px) {
     font-size: 1.15rem;
-    padding: 0px 15px;
+    padding: 0px 10px;
   }
 `
 
@@ -225,7 +225,7 @@ export const ParagrafoSecundario2 = styled.p`
 
   @media (max-width: 960px) {
     font-size: 1.15rem;
-    padding: 0px 15px;
+    padding: 0px 10px;
   }
 `
 

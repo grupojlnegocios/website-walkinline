@@ -513,7 +513,7 @@ Error generating stack: `+s.message+`
     width: 59rem;
   }
   @media (max-width: 1050px) {
-    width: 56rem;
+    width: 50rem;
   }
   @media (max-width: 770px) {
     display: none;
@@ -538,7 +538,7 @@ Error generating stack: `+s.message+`
   position: absolute;
 
   @media (max-width: 1150px) {
-    gap: 4rem 2rem;
+    gap: 4rem 1rem;
   }
 
   @media (max-width: 770px) {

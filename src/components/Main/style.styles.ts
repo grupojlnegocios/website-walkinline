@@ -89,8 +89,8 @@ export const Paragrafo = styled.p`
   color: ${(props) => props.theme['current-text']};
 
   @media (max-width: 960px) {
-    font-size: 1.15rem;
-    padding: 1rem 2rem;
+    font-size: 1.05rem;
+    padding: 0rem 2rem;
   }
 `
 
@@ -405,6 +405,17 @@ export const FundoSection = styled.img`
   }
   @media (max-width: 770px) {
     display: none;
+  }
+`
+export const FundoCarMobile = styled.img`
+  display: none;
+
+  @media (max-width: 770px) {
+    display: flex;
+    justify-content: center;
+    width: 19rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
   }
 `
 

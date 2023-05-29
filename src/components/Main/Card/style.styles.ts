@@ -13,9 +13,9 @@ export const CardBackground = styled.div`
     width: 17rem;
     height: 8rem;
   }
-  @media (max-width: 1150px) {
-    width: 17rem;
-    height: 8rem;
+  @media (max-width: 770px) {
+    width: 18rem;
+    height: 7rem;
   }
 `
 

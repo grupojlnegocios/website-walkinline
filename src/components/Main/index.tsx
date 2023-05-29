@@ -43,12 +43,14 @@ import {
   BotaoSobe,
   FundoSection,
   CardGrid,
+  FundoCarMobile,
 } from './style.styles'
 
 import logo from '../assets/images/logo.png'
 import Rastreio from '../assets/images/foto-veiculos.png'
 import Plataforma from '../assets/images/foto-sistema.png'
 import FundoCar from '../assets/images/carro-fundo.png'
+import FundoCarmobile from '../assets/images/carro-fundo-mobile.png'
 import { PlansTable } from './PlansTable'
 import { TableMobile } from './TableMobile'
 import { Forms } from './Forms'
@@ -178,6 +180,10 @@ export const Main = () => {
 
         <SegundaSessaoQuarta>
           <FundoSection src={FundoCar} alt="Fundo com carro" />
+          <FundoCarMobile
+            src={FundoCarmobile}
+            alt="Fundo com carro pro mobile"
+          />
           <CardGrid>
             <Card
               icon={'simcard'}

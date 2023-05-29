@@ -9,6 +9,8 @@ export const CardGrid = styled.div`
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+    z-index: 5;
+    position: absolute;
   }
 `
 

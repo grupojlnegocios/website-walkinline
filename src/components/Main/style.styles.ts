@@ -156,12 +156,12 @@ export const SessaoSecundaria = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  height: 100vh;
 
   &::before {
     position: absolute;
     width: 100%;
-    height: 85%;
+    height: 100vh;
     background: ${(props) => props.theme['blur-background']};
     opacity: 0.6;
     content: '';
@@ -569,7 +569,6 @@ export const SegundaSessaoQuarta = styled.div`
 `
 
 export const FundoSection = styled.img`
-  /* position: relative; */
   margin: auto;
   width: 950px;
 `

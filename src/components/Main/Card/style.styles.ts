@@ -22,7 +22,7 @@ export const Img = styled.div`
   margin: 1rem;
 `
 export const Titulo = styled.h1`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-decoration: underline;
   color: ${(props) => props.theme['background-nav-links']};
 `

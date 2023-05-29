@@ -400,8 +400,7 @@ export const CardGrid = styled.div`
   justify-items: center;
   justify-content: center;
   z-index: 5;
-  position: relative;
-  bottom: 29rem;
+  position: absolute;
 `
 
 // Quinta Sessão começa aqui !

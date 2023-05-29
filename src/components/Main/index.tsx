@@ -185,18 +185,6 @@ export const Main = () => {
             />
 
             <Card
-              icon={'equipamento'}
-              title={'Equipamentos'}
-              description={'Esse é um Paragrafo'}
-            />
-
-            <Card
-              icon={'entidade'}
-              title={'Entidades'}
-              description={'Esse é um Paragrafo'}
-            />
-
-            <Card
               icon={'veiculo'}
               title={'Veiculos'}
               description={'Esse é um Paragrafo'}
@@ -204,7 +192,19 @@ export const Main = () => {
 
             <Card
               icon={'os'}
-              title={'Organização'}
+              title={'Ordem de Serviço'}
+              description={'Esse é um Paragrafo'}
+            />
+
+            <Card
+              icon={'equipamento'}
+              title={'Equipamento'}
+              description={'Esse é um Paragrafo'}
+            />
+
+            <Card
+              icon={'entidade'}
+              title={'Entidade'}
               description={'Esse é um Paragrafo'}
             />
 

@@ -389,16 +389,27 @@ export const SegundaSessaoQuarta = styled.div`
   flex-direction: column;
 `
 
+// imagem do carro andando pelos cards
+
 export const FundoSection = styled.img`
   margin: auto;
   width: 62.5rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1150px) {
+    width: 59rem;
+  }
+  @media (max-width: 1050px) {
+    width: 56rem;
+  }
+  @media (max-width: 770px) {
     display: none;
   }
 `
+
+// Cards do que tem na plataforma
+
 export const CardGrid = styled.div`
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -408,12 +419,12 @@ export const CardGrid = styled.div`
   z-index: 5;
   position: absolute;
 
-  @media (max-width: 1024px) {
-    position: inherit;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
+  @media (max-width: 1150px) {
+    gap: 4rem 2rem;
+  }
+
+  @media (max-width: 770px) {
+    display: none;
   }
 `
 

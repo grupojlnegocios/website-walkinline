@@ -9,6 +9,14 @@ export const CardBackground = styled.div`
   border-radius: 8px;
   width: 18rem;
   height: 8rem;
+  @media (max-width: 1150px) {
+    width: 17rem;
+    height: 8rem;
+  }
+  @media (max-width: 1150px) {
+    width: 17rem;
+    height: 8rem;
+  }
 `
 
 export const CardText = styled.div`
@@ -21,14 +29,28 @@ export const CardText = styled.div`
 export const Img = styled.div`
   color: ${(props) => props.theme['background-nav-links']};
   margin: 1rem;
+
+  @media (max-width: 1150px) {
+    margin: 0.5rem;
+  }
 `
 export const Titulo = styled.h1`
   font-size: 1.3rem;
   text-decoration: underline;
   color: ${(props) => props.theme['background-nav-links']};
+
+  @media (max-width: 1150px) {
+    font-size: 1rem;
+  }
 `
 
 export const Paragrafo = styled.p`
   text-align: center;
   padding: 5px 10px;
+
+  @media (max-width: 1150px) {
+    font-size: 0.8rem;
+  }
+  @media (max-width: 1050px) {
+  }
 `

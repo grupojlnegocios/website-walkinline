@@ -65,6 +65,7 @@ import CarrosselQuatro from '../assets/images/carousel-4.png'
 
 import { useState, useEffect } from 'react'
 import { Card } from './Card'
+import { CardMobile } from './Card/CardMobile'
 
 export const Main = () => {
   const [buttonOnTop, setButtonOnTop] = useState(false)
@@ -214,6 +215,7 @@ export const Main = () => {
               description={'Esse é um Paragrafo'}
             />
           </CardGrid>
+          <CardMobile />
         </SegundaSessaoQuarta>
         {/* Fim da div */}
       </SessaoQuarta>

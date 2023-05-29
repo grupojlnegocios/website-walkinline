@@ -3,12 +3,11 @@ import styled from 'styled-components'
 export const CardBackground = styled.div`
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.904);
-
-  border: 1px solid black;
+  background-color: rgba(255, 255, 255);
+  border: 1px solid #121212bd;
   border-radius: 8px;
-  width: 20rem;
-  height: 10rem;
+  width: 16rem;
+  height: 8rem;
 `
 
 export const CardText = styled.div`
@@ -30,4 +29,9 @@ export const CardText = styled.div`
 export const Img = styled.div`
   color: #1d3557;
   margin: 1rem;
+`
+export const Titulo = styled.h1``
+
+export const Paragrafo = styled.p`
+  text-align: center;
 `

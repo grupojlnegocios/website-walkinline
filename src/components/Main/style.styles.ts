@@ -562,7 +562,24 @@ export const BotaoSobe = styled(BsFillArrowUpCircleFill)`
 
 export const SegundaSessaoQuarta = styled.div`
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 75%;
   flex-direction: column;
+`
+
+export const FundoSection = styled.img`
+  /* position: relative; */
+  margin: auto;
+  width: 950px;
+`
+export const CardGrid = styled.div`
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 6rem 4rem;
+  justify-items: center;
+  justify-content: center;
+  z-index: 5;
+  position: relative;
+  bottom: 29rem;
 `

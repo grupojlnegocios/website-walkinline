@@ -5,7 +5,13 @@ import { AiFillCar } from 'react-icons/ai'
 import { SlOrganization } from 'react-icons/sl'
 import { GiSmartphone } from 'react-icons/gi'
 
-import { CardBackground, CardText, Img } from './style.styles'
+import {
+  CardBackground,
+  CardText,
+  Img,
+  Paragrafo,
+  Titulo,
+} from './style.styles'
 
 interface CardProps {
   icon: string
@@ -16,22 +22,22 @@ export const Card = ({ icon, title, description }: CardProps) => {
   let item
   switch (icon) {
     case 'simcard':
-      item = <FaSimCard size={65} />
+      item = <FaSimCard size={45} />
       break
     case 'equipamento':
-      item = <MdGpsFixed size={65} />
+      item = <MdGpsFixed size={45} />
       break
     case 'entidade':
-      item = <BsPeopleFill size={65} />
+      item = <BsPeopleFill size={45} />
       break
     case 'veiculo':
-      item = <AiFillCar size={65} />
+      item = <AiFillCar size={45} />
       break
     case 'os':
-      item = <SlOrganization size={65} />
+      item = <SlOrganization size={45} />
       break
     case 'app':
-      item = <GiSmartphone size={65} />
+      item = <GiSmartphone size={45} />
       break
   }
 
@@ -40,8 +46,8 @@ export const Card = ({ icon, title, description }: CardProps) => {
       <Img>{item}</Img>
 
       <CardText>
-        <h1>{title}</h1>
-        <p>{description}</p>
+        <Titulo>{title}</Titulo>
+        <Paragrafo>{description}</Paragrafo>
       </CardText>
     </CardBackground>
   )

@@ -41,13 +41,14 @@ import {
   Carousel,
   BotaoUp,
   BotaoSobe,
-  // FundoSection,
+  FundoSection,
+  CardGrid,
 } from './style.styles'
 
 import logo from '../assets/images/logo.png'
 import Rastreio from '../assets/images/foto-veiculos.png'
 import Plataforma from '../assets/images/foto-sistema.png'
-// import FundoCar from '../assets/images/fundo-carro.png'
+import FundoCar from '../assets/images/fundo-carro.png'
 import { PlansTable } from './PlansTable'
 import { TableMobile } from './TableMobile'
 import { Forms } from './Forms'
@@ -175,54 +176,44 @@ export const Main = () => {
         </SubSessaoQuarta>
 
         <SegundaSessaoQuarta>
-          {/* <FundoSection src={FundoCar} alt="Fundo com carro" /> */}
-          <Card
-            icon={'simcard'}
-            title={'SimCard'}
-            description={
-              'Defheoin fobenwfeowfihneo iefnewofn iefnoewf ewihfnowefneiewhfno'
-            }
-          />
+          <FundoSection src={FundoCar} alt="Fundo com carro" />
+          <CardGrid>
+            <Card
+              icon={'simcard'}
+              title={'SimCard'}
+              description={'Esse é um Paragrafo'}
+            />
 
-          <Card
-            icon={'equipamento'}
-            title={'Equipamentos'}
-            description={
-              'Defheoin fobenwfeowfihneo iefnewofn iefnoewf ewihfnowefneiewhfno'
-            }
-          />
+            <Card
+              icon={'equipamento'}
+              title={'Equipamentos'}
+              description={'Esse é um Paragrafo'}
+            />
 
-          <Card
-            icon={'entidade'}
-            title={'Entidades'}
-            description={
-              'Defheoin fobenwfeowfihneo iefnewofn iefnoewf ewihfnowefneiewhfno'
-            }
-          />
+            <Card
+              icon={'entidade'}
+              title={'Entidades'}
+              description={'Esse é um Paragrafo'}
+            />
 
-          <Card
-            icon={'veiculo'}
-            title={'Veiculos'}
-            description={
-              'Defheoin fobenwfeowfihneo iefnewofn iefnoewf ewihfnowefneiewhfno'
-            }
-          />
+            <Card
+              icon={'veiculo'}
+              title={'Veiculos'}
+              description={'Esse é um Paragrafo'}
+            />
 
-          <Card
-            icon={'os'}
-            title={'Organização'}
-            description={
-              'Defheoin fobenwfeowfihneo iefnewofn iefnoewf ewihfnowefneiewhfno'
-            }
-          />
+            <Card
+              icon={'os'}
+              title={'Organização'}
+              description={'Esse é um Paragrafo'}
+            />
 
-          <Card
-            icon={'app'}
-            title={'Aplicativo'}
-            description={
-              'Defheoin fobenwfeowfihneo iefnewofn iefnoewf ewihfnowefneiewhfno'
-            }
-          />
+            <Card
+              icon={'app'}
+              title={'Aplicativo'}
+              description={'Esse é um Paragrafo'}
+            />
+          </CardGrid>
         </SegundaSessaoQuarta>
         {/* Fim da div */}
       </SessaoQuarta>

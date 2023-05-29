@@ -179,6 +179,9 @@ export const SessaoSecundariaArea = styled.div`
   width: fit-content;
   max-height: fit-content;
   margin-block: auto;
+  @media (max-width: 770px) {
+    gap: 1rem;
+  }
 `
 
 // Imagem da Logo da Segunda Sessão

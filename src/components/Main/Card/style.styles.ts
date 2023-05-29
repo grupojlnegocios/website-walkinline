@@ -3,10 +3,11 @@ import styled from 'styled-components'
 export const CardBackground = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   background-color: rgba(255, 255, 255);
   border: 1px solid #121212bd;
   border-radius: 8px;
-  width: 16rem;
+  width: 18rem;
   height: 8rem;
 `
 
@@ -14,7 +15,7 @@ export const CardText = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
 `
 
 export const Img = styled.div`

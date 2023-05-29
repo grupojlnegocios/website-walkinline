@@ -48,7 +48,7 @@ import {
 import logo from '../assets/images/logo.png'
 import Rastreio from '../assets/images/foto-veiculos.png'
 import Plataforma from '../assets/images/foto-sistema.png'
-import FundoCar from '../assets/images/fundo-carro.png'
+import FundoCar from '../assets/images/carro-fundo.png'
 import { PlansTable } from './PlansTable'
 import { TableMobile } from './TableMobile'
 import { Forms } from './Forms'
@@ -198,13 +198,13 @@ export const Main = () => {
 
             <Card
               icon={'equipamento'}
-              title={'Equipamento'}
+              title={'Equipamentos'}
               description={'Esse é um Paragrafo'}
             />
 
             <Card
               icon={'entidade'}
-              title={'Entidade'}
+              title={'Entidades'}
               description={'Esse é um Paragrafo'}
             />
 

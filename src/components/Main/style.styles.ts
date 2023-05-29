@@ -391,16 +391,30 @@ export const SegundaSessaoQuarta = styled.div`
 
 export const FundoSection = styled.img`
   margin: auto;
-  width: 950px;
+  width: 62.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `
 export const CardGrid = styled.div`
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  gap: 6rem 4rem;
+  gap: 6rem 3rem;
   justify-items: center;
   justify-content: center;
   z-index: 5;
   position: absolute;
+
+  @media (max-width: 1024px) {
+    position: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
 `
 
 // Quinta Sessão começa aqui !

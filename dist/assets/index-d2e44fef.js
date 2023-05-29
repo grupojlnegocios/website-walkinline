@@ -345,6 +345,9 @@ Error generating stack: `+s.message+`
   width: fit-content;
   max-height: fit-content;
   margin-block: auto;
+  @media (max-width: 770px) {
+    gap: 1rem;
+  }
 `,Ux=R.img`
   width: 16rem;
   height: auto;

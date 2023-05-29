@@ -18,13 +18,13 @@ export const CardText = styled.div`
 `
 
 export const Img = styled.div`
-  color: #1d3557;
+  color: ${(props) => props.theme['background-nav-links']};
   margin: 1rem;
 `
 export const Titulo = styled.h1`
   font-size: 1.5rem;
   text-decoration: underline;
-  color: black;
+  color: ${(props) => props.theme['background-nav-links']};
 `
 
 export const Paragrafo = styled.p`

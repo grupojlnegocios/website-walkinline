@@ -379,6 +379,31 @@ export const ImagemPlataforma = styled.img`
   }
 `
 
+// Nova section do Software da Quarta Section
+
+export const SegundaSessaoQuarta = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  flex-direction: column;
+`
+
+export const FundoSection = styled.img`
+  margin: auto;
+  width: 950px;
+`
+export const CardGrid = styled.div`
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 6rem 4rem;
+  justify-items: center;
+  justify-content: center;
+  z-index: 5;
+  position: relative;
+  bottom: 29rem;
+`
+
 // Quinta Sessão começa aqui !
 
 export const SessaoQuinta = styled.section`
@@ -556,29 +581,4 @@ export const BotaoSobe = styled(BsFillArrowUpCircleFill)`
     background-color: #1d3557;
     border: 3px solid #1d3557;
   }
-`
-
-// Nova section do Software
-
-export const SegundaSessaoQuarta = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 75%;
-  flex-direction: column;
-`
-
-export const FundoSection = styled.img`
-  margin: auto;
-  width: 950px;
-`
-export const CardGrid = styled.div`
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  gap: 6rem 4rem;
-  justify-items: center;
-  justify-content: center;
-  z-index: 5;
-  position: relative;
-  bottom: 29rem;
 `

@@ -180,7 +180,7 @@ export const SessaoSecundariaArea = styled.div`
   max-height: fit-content;
   margin-block: auto;
   @media (max-width: 770px) {
-    gap: 1rem;
+    gap: 2rem;
   }
 `
 

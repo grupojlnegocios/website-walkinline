@@ -223,6 +223,11 @@ export const ParagrafoSecundario2 = styled.p`
   float: left;
   padding: 0px 175px;
 
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
   @media (max-width: 960px) {
     font-size: 1.15rem;
     padding: 0px 10px;

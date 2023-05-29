@@ -131,7 +131,9 @@ export const Main = () => {
             Tudo isso via WEB / Aplicativos Mobiles.<br></br>
             <u>
               <strong>
-                Entre em contato agora mesmo com nosso time de especialistas.
+                <a href="">
+                  Entre em contato agora mesmo com nosso time de especialistas.
+                </a>
               </strong>
             </u>
           </ParagrafoSecundario2>

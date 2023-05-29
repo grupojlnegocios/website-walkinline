@@ -346,7 +346,7 @@ Error generating stack: `+s.message+`
   max-height: fit-content;
   margin-block: auto;
   @media (max-width: 770px) {
-    gap: 1rem;
+    gap: 2rem;
   }
 `,Ux=R.img`
   width: 16rem;

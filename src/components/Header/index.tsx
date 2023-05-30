@@ -22,6 +22,7 @@ import logo from '../assets/images/logo-branca.png'
 export const Header = () => {
   // Função de sumir o background Header quando sobe
   const [backgroundOnTop, setBackgroundOnTop] = useState(false)
+  const [progress, setProgress] = useState(false)
   const [NavBarTop, setNavBarTop] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
 
@@ -39,8 +40,10 @@ export const Header = () => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setBackgroundOnTop(true)
+        setProgress(true)
       } else {
         setBackgroundOnTop(false)
+        setProgress(false)
       }
     }
     window.addEventListener('scroll', handleScroll)
@@ -92,7 +95,7 @@ export const Header = () => {
           <HamburgerMenuIcon isVisible={isVisible} onClick={abrirMenu} />
         </BotaoAbrirNavBar>
       </HeaderDiv>
-      <Progresso max="100" value="0"></Progresso>
+      <Progresso max="100" value="0" progresso={progress}></Progresso>
     </HeaderContainer>
   )
 }

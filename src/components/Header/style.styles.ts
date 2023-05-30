@@ -4,6 +4,9 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 interface HeaderProps {
   background: boolean
 }
+interface ProgressProps {
+  progresso: boolean
+}
 
 export const HeaderContainer = styled.header<HeaderProps>`
   z-index: 11;
@@ -107,8 +110,8 @@ export const BotaoAbrirNavBar = styled.button`
     display: flex;
   }
 `
-export const Progresso = styled.progress`
-  /* display: none; */
+export const Progresso = styled.progress<ProgressProps>`
+  display: ${(props) => (props.progresso === true ? 'flex' : 'none')};
   position: fixed;
   z-index: 1;
   top: 5rem;
@@ -117,13 +120,12 @@ export const Progresso = styled.progress`
   width: 100%;
   height: 0.5rem;
   border: none;
-  background: transparent;
 
-  progress::-webkit-progress-bar {
-    background: #fff;
+  ::-webkit-progress-bar {
+    background: ${(props) => props.theme['background-nav-links']};
   }
 
-  progress::-webkit-progress-value {
+  ::-webkit-progress-value {
     background-color: ${(props) => props.theme['background-nav-links']};
   }
 `

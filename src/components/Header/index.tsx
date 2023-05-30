@@ -8,9 +8,13 @@ import {
   HeaderDiv,
   HamburgerMenuIcon,
   BotaoAbrirNavBar,
+  Progresso,
 } from './style.styles'
 
 import { SideBar } from '../SideBar'
+
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
 
 import { useState, useEffect } from 'react'
 import logo from '../assets/images/logo-branca.png'
@@ -20,6 +24,16 @@ export const Header = () => {
   const [backgroundOnTop, setBackgroundOnTop] = useState(false)
   const [NavBarTop, setNavBarTop] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.to('progress', {
+      value: 100,
+      scrollTrigger: {
+        scrub: 0.5,
+      },
+    })
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -78,6 +92,7 @@ export const Header = () => {
           <HamburgerMenuIcon isVisible={isVisible} onClick={abrirMenu} />
         </BotaoAbrirNavBar>
       </HeaderDiv>
+      <Progresso max="100" value="0"></Progresso>
     </HeaderContainer>
   )
 }

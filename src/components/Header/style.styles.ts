@@ -107,3 +107,23 @@ export const BotaoAbrirNavBar = styled.button`
     display: flex;
   }
 `
+export const Progresso = styled.progress`
+  /* display: none; */
+  position: fixed;
+  z-index: 1;
+  top: 5rem;
+  left: 0;
+  appearance: none;
+  width: 100%;
+  height: 0.5rem;
+  border: none;
+  background: transparent;
+
+  progress::-webkit-progress-bar {
+    background: #fff;
+  }
+
+  progress::-webkit-progress-value {
+    background-color: ${(props) => props.theme['background-nav-links']};
+  }
+`

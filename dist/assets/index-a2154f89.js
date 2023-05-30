@@ -140,6 +140,9 @@ Error generating stack: `+o.message+`
   background: transparent;
   box-shadow: 5px 4px 7px 1px rgb(0 0 0 / 64%);
 
+  @media (max-width: 425px) {
+  }
+
   &::-webkit-progress-bar {
     background: #ffffffd6;
   }
@@ -397,12 +400,13 @@ Error generating stack: `+o.message+`
   width: fit-content;
   max-height: fit-content;
   margin-block: auto;
-  gap: 3rem;
+  gap: 2rem;
   @media (max-width: 770px) {
     gap: 2rem;
   }
 `,J4=B.img`
   width: 16rem;
+  margin-top: 1rem;
   height: auto;
   overflow: hidden;
   margin-bottom: 3rem;

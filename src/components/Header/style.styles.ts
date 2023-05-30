@@ -120,12 +120,14 @@ export const Progresso = styled.progress<ProgressProps>`
   width: 100%;
   height: 0.5rem;
   border: none;
+  background: transparent;
+  box-shadow: 5px 4px 7px 1px rgb(0 0 0 / 64%);
 
-  ::-webkit-progress-bar {
-    background: ${(props) => props.theme['background-nav-links']};
+  &::-webkit-progress-bar {
+    background: #ffffffd6;
   }
 
-  ::-webkit-progress-value {
+  &::-webkit-progress-value {
     background-color: ${(props) => props.theme['background-nav-links']};
   }
 `

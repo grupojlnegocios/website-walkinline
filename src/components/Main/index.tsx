@@ -131,7 +131,11 @@ export const Main = () => {
             Tudo isso via WEB / Aplicativos Mobiles.<br></br>
             <u>
               <strong>
-                <a href="">
+                <a
+                  href="https://api.whatsapp.com/send?phone="
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Entre em contato agora mesmo com nosso time de especialistas.
                 </a>
               </strong>
@@ -294,7 +298,14 @@ export const Main = () => {
               </ParagrafoSetimaSec>
               <Contatos>
                 <TelefoneWpp>
-                  <strong>(11) 99999-9999</strong>
+                  <a
+                    href="https://api.whatsapp.com/send?phone="
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {' '}
+                    <strong>(11) 99999-9999</strong>
+                  </a>
                   <FaWhatsapp size={0} color={'35C42C'}></FaWhatsapp>
                 </TelefoneWpp>
               </Contatos>

@@ -114,11 +114,11 @@ export const Progresso = styled.progress<ProgressProps>`
   display: ${(props) => (props.progresso === true ? 'flex' : 'none')};
   position: fixed;
   z-index: 1;
-  top: 5rem;
+  top: 5.2rem;
   left: 0;
   appearance: none;
   width: 100%;
-  height: 0.5rem;
+  height: 0.3rem;
   border: none;
   background: transparent;
   box-shadow: 5px 4px 7px 1px rgb(0 0 0 / 64%);

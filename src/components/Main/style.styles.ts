@@ -569,6 +569,10 @@ export const TelefoneWpp = styled.p`
   font-size: 1.5rem;
   margin-left: 1rem;
   gap: 7px;
+  a {
+    color: black;
+    text-decoration: none;
+  }
 
   @media (max-width: 960px) {
     font-size: 1rem;

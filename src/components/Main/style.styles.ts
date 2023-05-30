@@ -179,7 +179,7 @@ export const SessaoSecundariaArea = styled.div`
   width: fit-content;
   max-height: fit-content;
   margin-block: auto;
-  gap: 3rem;
+  gap: 2rem;
   @media (max-width: 770px) {
     gap: 2rem;
   }
@@ -188,6 +188,7 @@ export const SessaoSecundariaArea = styled.div`
 
 export const MainImg = styled.img`
   width: 16rem;
+  margin-top: 1rem;
   height: auto;
   overflow: hidden;
   margin-bottom: 3rem;

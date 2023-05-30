@@ -123,6 +123,9 @@ export const Progresso = styled.progress<ProgressProps>`
   background: transparent;
   box-shadow: 5px 4px 7px 1px rgb(0 0 0 / 64%);
 
+  @media (max-width: 425px) {
+  }
+
   &::-webkit-progress-bar {
     background: #ffffffd6;
   }

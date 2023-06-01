@@ -51,16 +51,19 @@ export function Forms() {
 
       .catch((error: any) => {
         if (error.response.status === 400) {
-          toast.warn('Email não enviado!', {
-            position: 'top-right',
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: 'colored',
-          })
+          toast.warn(
+            'Email não enviado. Preencha corretamente todos os campos!',
+            {
+              position: 'top-right',
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: 'colored',
+            },
+          )
         } else if (error.response.status === 500) {
           toast.error(
             'Erro ao enviar o Email, tente enviar novamente mais tarde!',

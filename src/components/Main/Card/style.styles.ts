@@ -47,6 +47,7 @@ export const Titulo = styled.h1`
 export const Paragrafo = styled.p`
   text-align: center;
   padding: 5px 10px;
+  font-size: 0.95rem;
 
   @media (max-width: 1150px) {
     font-size: 0.8rem;

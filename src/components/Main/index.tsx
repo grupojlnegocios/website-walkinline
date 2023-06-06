@@ -57,7 +57,7 @@ import { Forms } from './Forms'
 
 import { FaWhatsapp } from 'react-icons/fa'
 import { GrMail } from 'react-icons/gr'
-
+import { useState, useEffect } from 'react'
 import 'react-awesome-slider/dist/styles.css'
 
 import CarrosselUm from '../assets/images/carousel-1.png'
@@ -65,7 +65,6 @@ import CarrosselDois from '../assets/images/carousel-2.png'
 import CarrosselTres from '../assets/images/carousel-3.png'
 import CarrosselQuatro from '../assets/images/carousel-4.png'
 
-import { useState, useEffect } from 'react'
 import { Card } from './Card'
 import { CardMobile } from './Card/CardMobile'
 
@@ -73,8 +72,8 @@ export const Main = () => {
   const [buttonOnTop, setButtonOnTop] = useState(false)
   const [cursor, setCursor] = useState(false)
   const [buttonUp, setButtonUp] = useState(false)
-  // eslint-disable-next-line no-unused-vars
   const [oldScroll, setOldScroll] = useState<number>(window.scrollY)
+  console.log(oldScroll)
 
   useEffect(() => {
     const handleScroll = () => {

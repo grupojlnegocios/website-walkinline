@@ -5,11 +5,12 @@ import Fundo from '../assets/images/fundo-parte4.jpg'
 import FundoInicio from '../assets/images/foto-sitewalkinline.png'
 import AwesomeSlider from 'react-awesome-slider'
 
-import { BsFillArrowUpCircleFill } from 'react-icons/bs'
+import { IoIosArrowUp } from 'react-icons/io'
 
 interface HeaderProps {
   opacidade: boolean
   cursor: boolean
+  subir: boolean
 }
 // Primeira Sessão começa aqui !
 
@@ -606,7 +607,7 @@ export const Carousel = styled(AwesomeSlider)`
 export const BotaoUp = styled.button<HeaderProps>`
   z-index: 20;
   border: 0;
-  display: inline-block;
+  /* display: inline-block; */
   position: fixed;
   bottom: 5rem;
   left: 25px;
@@ -614,8 +615,9 @@ export const BotaoUp = styled.button<HeaderProps>`
   transition: 0.3s ease;
   cursor: ${(props) => (props.cursor === true ? 'pointer' : 'default')};
   opacity: ${(props) => (props.opacidade === true ? '1' : '0')};
+  display: ${(props) => (props.subir === true ? 'inline-block' : 'none')};
 `
-export const BotaoSobe = styled(BsFillArrowUpCircleFill)`
+export const BotaoSobe = styled(IoIosArrowUp)`
   display: block;
   position: fixed;
   color: #1d3557;

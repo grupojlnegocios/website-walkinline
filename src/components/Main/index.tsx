@@ -72,6 +72,9 @@ import { CardMobile } from './Card/CardMobile'
 export const Main = () => {
   const [buttonOnTop, setButtonOnTop] = useState(false)
   const [cursor, setCursor] = useState(false)
+  const [buttonUp, setButtonUp] = useState(false)
+  // eslint-disable-next-line no-unused-vars
+  const [oldScroll, setOldScroll] = useState<number>(window.scrollY)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -82,7 +85,20 @@ export const Main = () => {
         setButtonOnTop(false)
         setCursor(false)
       }
+
+      setOldScroll((e) => {
+        if (e < window.scrollY) {
+          console.log('descendo')
+          setButtonUp(false)
+        } else {
+          setButtonUp(true)
+          console.log('subindo')
+        }
+
+        return window.scrollY
+      })
     }
+
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -342,8 +358,8 @@ export const Main = () => {
         </SubSessaoSetima>
       </SessaoSetima>
 
-      <BotaoUp opacidade={buttonOnTop} cursor={cursor}>
-        <BotaoSobe size={55} onClick={subirTela} />
+      <BotaoUp opacidade={buttonOnTop} cursor={cursor} subir={buttonUp}>
+        <BotaoSobe size={45} onClick={subirTela} />
       </BotaoUp>
     </main>
   )

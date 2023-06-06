@@ -959,6 +959,7 @@ Error generating stack: `+o.message+`
   border-radius: 8px;
   width: 18rem;
   height: 8rem;
+  box-shadow: 0px 11px 18px 1px rgb(0 0 0 / 55%);
   @media (max-width: 1150px) {
     width: 17rem;
     height: 8rem;

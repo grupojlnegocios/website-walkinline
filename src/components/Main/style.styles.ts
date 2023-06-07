@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import Imagem from '../assets/images/rodovia.jpg'
+
 import Check from '../assets/images/check.svg'
 import Fundo from '../assets/images/fundo-parte4.jpg'
-import FundoInicio from '../assets/images/foto-sitewalkinline.png'
+
 import AwesomeSlider from 'react-awesome-slider'
 
 import { IoIosArrowUp } from 'react-icons/io'
@@ -15,70 +15,6 @@ interface HeaderProps {
 // Primeira Sessão começa aqui !
 
 // Chamando ao Elemento Sessão Principal
-
-export const SessaoPrincipal = styled.section`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(${FundoInicio});
-  padding: 1rem;
-  background-size: cover;
-  height: 100vh;
-
-  @media (max-width: 770px) {
-    height: 115vh;
-  }
-  @media (max-width: 426px) {
-    height: 125vh;
-  }
-  @media (max-width: 376px) {
-    height: 135vh;
-  }
-  @media (max-width: 325px) {
-    height: 150vh;
-  }
-`
-
-// Chamando ao Elemento Sessão Principal Area
-
-export const SessaoPrincipalArea = styled.div`
-  display: inline-table;
-  max-width: 65%;
-  margin-top: 6.5rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  background-color: rgb(255 255 255 / 70%);
-  border-radius: 8px;
-  text-decoration: none;
-
-  @media (max-width: 710px) {
-    max-width: 95%;
-  }
-`
-
-// Chamando ao Elemento Titulo
-
-export const Titulo = styled.div`
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 1rem;
-  padding: 5px 35px;
-
-  @media (max-width: 960px) {
-    font-size: 1.75rem;
-    padding: 2px 17px;
-  }
-  @media (max-width: 785px) {
-    font-size: 1.5prem;
-    padding: 0px 10px;
-  }
-  @media (max-width: 710px) {
-    font-size: 1.3rem;
-  }
-`
-
-// Chamando ao Elemento Paragrafo
-
 export const Paragrafo = styled.p`
   display: inline-block;
   text-align: center;
@@ -94,118 +30,6 @@ export const Paragrafo = styled.p`
     padding: 0rem 2rem;
   }
 `
-
-// Chamando ao Elemento Titulo parte 1
-
-export const Parte1 = styled.h1`
-  font-weight: 100;
-  color: ${(props) => props.theme['current-title']};
-`
-
-// Chamando ao Elemento Titulo parte 2
-
-export const Parte2 = styled.h1`
-  font-weight: 400;
-  white-space: pre-wrap;
-  color: ${(props) => props.theme['current-title']};
-`
-
-// Chamando ao Elemento Botão
-
-export const Button = styled.a`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  margin-bottom: 2rem;
-  font-size: 1.25rem;
-  border-radius: 8px;
-  text-decoration: none;
-  background-color: ${(props) => props.theme['button-background']};
-  color: ${(props) => props.theme.white};
-  border: 1px solid ${(props) => props.theme['border-color-button']};
-  padding: 16px 0;
-  width: 15rem;
-  cursor: pointer;
-  transition: background-color 0.8s ease;
-
-  &:hover {
-    background-color: ${(props) => props.theme.white};
-    color: ${(props) => props.theme['button-background']};
-    border: 1px solid ${(props) => props.theme['button-background']};
-  }
-
-  @media (max-width: 960px) {
-    font-size: 1rem;
-    padding: 15px 0;
-    width: 13rem;
-    border-radius: 8px;
-  }
-  @media (max-width: 785px) {
-    font-size: 1rem;
-    padding: 13px 0;
-    width: 11rem;
-    border-radius: 6px;
-  }
-`
-// Segunda Sessão começa aqui !
-
-export const SessaoSecundaria = styled.section`
-  background-image: url(${Imagem});
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-
-  &::before {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: ${(props) => props.theme['blur-background']};
-    opacity: 0.6;
-    content: '';
-  }
-`
-
-// Chamando ao Elemento Sessão Secundaria
-
-export const SessaoSecundariaArea = styled.div`
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: fit-content;
-  max-height: fit-content;
-  margin-block: auto;
-  gap: 2rem;
-  @media (max-width: 770px) {
-    gap: 2rem;
-  }
-`
-// Imagem da Logo da Segunda Sessão
-
-export const MainImg = styled.img`
-  width: 16rem;
-  margin-top: 1rem;
-  height: auto;
-  overflow: hidden;
-  margin-bottom: 3rem;
-
-  @media (max-width: 960px) {
-    width: 13rem;
-    margin-bottom: 1rem;
-  }
-  @media (max-width: 785px) {
-    width: 10rem;
-    margin-bottom: 1rem;
-  }
-`
-
-// Chamando ao Elemento Paragrafo
-
 export const ParagrafoSecundario = styled.p`
   color: ${(props) => props.theme['current-text']};
   font-size: 1.5rem;
@@ -218,26 +42,7 @@ export const ParagrafoSecundario = styled.p`
     padding: 0px 10px;
   }
 `
-
-export const ParagrafoSecundario2 = styled.p`
-  color: ${(props) => props.theme['current-text']};
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  float: left;
-  padding: 0px 175px;
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
-  @media (max-width: 960px) {
-    font-size: 1.15rem;
-    padding: 0px 10px;
-  }
-`
+// Segunda Sessão começa aqui !
 
 // Terceira Sessão começa aqui !
 

@@ -1,16 +1,4 @@
 import {
-  Titulo,
-  Paragrafo,
-  SessaoPrincipal,
-  SessaoPrincipalArea,
-  Parte1,
-  Parte2,
-  Button,
-  SessaoSecundaria,
-  MainImg,
-  SessaoSecundariaArea,
-  ParagrafoSecundario,
-  ParagrafoSecundario2,
   SessaoTerceira,
   Titulo3,
   TextoLista,
@@ -44,9 +32,10 @@ import {
   FundoSection,
   CardGrid,
   FundoCarMobile,
+  Paragrafo,
+  ParagrafoSecundario,
 } from './style.styles'
 
-import logo from '../assets/images/logo.png'
 import Rastreio from '../assets/images/foto-veiculos.png'
 import Plataforma from '../assets/images/foto-sistema.png'
 import FundoCar from '../assets/images/carro-fundo.png'
@@ -67,6 +56,8 @@ import CarrosselQuatro from '../assets/images/carousel-4.png'
 
 import { Card } from './Card'
 import { CardMobile } from './Card/CardMobile'
+import { SectionOne } from './SectionOne'
+import { SectionTwo } from './SectionTwo'
 
 export const Main = () => {
   const [buttonOnTop, setButtonOnTop] = useState(false)
@@ -108,56 +99,9 @@ export const Main = () => {
 
   return (
     <main>
-      <SessaoPrincipal>
-        <SessaoPrincipalArea>
-          <Titulo>
-            <Parte1>Simplificamos a jornada de</Parte1>
-            <Parte2>Rastreamento Veicular e Telemetria Avançada</Parte2>
-          </Titulo>
+      <SectionOne />
 
-          <Paragrafo>
-            Disponibilizamos toda a infraestrutura e tecnologia necessária para
-            que as empresas possam estabelecer suas próprias plataformas de
-            rastreamento e telemetria de última geração, iniciando uma
-            trajetória de crescimento nas vendas do mercado de proteção veicular
-            e segurança patrimonial.
-          </Paragrafo>
-
-          <Button href="#monte-sua-central"> Monte sua Central ➝ </Button>
-        </SessaoPrincipalArea>
-      </SessaoPrincipal>
-
-      <SessaoSecundaria id="quem-somos">
-        <SessaoSecundariaArea>
-          <MainImg src={logo} alt="Logo" />
-
-          <ParagrafoSecundario>
-            <strong>Walk in Line</strong> é uma moderna plataforma de
-            rastreamento veicular desenvolvida pelo <strong>Grupo JL</strong>{' '}
-            que possibilita que sua empresa ofereça um serviço de qualidade pelo
-            melhor custo benefício do mercado.
-          </ParagrafoSecundario>
-
-          <ParagrafoSecundario>
-            O sistema permite que centrais de monitoramento e clientes finais
-            acompanhem seus veículos e ativos rastreaveis em tempo real!
-          </ParagrafoSecundario>
-          <ParagrafoSecundario2>
-            Tudo isso via WEB / Aplicativos Mobiles.<br></br>
-            <u>
-              <strong>
-                <a
-                  href="https://api.whatsapp.com/send?phone="
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Entre em contato agora mesmo com nosso time de especialistas.
-                </a>
-              </strong>
-            </u>
-          </ParagrafoSecundario2>
-        </SessaoSecundariaArea>
-      </SessaoSecundaria>
+      <SectionTwo />
 
       <SessaoTerceira id="nosso-diferencial">
         <Titulo3>Diferencial</Titulo3>

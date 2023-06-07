@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import FundoInicio from '../../assets/images/foto-section1.png'
+import FundoInicio from '../../assets/images/foto-section.png'
 
 // Parte Principal da Section
 

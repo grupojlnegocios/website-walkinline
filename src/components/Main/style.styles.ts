@@ -66,28 +66,6 @@ export const Titulo3 = styled.h1`
 
 // Quinta Sessão começa aqui !
 
-export const SessaoQuinta = styled.section`
-  background: url(${Fundo});
-  background-size: cover;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-`
-export const SubSessaoQuinta = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 75%;
-  gap: 2rem;
-`
-export const RodapeTabela = styled.p`
-  font-size: 0.75rem;
-
-  @media (max-width: 960px) {
-    font-size: 0.7rem;
-  }
-`
-
 // Sexta Sessão começa aqui !
 
 export const SessaoSexta = styled.section`

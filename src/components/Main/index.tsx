@@ -1,7 +1,4 @@
 import {
-  SessaoQuinta,
-  SubSessaoQuinta,
-  RodapeTabela,
   SessaoSexta,
   SubSessaoSexta,
   SessaoSetima,
@@ -21,8 +18,6 @@ import {
   Titulo3,
 } from './style.styles'
 
-import { PlansTable } from './PlansTable'
-import { TableMobile } from './TableMobile'
 import { Forms } from './Forms'
 
 import { FaWhatsapp } from 'react-icons/fa'
@@ -39,6 +34,7 @@ import { SectionOne } from './SectionOne'
 import { SectionTwo } from './SectionTwo'
 import { SectionThree } from './SectionThree'
 import { SectionFour } from './SectionFour'
+import { SectionFive } from './SectionFive'
 
 export const Main = () => {
   const [buttonOnTop, setButtonOnTop] = useState(false)
@@ -88,24 +84,7 @@ export const Main = () => {
 
       <SectionFour />
 
-      <SessaoQuinta id="planos">
-        <SubSessaoQuinta>
-          <Titulo3>Planos</Titulo3>
-
-          <ParagrafoSecundario>
-            Ofereça um serviço personalizado para seus clientes, de acordo com a
-            necessidade de cada um, através dos planos do sistema{' '}
-            <strong>Walk in Line</strong>.
-          </ParagrafoSecundario>
-          <TableMobile />
-          <PlansTable />
-
-          <RodapeTabela>
-            * Valor condicional ao número total de veículos rastreados no
-            sistema.*
-          </RodapeTabela>
-        </SubSessaoQuinta>
-      </SessaoQuinta>
+      <SectionFive />
 
       <SessaoSexta id="monte-sua-central">
         <SubSessaoSexta>

@@ -138,7 +138,7 @@ Error generating stack: `+o.message+`
   height: 0.3rem;
   border: none;
   background: transparent;
-  box-shadow: 5px 4px 7px 1px rgb(0 0 0 / 64%);
+  box-shadow: 0px 5px 9px 2px rgb(0 0 0 / 64%);
 
   @media (max-width: 425px) {
   }
@@ -240,13 +240,13 @@ Error generating stack: `+o.message+`
   z-index: 5;
   width: 100%;
   height: 100%;
-  background-color: #00000080;
+  background-color: #0000009e;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   display: ${t=>t.background===!0?"flex":"none"};
-`;function rS({navbar:t,fecharMenu:e,background:n}){function r(){e()}return l.jsxs(l.Fragment,{children:[l.jsx(nS,{background:n}),l.jsxs(Q2,{isOpen:t,children:[l.jsx(Z2,{children:l.jsx(tS,{children:l.jsx(eS,{onClick:r})})}),l.jsxs(K2,{children:[l.jsx(Ro,{children:l.jsx(Qs,{href:"#quem-somos",onClick:r,children:"Quem Somos"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#nosso-diferencial",onClick:r,children:"Diferencial"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#software",onClick:r,children:"Software"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#planos",onClick:r,children:"Planos"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#contato",onClick:r,children:"Contatos"})}),l.jsx(Ro,{children:l.jsx(J2,{href:"#monte-sua-central",onClick:r,children:"Monte sua Central"})})]})]})]})}function Ar(t){if(t===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}function py(t,e){t.prototype=Object.create(e.prototype),t.prototype.constructor=t,t.__proto__=e}/*!
+`;function rS({navbar:t,fecharMenu:e,background:n}){function r(){e()}return l.jsxs(l.Fragment,{children:[l.jsx(nS,{onClick:r,background:n}),l.jsxs(Q2,{isOpen:t,children:[l.jsx(Z2,{children:l.jsx(tS,{children:l.jsx(eS,{onClick:r})})}),l.jsxs(K2,{children:[l.jsx(Ro,{children:l.jsx(Qs,{href:"#quem-somos",onClick:r,children:"Quem Somos"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#nosso-diferencial",onClick:r,children:"Diferencial"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#software",onClick:r,children:"Software"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#planos",onClick:r,children:"Planos"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#contato",onClick:r,children:"Contatos"})}),l.jsx(Ro,{children:l.jsx(J2,{href:"#monte-sua-central",onClick:r,children:"Monte sua Central"})})]})]})]})}function Ar(t){if(t===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}function py(t,e){t.prototype=Object.create(e.prototype),t.prototype.constructor=t,t.__proto__=e}/*!
  * GSAP 3.11.5
  * https://greensock.com
  *

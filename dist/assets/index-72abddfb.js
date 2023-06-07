@@ -235,7 +235,7 @@ Error generating stack: `+o.message+`
 `,tS=B.button`
   background-color: transparent;
   border: 0px;
-`;function nS({navbar:t,fecharMenu:e}){function n(){e()}return l.jsxs(Q2,{isOpen:t,children:[l.jsx(Z2,{children:l.jsx(tS,{children:l.jsx(eS,{onClick:n})})}),l.jsxs(K2,{children:[l.jsx(Ro,{children:l.jsx(Qs,{href:"#quem-somos",children:"Quem Somos"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#nosso-diferencial",children:"Diferencial"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#software",children:"Software"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#planos",children:"Planos"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#contato",children:"Contatos"})}),l.jsx(Ro,{children:l.jsx(J2,{href:"#monte-sua-central",children:" Monte sua Central "})})]})]})}function Ar(t){if(t===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}function py(t,e){t.prototype=Object.create(e.prototype),t.prototype.constructor=t,t.__proto__=e}/*!
+`;function nS({navbar:t,fecharMenu:e}){function n(){e()}return l.jsxs(Q2,{isOpen:t,children:[l.jsx(Z2,{children:l.jsx(tS,{children:l.jsx(eS,{onClick:n})})}),l.jsxs(K2,{children:[l.jsx(Ro,{children:l.jsx(Qs,{href:"#quem-somos",onClick:n,children:"Quem Somos"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#nosso-diferencial",onClick:n,children:"Diferencial"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#software",onClick:n,children:"Software"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#planos",onClick:n,children:"Planos"})}),l.jsx(Ro,{children:l.jsx(Qs,{href:"#contato",onClick:n,children:"Contatos"})}),l.jsx(Ro,{children:l.jsx(J2,{href:"#monte-sua-central",onClick:n,children:"Monte sua Central"})})]})]})}function Ar(t){if(t===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}function py(t,e){t.prototype=Object.create(e.prototype),t.prototype.constructor=t,t.__proto__=e}/*!
  * GSAP 3.11.5
  * https://greensock.com
  *
@@ -959,7 +959,8 @@ Error generating stack: `+o.message+`
   border-radius: 8px;
   width: 18rem;
   height: 8rem;
-  box-shadow: 0px 11px 18px 1px rgb(0 0 0 / 55%);
+  box-shadow: 0px 7px 14px 2px rgb(0 0 0 / 50%);
+
   @media (max-width: 1150px) {
     width: 17rem;
     height: 8rem;

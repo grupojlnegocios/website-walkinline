@@ -26,6 +26,8 @@ export const Header = () => {
   const [NavBarTop, setNavBarTop] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
 
+  const [backgroundBlack, setBackgroundBlack] = useState(false)
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
     gsap.to('progress', {
@@ -53,11 +55,13 @@ export const Header = () => {
   function abrirMenu() {
     setNavBarTop(true)
     setIsVisible(true)
+    setBackgroundBlack(true)
   }
 
   function fecharMenu() {
     setNavBarTop(false)
     setIsVisible(false)
+    setBackgroundBlack(false)
   }
 
   return (
@@ -90,7 +94,11 @@ export const Header = () => {
             <Button href="#monte-sua-central"> Monte sua Central </Button>
           </ListaItens>
         </Listas>
-        <SideBar navbar={NavBarTop} fecharMenu={fecharMenu} />
+        <SideBar
+          navbar={NavBarTop}
+          fecharMenu={fecharMenu}
+          background={backgroundBlack}
+        />
         <BotaoAbrirNavBar>
           <HamburgerMenuIcon isVisible={isVisible} onClick={abrirMenu} />
         </BotaoAbrirNavBar>

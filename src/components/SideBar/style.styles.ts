@@ -4,6 +4,9 @@ import { IoCloseSharp } from 'react-icons/io5'
 interface BarraLateralProps {
   isOpen: boolean
 }
+interface BackgroundProps {
+  background: boolean
+}
 
 export const BarraLateralArea = styled.div<BarraLateralProps>`
   display: ${(props) => (props.isOpen === true ? 'flex' : 'none')};
@@ -104,4 +107,17 @@ export const CloseSharp = styled(IoCloseSharp)`
 export const FecharNavBar = styled.button`
   background-color: transparent;
   border: 0px;
+`
+
+export const BackgroundBlack = styled.div<BackgroundProps>`
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: ${(props) => (props.background === true ? 'flex' : 'none')};
 `

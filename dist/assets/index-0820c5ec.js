@@ -481,6 +481,7 @@ Error generating stack: `+o.message+`
 `,tE=B.div`
   display: flex;
   align-items: center;
+  gap: 1.5rem;
 
   @media (max-width: 960px) {
     flex-direction: column;
@@ -762,7 +763,7 @@ Error generating stack: `+o.message+`
     background-color: #1d3557;
     border: 3px solid #1d3557;
   }
-`,PE="/website-walkinline/assets/logo-3f8f7794.png",NE="/website-walkinline/assets/foto-veiculos-f03a770c.png",RE="/website-walkinline/assets/foto-sistema-2e48772c.png",zE="/website-walkinline/assets/carro-fundo-0b089752.png",AE="/website-walkinline/assets/carro-fundo-mobile-7d438cdc.png",ME=B.table`
+`,PE="/website-walkinline/assets/logo-3f8f7794.png",NE="/website-walkinline/assets/foto-veiculos-04744024.png",RE="/website-walkinline/assets/foto-sistema-2e48772c.png",zE="/website-walkinline/assets/carro-fundo-0b089752.png",AE="/website-walkinline/assets/carro-fundo-mobile-7d438cdc.png",ME=B.table`
   display: table;
   background: #fff;
   width: 65%;

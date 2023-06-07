@@ -23,7 +23,10 @@ export function SideBar({ navbar, fecharMenu, background }: SideBarProps) {
 
   return (
     <>
-      <BackgroundBlack background={background}></BackgroundBlack>
+      <BackgroundBlack
+        onClick={handleCloseSharpIconClick}
+        background={background}
+      ></BackgroundBlack>
       <BarraLateralArea isOpen={navbar}>
         <AreaBotaoClose>
           <FecharNavBar>

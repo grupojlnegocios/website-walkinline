@@ -273,6 +273,7 @@ export const Titulo3 = styled.h1`
 export const TextoLista = styled.div`
   display: flex;
   align-items: center;
+  gap: 1.5rem;
 
   @media (max-width: 960px) {
     flex-direction: column;

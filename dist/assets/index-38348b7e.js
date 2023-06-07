@@ -314,7 +314,7 @@ Error generating stack: `+o.message+`
     background-color: #1d3557;
     border: 3px solid #1d3557;
   }
-`;const L4="/website-walkinline/assets/foto-sitewalkinline-a9161cdf.png",D4=B.section`
+`;const L4="/website-walkinline/assets/foto-section1-e1e8bb97.png",D4=B.section`
   display: flex;
   align-items: center;
   justify-content: center;

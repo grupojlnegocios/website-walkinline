@@ -2,8 +2,6 @@ import styled from 'styled-components'
 
 import Fundo from '../assets/images/fundo-parte4.jpg'
 
-import AwesomeSlider from 'react-awesome-slider'
-
 import { IoIosArrowUp } from 'react-icons/io'
 
 interface HeaderProps {
@@ -68,19 +66,6 @@ export const Titulo3 = styled.h1`
 
 // Sexta Sessão começa aqui !
 
-export const SessaoSexta = styled.section`
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-
-export const SubSessaoSexta = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-`
 // Setima Sessão começa aqui !
 
 export const SessaoSetima = styled.section`
@@ -185,15 +170,6 @@ export const EmailContato = styled.p`
   @media (max-width: 960px) {
     font-size: 1rem;
     margin-left: 1rem;
-  }
-`
-
-export const Carousel = styled(AwesomeSlider)`
-  width: 75%;
-  nav {
-    margin-top: 5px;
-    display: flex;
-    align-items: center;
   }
 `
 

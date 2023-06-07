@@ -1,6 +1,4 @@
 import {
-  SessaoSexta,
-  SubSessaoSexta,
   SessaoSetima,
   SubSessaoSetima,
   ParagrafoSetimaSec,
@@ -11,10 +9,8 @@ import {
   ParagrafoContato,
   TelefoneWpp,
   EmailContato,
-  Carousel,
   BotaoUp,
   BotaoSobe,
-  ParagrafoSecundario,
   Titulo3,
 } from './style.styles'
 
@@ -25,16 +21,12 @@ import { GrMail } from 'react-icons/gr'
 import { useState, useEffect } from 'react'
 import 'react-awesome-slider/dist/styles.css'
 
-import CarrosselUm from '../assets/images/carousel-1.png'
-import CarrosselDois from '../assets/images/carousel-2.png'
-import CarrosselTres from '../assets/images/carousel-3.png'
-import CarrosselQuatro from '../assets/images/carousel-4.png'
-
 import { SectionOne } from './SectionOne'
 import { SectionTwo } from './SectionTwo'
 import { SectionThree } from './SectionThree'
 import { SectionFour } from './SectionFour'
 import { SectionFive } from './SectionFive'
+import { SectionSix } from './SectionSix'
 
 export const Main = () => {
   const [buttonOnTop, setButtonOnTop] = useState(false)
@@ -86,31 +78,7 @@ export const Main = () => {
 
       <SectionFive />
 
-      <SessaoSexta id="monte-sua-central">
-        <SubSessaoSexta>
-          <Titulo3>Monte sua Central</Titulo3>
-          <ParagrafoSecundario>
-            Tudo que você precisa para abrir sua empresa de forma rápida e
-            fácil.
-          </ParagrafoSecundario>
-          <Carousel
-            media={[
-              {
-                source: CarrosselUm,
-              },
-              {
-                source: CarrosselDois,
-              },
-              {
-                source: CarrosselTres,
-              },
-              {
-                source: CarrosselQuatro,
-              },
-            ]}
-          />
-        </SubSessaoSexta>
-      </SessaoSexta>
+      <SectionSix />
 
       <SessaoSetima id="contato">
         <SubSessaoSetima>

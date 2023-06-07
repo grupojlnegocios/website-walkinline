@@ -114,7 +114,7 @@ export const BackgroundBlack = styled.div<BackgroundProps>`
   z-index: 5;
   width: 100%;
   height: 100%;
-  background-color: #00000080;
+  background-color: #0000009e;
   top: 0;
   bottom: 0;
   right: 0;

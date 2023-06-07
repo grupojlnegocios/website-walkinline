@@ -121,7 +121,7 @@ export const Progresso = styled.progress<ProgressProps>`
   height: 0.3rem;
   border: none;
   background: transparent;
-  box-shadow: 5px 4px 7px 1px rgb(0 0 0 / 64%);
+  box-shadow: 0px 5px 9px 2px rgb(0 0 0 / 64%);
 
   @media (max-width: 425px) {
   }

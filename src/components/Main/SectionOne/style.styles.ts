@@ -22,11 +22,11 @@ export const SessaoPrincipal = styled.section`
     width: 100vw;
   }
   @media (max-width: 376px) {
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
   }
   @media (max-width: 325px) {
-    height: 100vh;
+    height: 130vh;
     width: 100vw;
   }
 `

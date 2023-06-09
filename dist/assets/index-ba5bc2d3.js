@@ -492,6 +492,8 @@ Error generating stack: `+o.message+`
   @media (max-width: 960px) {
     font-size: 1.15rem;
     padding: 0px 10px;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
   }
 `,X4=B.p`
   color: ${t=>t.theme.white};

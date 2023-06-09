@@ -35,7 +35,7 @@ export const SessaoPrincipal = styled.section`
 
 export const SessaoPrincipalArea = styled.div`
   display: inline-table;
-  max-width: 65%;
+  max-width: 78%;
   margin-top: 6.5rem;
   margin-bottom: 2rem;
   text-align: center;

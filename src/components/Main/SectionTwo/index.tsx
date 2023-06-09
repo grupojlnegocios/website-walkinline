@@ -6,7 +6,7 @@ import {
   ParagrafoSecundario2,
 } from './style.styles'
 
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo-branca.png'
 
 export const SectionTwo = () => {
   return (

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import Imagem from '../../assets/images/rodovia.jpg'
+import Imagem from '../../assets/images/foto-section2.png'
 
 export const SessaoSecundaria = styled.section`
   background-image: url(${Imagem});
@@ -15,7 +15,7 @@ export const SessaoSecundaria = styled.section`
     position: absolute;
     width: 100%;
     height: 100vh;
-    background: ${(props) => props.theme['blur-background']};
+    background: #ffffff36;
     opacity: 0.6;
     content: '';
   }
@@ -34,17 +34,17 @@ export const SessaoSecundaria = styled.section`
 // Chamando ao Elemento Sessão Secundaria
 
 export const SessaoSecundariaArea = styled.div`
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: fit-content;
-  max-height: fit-content;
-  margin-block: auto;
-  gap: 2rem;
-  @media (max-width: 770px) {
-    gap: 2rem;
+  display: inline-table;
+  max-width: 77%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  background-color: #000000bd;
+  border-radius: 8px;
+  text-decoration: none;
+
+  @media (max-width: 710px) {
+    max-width: 90%;
   }
 `
 // Imagem da Logo da Segunda Sessão
@@ -54,7 +54,6 @@ export const MainImg = styled.img`
   margin-top: 1rem;
   height: auto;
   overflow: hidden;
-  margin-bottom: 3rem;
 
   @media (max-width: 960px) {
     width: 13rem;
@@ -69,11 +68,12 @@ export const MainImg = styled.img`
 // Chamando ao Elemento Paragrafo
 
 export const ParagrafoSecundario = styled.p`
-  color: ${(props) => props.theme['current-text']};
+  color: ${(props) => props.theme.white};
   font-size: 1.5rem;
   text-align: center;
   float: left;
-  padding: 0px 175px;
+  padding: 0px 55px;
+  margin-top: 1.5rem;
 
   @media (max-width: 960px) {
     font-size: 1.15rem;
@@ -82,17 +82,17 @@ export const ParagrafoSecundario = styled.p`
 `
 
 export const ParagrafoSecundario2 = styled.p`
-  color: ${(props) => props.theme['current-text']};
+  color: ${(props) => props.theme.white};
   font-size: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 14rem;
+  margin-bottom: 2rem;
   text-align: center;
-  float: left;
-  padding: 0px 175px;
+  padding: 0px 55px;
+  margin-bottom: 2rem;
 
   a {
     text-decoration: none;
-    color: black;
+    color: ${(props) => props.theme.white};
   }
 
   @media (max-width: 960px) {

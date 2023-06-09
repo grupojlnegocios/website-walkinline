@@ -443,6 +443,16 @@ Error generating stack: `+o.message+`
     opacity: 0.6;
     content: '';
   }
+
+  @media (max-width: 426px) {
+    background-position: center;
+  }
+  @media (max-width: 376px) {
+    background-position: center;
+  }
+  @media (max-width: 325px) {
+    background-position: center;
+  }
 `,q4=B.div`
   z-index: 1;
   display: flex;

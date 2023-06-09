@@ -1,13 +1,13 @@
 import {
   SessaoQuarta,
   SubSessaoQuarta,
-  Paragrafo4,
+  Paragrafo,
   ImagemPlataforma,
   SegundaSessaoQuarta,
   FundoSection,
   CardGrid,
   FundoCarMobile,
-  Titulo3,
+  Titulo,
 } from './style.styles'
 
 import Plataforma from '../../assets/images/foto-sistema.png'
@@ -21,16 +21,16 @@ export const SectionFour = () => {
   return (
     <SessaoQuarta id="software">
       <SubSessaoQuarta>
-        <Titulo3>Software</Titulo3>
+        <Titulo>Software</Titulo>
 
-        <Paragrafo4>
+        <Paragrafo>
           O software da <strong>Walk in Line</strong> possui uma{' '}
           <strong>versão web</strong> e uma <strong>versão mobile</strong>,
           tanto <strong>iOS</strong> como <strong>Android</strong> para sua
           empresa de rastreamento, onde a central e o seu cliente final
           monitoram seus ativos rastreáveis de qualquer lugar e a qualquer
           momento.
-        </Paragrafo4>
+        </Paragrafo>
         <ImagemPlataforma src={Plataforma} alt="Rastreio" />
       </SubSessaoQuarta>
 

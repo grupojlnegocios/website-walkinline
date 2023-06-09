@@ -25,7 +25,7 @@ export const SubSessaoSetima = styled.div`
     justify-content: center;
   }
 `
-export const Titulo3 = styled.h1`
+export const Titulo = styled.h1`
   display: flex;
   font-size: 2.5rem;
   font-weight: 400;
@@ -41,7 +41,7 @@ export const Titulo3 = styled.h1`
   }
 `
 
-export const ParagrafoContato = styled.p`
+export const ParagrafoPrincipal = styled.p`
   color: ${(props) => props.theme['current-text']};
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -79,7 +79,7 @@ export const SessaoFormularioInfo = styled.div`
   }
 `
 
-export const ParagrafoSetimaSec = styled.p`
+export const Paragrafo = styled.p`
   align-items: start;
   padding: 1rem;
   max-width: 21.8rem;

@@ -2,8 +2,8 @@ import {
   Carousel,
   SessaoSexta,
   SubSessaoSexta,
-  Titulo3,
-  ParagrafoSecundario,
+  Titulo,
+  Paragrafo,
 } from './style.styles'
 
 import CarrosselUm from '../../assets/images/carousel-1.png'
@@ -15,10 +15,10 @@ export const SectionSix = () => {
   return (
     <SessaoSexta id="monte-sua-central">
       <SubSessaoSexta>
-        <Titulo3>Monte sua Central</Titulo3>
-        <ParagrafoSecundario>
+        <Titulo>Monte sua Central</Titulo>
+        <Paragrafo>
           Tudo que você precisa para abrir sua empresa de forma rápida e fácil.
-        </ParagrafoSecundario>
+        </Paragrafo>
         <Carousel
           media={[
             {

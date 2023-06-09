@@ -2,22 +2,6 @@ import styled from 'styled-components'
 
 import Fundo from '../../assets/images/fundo-parte4.jpg'
 
-export const Titulo3 = styled.h1`
-  display: flex;
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: ${(props) => props.theme['current-title']};
-  border-bottom: 2.5px solid ${(props) => props.theme['current-title']};
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  @media (max-width: 960px) {
-    font-size: 35px;
-  }
-  @media (max-width: 785px) {
-    font-size: 30px;
-  }
-`
-
 export const SessaoQuarta = styled.section`
   display: flex;
   justify-content: center;
@@ -35,9 +19,23 @@ export const SubSessaoQuarta = styled.div`
   width: 75%;
 `
 
-// Paragrafo da Quarta Section
+export const Titulo = styled.h1`
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: ${(props) => props.theme['current-title']};
+  border-bottom: 2.5px solid ${(props) => props.theme['current-title']};
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  @media (max-width: 960px) {
+    font-size: 35px;
+  }
+  @media (max-width: 785px) {
+    font-size: 30px;
+  }
+`
 
-export const Paragrafo4 = styled.p`
+export const Paragrafo = styled.p`
   color: ${(props) => props.theme['current-text']};
   font-size: 1.5rem;
   text-align: center;
@@ -48,6 +46,7 @@ export const Paragrafo4 = styled.p`
     padding: 1rem 0rem;
   }
 `
+
 export const ImagemPlataforma = styled.img`
   width: 40rem;
 

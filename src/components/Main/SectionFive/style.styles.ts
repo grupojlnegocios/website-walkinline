@@ -23,7 +23,7 @@ export const RodapeTabela = styled.p`
     font-size: 0.7rem;
   }
 `
-export const Titulo3 = styled.h1`
+export const Titulo = styled.h1`
   display: flex;
   font-size: 2.5rem;
   font-weight: 400;
@@ -38,7 +38,7 @@ export const Titulo3 = styled.h1`
     font-size: 30px;
   }
 `
-export const ParagrafoSecundario = styled.p`
+export const Paragrafo = styled.p`
   color: ${(props) => props.theme['current-text']};
   font-size: 1.5rem;
   text-align: center;

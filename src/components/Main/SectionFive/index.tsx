@@ -2,8 +2,8 @@ import {
   SessaoQuinta,
   SubSessaoQuinta,
   RodapeTabela,
-  Titulo3,
-  ParagrafoSecundario,
+  Titulo,
+  Paragrafo,
 } from './style.styles'
 import { PlansTable } from '../PlansTable'
 import { TableMobile } from '../TableMobile'
@@ -12,13 +12,13 @@ export const SectionFive = () => {
   return (
     <SessaoQuinta id="planos">
       <SubSessaoQuinta>
-        <Titulo3>Planos</Titulo3>
+        <Titulo>Planos</Titulo>
 
-        <ParagrafoSecundario>
+        <Paragrafo>
           Ofereça um serviço personalizado para seus clientes, de acordo com a
           necessidade de cada um, através dos planos do sistema{' '}
           <strong>Walk in Line</strong>.
-        </ParagrafoSecundario>
+        </Paragrafo>
         <TableMobile />
         <PlansTable />
 

@@ -1,15 +1,15 @@
 import {
   SessaoSetima,
   SubSessaoSetima,
-  ParagrafoSetimaSec,
+  Paragrafo,
   SessaoFormulario,
   FormularioArea,
   SessaoFormularioInfo,
   Contatos,
-  ParagrafoContato,
+  ParagrafoPrincipal,
   TelefoneWpp,
   EmailContato,
-  Titulo3,
+  Titulo,
 } from './style.styles'
 
 import { FaWhatsapp } from 'react-icons/fa'
@@ -20,23 +20,23 @@ export const SectionSeven = () => {
   return (
     <SessaoSetima id="contato">
       <SubSessaoSetima>
-        <Titulo3>Contato</Titulo3>
+        <Titulo>Contato</Titulo>
 
-        <ParagrafoContato>
+        <ParagrafoPrincipal>
           <strong>Preenchimento Obrigatório (*)</strong>
-        </ParagrafoContato>
+        </ParagrafoPrincipal>
         <SessaoFormulario>
           <SessaoFormularioInfo>
-            <ParagrafoSetimaSec>
+            <Paragrafo>
               Preencha todos os campos e entraremos em contato para{' '}
               <strong>MONTAR</strong> a sua{' '}
               <strong>EMPRESA DE RASTREAMENTO.</strong>
-            </ParagrafoSetimaSec>
+            </Paragrafo>
 
-            <ParagrafoSetimaSec>
+            <Paragrafo>
               Entre em contato conosco através do formulário ou pelo telefone
               abaixo! Montaremos sua central em apenas alguns minutos!
-            </ParagrafoSetimaSec>
+            </Paragrafo>
             <Contatos>
               <TelefoneWpp>
                 <a
@@ -56,12 +56,12 @@ export const SectionSeven = () => {
               <GrMail size={0} color={'#1D3557'}></GrMail>
             </EmailContato>
 
-            <ParagrafoSetimaSec>
+            <Paragrafo>
               <strong>
                 Av. das Nações Unidas, 18801 15° Andar - Santo Amaro, São Paulo
                 - SP, 04753-100
               </strong>
-            </ParagrafoSetimaSec>
+            </Paragrafo>
           </SessaoFormularioInfo>
 
           <FormularioArea>

@@ -10,7 +10,7 @@ export const SessaoTerceira = styled.section`
 
 // Chamando ao Elemento Titulo 3
 
-export const Titulo3 = styled.h1`
+export const Titulo = styled.h1`
   display: flex;
   font-size: 2.5rem;
   font-weight: 400;
@@ -23,6 +23,20 @@ export const Titulo3 = styled.h1`
   }
   @media (max-width: 785px) {
     font-size: 30px;
+  }
+`
+
+export const Titulo2 = styled.h1`
+  display: flex;
+  font-size: 2rem;
+  color: ${(props) => props.theme['current-title']};
+  font-weight: 400;
+  margin-bottom: 1rem;
+
+  @media (max-width: 960px) {
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
   }
 `
 
@@ -62,22 +76,6 @@ export const Listas = styled.ul`
   list-style: none;
   width: 100%;
   display: block;
-`
-
-// Chamando ao Titulo da Lista
-
-export const Titulo4 = styled.h1`
-  display: flex;
-  font-size: 2rem;
-  color: ${(props) => props.theme['current-title']};
-  font-weight: 400;
-  margin-bottom: 1rem;
-
-  @media (max-width: 960px) {
-    font-size: 1.5rem;
-    justify-content: center;
-    margin-top: 1rem;
-  }
 `
 
 // Chamando ao Elementos da Lista

@@ -1,10 +1,10 @@
 import {
   SessaoTerceira,
-  Titulo3,
+  Titulo,
   TextoLista,
   Listas,
   ListaV,
-  Titulo4,
+  Titulo2,
   ImagemRastreio,
   Paragrafo,
 } from './style.styles'
@@ -14,7 +14,7 @@ import Rastreio from '../../assets/images/foto-veiculos.png'
 export const SectionThree = () => {
   return (
     <SessaoTerceira id="nosso-diferencial">
-      <Titulo3>Diferencial</Titulo3>
+      <Titulo>Diferencial</Titulo>
 
       <Paragrafo>
         A <strong>walk in line</strong> oferece as melhores opções do mercado
@@ -26,7 +26,7 @@ export const SectionThree = () => {
         <ImagemRastreio src={Rastreio} alt="Rastreio" />
 
         <Listas>
-          <Titulo4>Vantagens</Titulo4>
+          <Titulo2>Vantagens</Titulo2>
           <ListaV>Mais de 70 rastreadores homologados</ListaV>
           <ListaV>Aceita customizações e integrações</ListaV>
           <ListaV>Equipe de suporte altamente qualificada</ListaV>

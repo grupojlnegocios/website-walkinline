@@ -131,20 +131,20 @@ Error generating stack: `+o.message+`
   display: ${t=>t.progresso===!0?"flex":"none"};
   position: fixed;
   z-index: 1;
-  top: 5.2rem;
+  top: 5.5rem;
   left: 0;
   appearance: none;
   width: 100%;
-  height: 0.3rem;
+  height: 0.2rem;
   border: none;
-  background: transparent;
+  background: white;
   box-shadow: 0px 5px 9px 2px rgb(0 0 0 / 64%);
 
   @media (max-width: 425px) {
   }
 
   &::-webkit-progress-bar {
-    background: #ffffffd6;
+    background: white;
   }
 
   &::-webkit-progress-value {
@@ -1271,7 +1271,7 @@ Error generating stack: `+o.message+`
   }
 `,uC=B.a`
   color: ${t=>t.theme.white};
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
   white-space: nowrap;
 
@@ -1282,7 +1282,7 @@ Error generating stack: `+o.message+`
     font-size: 0.5rem;
   }
 `,cC=B.img`
-  width: 6rem;
+  width: 7rem;
   height: auto;
 
   @media (max-width: 960px) {

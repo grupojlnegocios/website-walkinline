@@ -8,21 +8,26 @@ export const SessaoPrincipal = styled.section`
   align-items: center;
   justify-content: center;
   background-image: url(${FundoInicio});
+  background-size: 100% auto;
   padding: 1rem;
   background-size: cover;
   height: 100vh;
 
   @media (max-width: 770px) {
-    height: 115vh;
+    height: 100vh;
+    width: 100vw;
   }
   @media (max-width: 426px) {
-    height: 125vh;
+    height: 100vh;
+    width: 100vw;
   }
   @media (max-width: 376px) {
-    height: 135vh;
+    height: 100vh;
+    width: 100vw;
   }
   @media (max-width: 325px) {
-    height: 150vh;
+    height: 100vh;
+    width: 100vw;
   }
 `
 
@@ -39,7 +44,7 @@ export const SessaoPrincipalArea = styled.div`
   text-decoration: none;
 
   @media (max-width: 710px) {
-    max-width: 95%;
+    max-width: 100%;
   }
 `
 

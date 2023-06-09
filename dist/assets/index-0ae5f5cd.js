@@ -532,33 +532,7 @@ Error generating stack: `+o.message+`
   @media (max-width: 785px) {
     font-size: 30px;
   }
-`,eb=B.div`
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
-`,tb=B.img`
-  width: 28rem;
-
-  @media (max-width: 960px) {
-    width: 24rem;
-  }
-  @media (max-width: 785px) {
-    width: 20rem;
-  }
-  @media (max-width: 500px) {
-    width: 15rem;
-  }
-`,nb=B.ul`
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  width: 100%;
-  display: block;
-`,rb=B.h1`
+`,eb=B.h1`
   display: flex;
   font-size: 2rem;
   color: ${t=>t.theme["current-title"]};
@@ -570,6 +544,32 @@ Error generating stack: `+o.message+`
     justify-content: center;
     margin-top: 1rem;
   }
+`,tb=B.div`
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`,nb=B.img`
+  width: 28rem;
+
+  @media (max-width: 960px) {
+    width: 24rem;
+  }
+  @media (max-width: 785px) {
+    width: 20rem;
+  }
+  @media (max-width: 500px) {
+    width: 15rem;
+  }
+`,rb=B.ul`
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  width: 100%;
+  display: block;
 `,el=B.ul`
   background: url(${K4});
   background-repeat: no-repeat;
@@ -599,7 +599,20 @@ Error generating stack: `+o.message+`
     font-size: 1.05rem;
     padding: 0rem 2rem;
   }
-`,ob="/website-walkinline/assets/foto-veiculos-def94b2a.png",sb=()=>l.jsxs(J4,{id:"nosso-diferencial",children:[l.jsx(Z4,{children:"Diferencial"}),l.jsxs(ib,{children:["A ",l.jsx("strong",{children:"walk in line"})," oferece as melhores opções do mercado para facilitar e desenvolver o seu negocio através do nosso"," ",l.jsx("u",{children:"software inteligente"}),"!"]}),l.jsxs(eb,{children:[l.jsx(tb,{src:ob,alt:"Rastreio"}),l.jsxs(nb,{children:[l.jsx(rb,{children:"Vantagens"}),l.jsx(el,{children:"Mais de 70 rastreadores homologados"}),l.jsx(el,{children:"Aceita customizações e integrações"}),l.jsx(el,{children:"Equipe de suporte altamente qualificada"}),l.jsx(el,{children:"Parceria com os melhores fabricantes do Brasil e do mundo"}),l.jsx(el,{children:"Sistema web hospedado em datacenter de alto padrão"})]})]})]}),sm="/website-walkinline/assets/fundo-parte4-f67909fa.jpg",lb=B.h1`
+`,ob="/website-walkinline/assets/foto-veiculos-def94b2a.png",sb=()=>l.jsxs(J4,{id:"nosso-diferencial",children:[l.jsx(Z4,{children:"Diferencial"}),l.jsxs(ib,{children:["A ",l.jsx("strong",{children:"walk in line"})," oferece as melhores opções do mercado para facilitar e desenvolver o seu negocio através do nosso"," ",l.jsx("u",{children:"software inteligente"}),"!"]}),l.jsxs(tb,{children:[l.jsx(nb,{src:ob,alt:"Rastreio"}),l.jsxs(rb,{children:[l.jsx(eb,{children:"Vantagens"}),l.jsx(el,{children:"Mais de 70 rastreadores homologados"}),l.jsx(el,{children:"Aceita customizações e integrações"}),l.jsx(el,{children:"Equipe de suporte altamente qualificada"}),l.jsx(el,{children:"Parceria com os melhores fabricantes do Brasil e do mundo"}),l.jsx(el,{children:"Sistema web hospedado em datacenter de alto padrão"})]})]})]}),sm="/website-walkinline/assets/fundo-parte4-f67909fa.jpg",lb=B.section`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: url(${sm});
+  background-size: cover;
+  align-items: center;
+`,ab=B.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+  width: 75%;
+`,ub=B.h1`
   display: flex;
   font-size: 2.5rem;
   font-weight: 400;
@@ -613,19 +626,6 @@ Error generating stack: `+o.message+`
   @media (max-width: 785px) {
     font-size: 30px;
   }
-`,ab=B.section`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background: url(${sm});
-  background-size: cover;
-  align-items: center;
-`,ub=B.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 35px;
-  width: 75%;
 `,cb=B.p`
   color: ${t=>t.theme["current-text"]};
   font-size: 1.5rem;
@@ -759,7 +759,7 @@ Error generating stack: `+o.message+`
     z-index: 5;
     position: absolute;
   }
-`;B.div``;B.img``;const Pb=()=>l.jsxs(Ob,{children:[l.jsx(Un,{icon:"simcard",title:"SimCard",description:"Controle total da sua frota na gestão de simcards: segurança em suas mãos."}),l.jsx(Un,{icon:"equipamento",title:"Equipamentos",description:"Aumente a eficiência operacional administrando e protegendo seus ativos."}),l.jsx(Un,{icon:"entidade",title:"Entidades",description:"Conecte e gerencie todas as pessoas relevantes em um só lugar."}),l.jsx(Un,{icon:"veiculo",title:"Veiculos",description:"Maximize a produtividade da sua frota: impulsione seus resultados e garanta sua tranquilidade."}),l.jsx(Un,{icon:"os",title:"Ordem de Serviço",description:"Gerencie todas as etapas do rastreamento veicular de forma organizada e precisa."}),l.jsx(Un,{icon:"app",title:"Aplicativo",description:"Tenha o controle na palma da mão: acompanhe sua frota em tempo real com nosso aplicativo."})]}),Nb=()=>l.jsxs(ab,{id:"software",children:[l.jsxs(ub,{children:[l.jsx(lb,{children:"Software"}),l.jsxs(cb,{children:["O software da ",l.jsx("strong",{children:"Walk in Line"})," possui uma"," ",l.jsx("strong",{children:"versão web"})," e uma ",l.jsx("strong",{children:"versão mobile"}),", tanto ",l.jsx("strong",{children:"iOS"})," como ",l.jsx("strong",{children:"Android"})," para sua empresa de rastreamento, onde a central e o seu cliente final monitoram seus ativos rastreáveis de qualquer lugar e a qualquer momento."]}),l.jsx(db,{src:gb,alt:"Rastreio"})]}),l.jsxs(fb,{children:[l.jsx(hb,{src:xb,alt:"Fundo com carro"}),l.jsx(pb,{src:yb,alt:"Fundo com carro pro mobile"}),l.jsxs(mb,{children:[l.jsx(Un,{icon:"simcard",title:"SimCard",description:"Controle total da sua frota na gestão de simcards: segurança em suas mãos."}),l.jsx(Un,{icon:"veiculo",title:"Veiculos",description:"Maximize a produtividade da sua frota: impulsione seus resultados e garanta sua tranquilidade."}),l.jsx(Un,{icon:"os",title:"Ordem de Serviço",description:"Gerencie todas as etapas do rastreamento veicular de forma organizada e precisa."}),l.jsx(Un,{icon:"equipamento",title:"Equipamentos",description:"Aumente a eficiência operacional administrando e protegendo seus ativos."}),l.jsx(Un,{icon:"entidade",title:"Entidades",description:"Conecte e gerencie todas as pessoas relevantes em um só lugar."}),l.jsx(Un,{icon:"app",title:"Aplicativo",description:"Tenha o controle na palma da mão: acompanhe sua frota em tempo real com nosso aplicativo."})]}),l.jsx(Pb,{})]})]}),Rb=B.section`
+`;B.div``;B.img``;const Pb=()=>l.jsxs(Ob,{children:[l.jsx(Un,{icon:"simcard",title:"SimCard",description:"Controle total da sua frota na gestão de simcards: segurança em suas mãos."}),l.jsx(Un,{icon:"equipamento",title:"Equipamentos",description:"Aumente a eficiência operacional administrando e protegendo seus ativos."}),l.jsx(Un,{icon:"entidade",title:"Entidades",description:"Conecte e gerencie todas as pessoas relevantes em um só lugar."}),l.jsx(Un,{icon:"veiculo",title:"Veiculos",description:"Maximize a produtividade da sua frota: impulsione seus resultados e garanta sua tranquilidade."}),l.jsx(Un,{icon:"os",title:"Ordem de Serviço",description:"Gerencie todas as etapas do rastreamento veicular de forma organizada e precisa."}),l.jsx(Un,{icon:"app",title:"Aplicativo",description:"Tenha o controle na palma da mão: acompanhe sua frota em tempo real com nosso aplicativo."})]}),Nb=()=>l.jsxs(lb,{id:"software",children:[l.jsxs(ab,{children:[l.jsx(ub,{children:"Software"}),l.jsxs(cb,{children:["O software da ",l.jsx("strong",{children:"Walk in Line"})," possui uma"," ",l.jsx("strong",{children:"versão web"})," e uma ",l.jsx("strong",{children:"versão mobile"}),", tanto ",l.jsx("strong",{children:"iOS"})," como ",l.jsx("strong",{children:"Android"})," para sua empresa de rastreamento, onde a central e o seu cliente final monitoram seus ativos rastreáveis de qualquer lugar e a qualquer momento."]}),l.jsx(db,{src:gb,alt:"Rastreio"})]}),l.jsxs(fb,{children:[l.jsx(hb,{src:xb,alt:"Fundo com carro"}),l.jsx(pb,{src:yb,alt:"Fundo com carro pro mobile"}),l.jsxs(mb,{children:[l.jsx(Un,{icon:"simcard",title:"SimCard",description:"Controle total da sua frota na gestão de simcards: segurança em suas mãos."}),l.jsx(Un,{icon:"veiculo",title:"Veiculos",description:"Maximize a produtividade da sua frota: impulsione seus resultados e garanta sua tranquilidade."}),l.jsx(Un,{icon:"os",title:"Ordem de Serviço",description:"Gerencie todas as etapas do rastreamento veicular de forma organizada e precisa."}),l.jsx(Un,{icon:"equipamento",title:"Equipamentos",description:"Aumente a eficiência operacional administrando e protegendo seus ativos."}),l.jsx(Un,{icon:"entidade",title:"Entidades",description:"Conecte e gerencie todas as pessoas relevantes em um só lugar."}),l.jsx(Un,{icon:"app",title:"Aplicativo",description:"Tenha o controle na palma da mão: acompanhe sua frota em tempo real com nosso aplicativo."})]}),l.jsx(Pb,{})]})]}),Rb=B.section`
   background: url(${sm});
   background-size: cover;
   padding: 2rem;

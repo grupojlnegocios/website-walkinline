@@ -39,9 +39,10 @@ export const SessaoSecundariaArea = styled.div`
   margin-top: 5rem;
   margin-bottom: 5rem;
   text-align: center;
-  background-color: #000000bd;
+  background-color: #000000ab;
   border-radius: 8px;
   text-decoration: none;
+  z-index: 1;
 
   @media (max-width: 710px) {
     max-width: 90%;

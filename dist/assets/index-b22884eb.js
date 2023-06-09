@@ -1266,7 +1266,7 @@ Error generating stack: `+o.message+`
   }
 `,uC=B.a`
   color: ${t=>t.theme.white};
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
   white-space: nowrap;
 

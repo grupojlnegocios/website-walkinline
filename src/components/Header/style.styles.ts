@@ -114,20 +114,20 @@ export const Progresso = styled.progress<ProgressProps>`
   display: ${(props) => (props.progresso === true ? 'flex' : 'none')};
   position: fixed;
   z-index: 1;
-  top: 5.2rem;
+  top: 5.5rem;
   left: 0;
   appearance: none;
   width: 100%;
-  height: 0.3rem;
+  height: 0.2rem;
   border: none;
-  background: transparent;
+  background: white;
   box-shadow: 0px 5px 9px 2px rgb(0 0 0 / 64%);
 
   @media (max-width: 425px) {
   }
 
   &::-webkit-progress-bar {
-    background: #ffffffd6;
+    background: white;
   }
 
   &::-webkit-progress-value {

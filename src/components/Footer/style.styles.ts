@@ -25,7 +25,7 @@ export const SubFooter = styled.footer`
 
 export const TextoFooter = styled.a`
   color: ${(props) => props.theme.white};
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
   white-space: nowrap;
 
@@ -38,7 +38,7 @@ export const TextoFooter = styled.a`
 `
 
 export const FooterImg = styled.img`
-  width: 6rem;
+  width: 7rem;
   height: auto;
 
   @media (max-width: 960px) {

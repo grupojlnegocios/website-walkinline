@@ -80,9 +80,4 @@ export const Button = styled.button`
     padding: 13px 23px;
     border-radius: 6px;
   }
-  @media (max-width: 785px) {
-    font-size: 13px;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
 `

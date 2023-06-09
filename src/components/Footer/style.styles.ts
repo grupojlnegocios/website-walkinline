@@ -30,10 +30,7 @@ export const TextoFooter = styled.a`
   white-space: nowrap;
 
   @media (max-width: 960px) {
-    font-size: 0.55rem;
-  }
-  @media (max-width: 785px) {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 `
 
@@ -43,14 +40,6 @@ export const FooterImg = styled.img`
 
   @media (max-width: 960px) {
     width: 5rem;
-    height: auto;
-  }
-  @media (max-width: 785px) {
-    width: 4rem;
-    height: auto;
-  }
-  @media (max-width: 710px) {
-    width: 3rem;
     height: auto;
   }
 `

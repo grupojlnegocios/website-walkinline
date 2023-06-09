@@ -2,8 +2,8 @@ import {
   SessaoSecundaria,
   MainImg,
   SessaoSecundariaArea,
+  Paragrafo,
   ParagrafoSecundario,
-  ParagrafoSecundario2,
 } from './style.styles'
 
 import logo from '../../assets/images/logo-branca.png'
@@ -14,18 +14,18 @@ export const SectionTwo = () => {
       <SessaoSecundariaArea>
         <MainImg src={logo} alt="Logo" />
 
-        <ParagrafoSecundario>
+        <Paragrafo>
           <strong>Walk in Line</strong> é uma moderna plataforma de rastreamento
           veicular desenvolvida pelo <strong>Grupo JL</strong> que possibilita
           que sua empresa ofereça um serviço de qualidade pelo melhor custo
           benefício do mercado.
-        </ParagrafoSecundario>
+        </Paragrafo>
 
-        <ParagrafoSecundario>
+        <Paragrafo>
           O sistema permite que centrais de monitoramento e clientes finais
           acompanhem seus veículos e ativos rastreaveis em tempo real!
-        </ParagrafoSecundario>
-        <ParagrafoSecundario2>
+        </Paragrafo>
+        <ParagrafoSecundario>
           Tudo isso via WEB / Aplicativos Mobiles.<br></br>
           <u>
             <strong>
@@ -38,7 +38,7 @@ export const SectionTwo = () => {
               </a>
             </strong>
           </u>
-        </ParagrafoSecundario2>
+        </ParagrafoSecundario>
       </SessaoSecundariaArea>
     </SessaoSecundaria>
   )

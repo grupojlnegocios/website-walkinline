@@ -68,7 +68,7 @@ export const MainImg = styled.img`
 
 // Chamando ao Elemento Paragrafo
 
-export const ParagrafoSecundario = styled.p`
+export const Paragrafo = styled.p`
   color: ${(props) => props.theme.white};
   font-size: 1.5rem;
   text-align: center;
@@ -79,10 +79,12 @@ export const ParagrafoSecundario = styled.p`
   @media (max-width: 960px) {
     font-size: 1.15rem;
     padding: 0px 10px;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
   }
 `
 
-export const ParagrafoSecundario2 = styled.p`
+export const ParagrafoSecundario = styled.p`
   color: ${(props) => props.theme.white};
   font-size: 1.5rem;
   margin-top: 14rem;

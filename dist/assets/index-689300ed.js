@@ -319,21 +319,26 @@ Error generating stack: `+o.message+`
   align-items: center;
   justify-content: center;
   background-image: url(${L4});
+  background-size: 100% auto;
   padding: 1rem;
   background-size: cover;
   height: 100vh;
 
   @media (max-width: 770px) {
-    height: 115vh;
+    height: 100vh;
+    width: 100vw;
   }
   @media (max-width: 426px) {
-    height: 125vh;
+    height: 100vh;
+    width: 100vw;
   }
   @media (max-width: 376px) {
-    height: 135vh;
+    height: 100vh;
+    width: 100vw;
   }
   @media (max-width: 325px) {
-    height: 150vh;
+    height: 100vh;
+    width: 100vw;
   }
 `,I4=B.div`
   display: inline-table;
@@ -346,7 +351,7 @@ Error generating stack: `+o.message+`
   text-decoration: none;
 
   @media (max-width: 710px) {
-    max-width: 95%;
+    max-width: 100%;
   }
 `,B4=B.div`
   font-size: 2rem;

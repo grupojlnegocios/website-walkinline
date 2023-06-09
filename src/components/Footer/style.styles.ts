@@ -25,7 +25,7 @@ export const SubFooter = styled.footer`
 
 export const TextoFooter = styled.a`
   color: ${(props) => props.theme.white};
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
   white-space: nowrap;
 

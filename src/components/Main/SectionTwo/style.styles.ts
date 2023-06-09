@@ -19,6 +19,16 @@ export const SessaoSecundaria = styled.section`
     opacity: 0.6;
     content: '';
   }
+
+  @media (max-width: 426px) {
+    background-position: center;
+  }
+  @media (max-width: 376px) {
+    background-position: center;
+  }
+  @media (max-width: 325px) {
+    background-position: center;
+  }
 `
 
 // Chamando ao Elemento Sessão Secundaria

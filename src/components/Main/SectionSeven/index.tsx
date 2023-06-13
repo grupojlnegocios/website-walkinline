@@ -8,6 +8,7 @@ import {
   Contatos,
   ParagrafoPrincipal,
   TelefoneWpp,
+  TelefoneFix,
   EmailContato,
   Titulo,
 } from './style.styles'
@@ -15,6 +16,7 @@ import {
 import { FaWhatsapp } from 'react-icons/fa'
 import { GrMail } from 'react-icons/gr'
 import { Forms } from '../Forms'
+import { AiFillPhone } from 'react-icons/ai'
 
 export const SectionSeven = () => {
   return (
@@ -40,15 +42,20 @@ export const SectionSeven = () => {
             <Contatos>
               <TelefoneWpp>
                 <a
-                  href="https://api.whatsapp.com/send?phone="
+                  href="https://api.whatsapp.com/send?phone=5511996634534"
                   target="_blank"
                   rel="noreferrer"
                 >
                   {' '}
-                  <strong>(11) 99999-9999</strong>
+                  <strong>(11) 99663-4534</strong>
                 </a>
                 <FaWhatsapp size={0} color={'35C42C'}></FaWhatsapp>
               </TelefoneWpp>
+
+              <TelefoneFix>
+                <strong>(11) 3294-1403</strong>
+                <AiFillPhone size={0} color={'#1D3557'}></AiFillPhone>
+              </TelefoneFix>
             </Contatos>
 
             <EmailContato>

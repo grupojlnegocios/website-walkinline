@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import Imagem from '../../assets/images/foto-section2.png'
+import Imagem from "../../assets/images/foto-section2.png"
 
 export const SessaoSecundaria = styled.section`
   background-image: url(${Imagem});
@@ -17,7 +17,7 @@ export const SessaoSecundaria = styled.section`
     height: 100vh;
     background: #ffffff36;
     opacity: 0.6;
-    content: '';
+    content: "";
   }
 
   @media (max-width: 426px) {

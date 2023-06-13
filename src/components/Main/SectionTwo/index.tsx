@@ -30,7 +30,7 @@ export const SectionTwo = () => {
           <u>
             <strong>
               <a
-                href="https://api.whatsapp.com/send?phone="
+                href="https://api.whatsapp.com/send?phone=5511996634534"
                 target="_blank"
                 rel="noreferrer"
               >

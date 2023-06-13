@@ -15,19 +15,19 @@ export const SessaoPrincipal = styled.section`
 
   @media (max-width: 770px) {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
   }
   @media (max-width: 426px) {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
   }
   @media (max-width: 376px) {
     height: 110vh;
-    width: 100vw;
+    width: 100%;
   }
   @media (max-width: 325px) {
     height: 130vh;
-    width: 100vw;
+    width: 100%;
   }
 `
 

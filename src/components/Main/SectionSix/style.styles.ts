@@ -22,6 +22,13 @@ export const Carousel = styled(AwesomeSlider)`
     display: flex;
     align-items: center;
   }
+
+  media {
+  }
+
+  @media (max-width: 785px) {
+    width: 100%;
+  }
 `
 
 export const Titulo = styled.h1`

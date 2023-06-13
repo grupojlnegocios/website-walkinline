@@ -19,22 +19,38 @@ export const SectionSix = () => {
         <Paragrafo>
           Tudo que você precisa para abrir sua empresa de forma rápida e fácil.
         </Paragrafo>
-        <Carousel
-          media={[
-            {
-              source: CarrosselUm,
-            },
-            {
-              source: CarrosselDois,
-            },
-            {
-              source: CarrosselTres,
-            },
-            {
-              source: CarrosselQuatro,
-            },
-          ]}
-        />
+        <Carousel>
+          <div style={{ zIndex: 2, backgroundColor: 'white' }}>
+            <div>
+              <img
+                alt="Wow"
+                src={CarrosselUm}
+                style={{ width: '100%', height: '100%' }}
+              />
+            </div>
+          </div>
+          <div style={{ backgroundColor: 'white' }}>
+            <img
+              alt="Wow"
+              src={CarrosselDois}
+              style={{ width: '100%', height: '100%' }}
+            />
+          </div>
+          <div style={{ backgroundColor: 'white' }}>
+            <img
+              alt="Wow"
+              src={CarrosselTres}
+              style={{ width: '100%', height: '100%' }}
+            />
+          </div>
+          <div style={{ backgroundColor: 'white' }}>
+            <img
+              alt="Wow"
+              src={CarrosselQuatro}
+              style={{ width: '100%', height: '100%' }}
+            />
+          </div>
+        </Carousel>
       </SubSessaoSexta>
     </SessaoSexta>
   )

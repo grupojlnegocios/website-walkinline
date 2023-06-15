@@ -12,17 +12,17 @@ export const PlansTable = () => {
           </th>
 
           <th>
-            <h3>WalkinLine Básic</h3>
+            <h3>Walk in Line Basic</h3>
             <h4>Valor conforme negociação</h4>
           </th>
 
           <th>
-            <h3>WalkinLine Select</h3>
+            <h3>Walk in Line Select</h3>
             <h4>Valor conforme negociação</h4>
           </th>
 
           <th>
-            <h3>WalkinLine Premium</h3>
+            <h3>Walk in Line Premium</h3>
             <h4>Valor conforme negociação</h4>
           </th>
         </LinhaCabeca>

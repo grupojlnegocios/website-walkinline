@@ -50,7 +50,7 @@ export const TableMobile = () => {
           <td>
             <a onClick={() => AbrirTabela(1)}>
               <div>
-                <h3>Walk in line Básic</h3>
+                <h3>Walk in line Basic</h3>
                 <h4>Valor conforme negociação</h4>
               </div>
               <Botao>

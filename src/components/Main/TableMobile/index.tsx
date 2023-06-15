@@ -50,7 +50,7 @@ export const TableMobile = () => {
           <td>
             <a onClick={() => AbrirTabela(1)}>
               <div>
-                <h3>Walk in line Básico</h3>
+                <h3>Walk in line Básic</h3>
                 <h4>Valor conforme negociação</h4>
               </div>
               <Botao>
@@ -400,7 +400,7 @@ export const TableMobile = () => {
           <td>
             <a onClick={() => AbrirTabela(2)}>
               <div>
-                <h3>Walk in Line Médio</h3>
+                <h3>Walk in Line Select</h3>
                 <h4>Valor conforme negociação</h4>
               </div>
               <Botao>
@@ -749,7 +749,7 @@ export const TableMobile = () => {
           <td>
             <a onClick={() => AbrirTabela(3)}>
               <div>
-                <h3>Walk in Line Mega</h3>
+                <h3>Walk in Line Premium</h3>
                 <h4>Valor conforme negociação</h4>
               </div>
               <Botao>

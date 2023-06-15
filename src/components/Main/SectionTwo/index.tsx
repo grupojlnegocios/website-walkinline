@@ -26,7 +26,7 @@ export const SectionTwo = () => {
           acompanhem seus veículos e ativos rastreaveis em tempo real!
         </Paragrafo>
         <ParagrafoSecundario>
-          Tudo isso via WEB / Aplicativos Mobiles.<br></br>
+          Tudo isso via WEB / Aplicativo Mobile.<br></br>
           <u>
             <strong>
               <a

@@ -5,7 +5,7 @@ import { useState } from 'react'
 export const StartLoading = () => {
   const [loading, setLoading] = useState(true)
 
-  if (document.readyState === 'complete' || window.onload) {
+  if (document.readyState === 'complete' || window.document.onload) {
     setTimeout(() => {
       setLoading(false)
     }, 3000)

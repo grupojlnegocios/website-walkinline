@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "aws s3 cp --recursive dist/ s3://walkinline.com.br/pt-br/ --acl public-read && aws cloudfront create-invalidation --distribution-id E1GKUTA33EBGGF --paths '/*'"
+    "deploy": "aws s3 cp --recursive dist/ s3://walkinline.com.br/pt-br/ && aws cloudfront create-invalidation --distribution-id E1GKUTA33EBGGF --paths '/*'"
   },
   "dependencies": {
     "axios": "^1.4.0",

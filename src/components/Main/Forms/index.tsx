@@ -20,8 +20,6 @@ export function Forms() {
 
     setShowLoader(true)
 
-    console.log({ name, cellphone, email, message })
-
     const data = {
       name,
       cellphone,

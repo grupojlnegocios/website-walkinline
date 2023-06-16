@@ -5,12 +5,9 @@ interface LoaderProps {
 }
 
 export const ContainerLoader = styled.div<LoaderProps>`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #0f1c2f;
   z-index: 30;
   opacity: ${(props) => (props.loading === true ? '1' : '0')};
@@ -21,8 +18,13 @@ export const ContainerLoader = styled.div<LoaderProps>`
 export const Loading = styled.div`
   animation: MoveUpDown 0.9s linear infinite;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
   bottom: 0;
-  margin-bottom: 13rem;
+  left: 0;
+  right: 0;
 
   @keyframes MoveUpDown {
     0%,
@@ -32,10 +34,6 @@ export const Loading = styled.div`
     50% {
       bottom: 1rem;
     }
-  }
-
-  @media (max-width: 430px) {
-    margin-bottom: 20rem;
   }
 `
 

@@ -33,6 +33,10 @@ export const Loading = styled.div`
       bottom: 1rem;
     }
   }
+
+  @media (max-width: 430px) {
+    margin-bottom: 20rem;
+  }
 `
 
 export const Img = styled.img`

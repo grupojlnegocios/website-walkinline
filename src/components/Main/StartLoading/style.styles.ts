@@ -40,7 +40,7 @@ export const Loading = styled.div`
 export const Img = styled.img`
   height: 10rem;
 
-  @media (max-width: 430px) {
+  @media (max-width: 770px) {
     height: 7rem;
   }
 `

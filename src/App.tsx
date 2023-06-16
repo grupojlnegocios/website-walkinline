@@ -8,8 +8,6 @@ import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 import { StartLoading } from './components/Main/StartLoading'
 
-import {} from './components/Main/StartLoading/style.styles'
-
 function App() {
   return (
     <ThemeProvider theme={lightTheme}>

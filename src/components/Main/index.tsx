@@ -30,11 +30,9 @@ export const Main = () => {
 
       setOldScroll((e) => {
         if (e < window.scrollY) {
-          console.log('descendo')
           setButtonUp(false)
         } else {
           setButtonUp(true)
-          console.log('subindo')
         }
 
         return window.scrollY

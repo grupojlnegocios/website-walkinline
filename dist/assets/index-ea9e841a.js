@@ -1343,6 +1343,10 @@ Error generating stack: `+o.message+`
       bottom: 1rem;
     }
   }
+
+  @media (max-width: 430px) {
+    margin-bottom: 20rem;
+  }
 `,y3=L.img`
   height: 10rem;
 

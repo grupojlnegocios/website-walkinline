@@ -5,10 +5,10 @@ import { useState } from 'react'
 export const StartLoading = () => {
   const [loading, setLoading] = useState(true)
 
-  if (document.readyState === 'complete') {
+  window.onload = () => {
     setTimeout(() => {
       setLoading(false)
-    }, 3000)
+    }, 2000)
   }
   return (
     <ContainerLoader loading={loading}>

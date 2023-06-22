@@ -6,12 +6,33 @@ import {
   ParagrafoSecundario,
 } from './style.styles'
 
+import { useState, useEffect } from 'react'
+
 import logo from '../../assets/images/logo-branca.png'
 
 export const SectionTwo = () => {
+  const [infoSection, setInfoSection] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollDiv = 247
+
+      if (window.scrollY >= scrollDiv) {
+        setInfoSection(true)
+      } else {
+        setInfoSection(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
     <SessaoSecundaria id="quem-somos">
-      <SessaoSecundariaArea>
+      <SessaoSecundariaArea visible={infoSection}>
         <MainImg src={logo} alt="Logo" />
 
         <Paragrafo>

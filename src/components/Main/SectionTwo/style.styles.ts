@@ -1,6 +1,10 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
-import Imagem from "../../assets/images/foto-section2.png"
+import Imagem from '../../assets/images/foto-section2.png'
+
+interface VisibleSeProps {
+  visible: boolean
+}
 
 export const SessaoSecundaria = styled.section`
   background-image: url(${Imagem});
@@ -10,6 +14,7 @@ export const SessaoSecundaria = styled.section`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
 
   &::before {
     position: absolute;
@@ -17,7 +22,7 @@ export const SessaoSecundaria = styled.section`
     height: 100vh;
     background: #ffffff36;
     opacity: 0.6;
-    content: "";
+    content: '';
   }
 
   @media (max-width: 426px) {
@@ -33,7 +38,7 @@ export const SessaoSecundaria = styled.section`
 
 // Chamando ao Elemento Sessão Secundaria
 
-export const SessaoSecundariaArea = styled.div`
+export const SessaoSecundariaArea = styled.div<VisibleSeProps>`
   display: inline-table;
   max-width: 77%;
   margin-top: 5rem;
@@ -43,6 +48,9 @@ export const SessaoSecundariaArea = styled.div`
   border-radius: 8px;
   text-decoration: none;
   z-index: 1;
+  opacity: ${(props) => (props.visible === true ? '1' : '0')};
+  visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+  transition: opacity 0.8s ease, visibility 0.8s ease, display 0.8s ease;
 
   @media (max-width: 710px) {
     max-width: 90%;

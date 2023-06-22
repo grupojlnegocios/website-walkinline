@@ -14,7 +14,6 @@ export const SessaoSecundaria = styled.section`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
 
   &::before {
     position: absolute;

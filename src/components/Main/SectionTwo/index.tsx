@@ -12,15 +12,23 @@ import logo from '../../assets/images/logo-branca.png'
 
 export const SectionTwo = () => {
   const [infoSection, setInfoSection] = useState(false)
+  const [imgVisible, setiImgVisible] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollValue = 247
+      const scrollElement = 271
 
       if (window.scrollY >= scrollValue) {
         setInfoSection(true)
       } else {
         setInfoSection(false)
+      }
+
+      if (window.scrollY >= scrollElement) {
+        setiImgVisible(true)
+      } else {
+        setiImgVisible(false)
       }
     }
 
@@ -33,7 +41,7 @@ export const SectionTwo = () => {
   return (
     <SessaoSecundaria id="quem-somos">
       <SessaoSecundariaArea visible={infoSection}>
-        <MainImg src={logo} alt="Logo" />
+        <MainImg visible={imgVisible} src={logo} alt="Logo" />
 
         <Paragrafo>
           <strong>Walk in Line</strong> é uma moderna plataforma de rastreamento

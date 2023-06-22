@@ -57,11 +57,15 @@ export const SessaoSecundariaArea = styled.div<VisibleSeProps>`
 `
 // Imagem da Logo da Segunda Sessão
 
-export const MainImg = styled.img`
+export const MainImg = styled.img<VisibleSeProps>`
   width: 16rem;
   margin-top: 1rem;
   height: auto;
   overflow: hidden;
+  margin-left: ${(props) => (props.visible === true ? '0' : '49rem')};
+  opacity: ${(props) => (props.visible === true ? '1' : '0')};
+  visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+  transition: opacity 0.8s ease, visibility 0.8s ease, margin-left 0.8s ease;
 
   @media (max-width: 960px) {
     width: 13rem;

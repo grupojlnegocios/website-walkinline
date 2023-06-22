@@ -12,7 +12,7 @@ export const SessaoTerceira = styled.section<VisibleProps>`
   padding: 2rem;
   opacity: ${(props) => (props.visible === true ? '1' : '0')};
   visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
-  transition: opacity 0.8s ease, visibility 0.8s ease;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 `
 
 // Chamando ao Elemento Titulo 3

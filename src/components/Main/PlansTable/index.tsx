@@ -1,10 +1,30 @@
 import { Tabela, CabecaTabela, CorpoTabela, LinhaCabeca } from './style.styles'
 
 import { AiFillCheckCircle } from 'react-icons/ai'
+import { useState, useEffect } from 'react'
 
 export const PlansTable = () => {
+  const [tableVisible, setTableVisible] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTable = 3055
+
+      if (window.scrollY >= scrollTable) {
+        setTableVisible(true)
+      } else {
+        setTableVisible(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <Tabela>
+    <Tabela visible={tableVisible}>
       <CabecaTabela>
         <LinhaCabeca>
           <th>

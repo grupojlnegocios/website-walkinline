@@ -14,16 +14,61 @@ import Plataforma from '../../assets/images/foto-sistema.png'
 import FundoCar from '../../assets/images/carro-fundo.png'
 import FundoCarmobile from '../../assets/images/carro-fundo-mobile.png'
 
+import { useState, useEffect } from 'react'
+
 import { Card } from '../Card'
 import { CardMobile } from '../Card/CardMobile'
 
 export const SectionFour = () => {
+  const [infoSection, setInfoSection] = useState(false)
+  const [textDecore, setTextDecore] = useState(false)
+  const [imgDecore, setImgDecore] = useState(false)
+  const [cardDecore, setCardDecore] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollValue = 1457
+      const textVisible = 1480
+      const imgVisible = 1668
+      const cardVisible = 2300
+
+      if (window.scrollY >= scrollValue) {
+        setInfoSection(true)
+      } else {
+        setInfoSection(false)
+      }
+
+      if (window.scrollY >= textVisible) {
+        setTextDecore(true)
+      } else {
+        setTextDecore(false)
+      }
+
+      if (window.scrollY >= imgVisible) {
+        setImgDecore(true)
+      } else {
+        setImgDecore(false)
+      }
+
+      if (window.scrollY >= cardVisible) {
+        setCardDecore(true)
+      } else {
+        setCardDecore(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <SessaoQuarta id="software">
+    <SessaoQuarta visible={infoSection} id="software">
       <SubSessaoQuarta>
         <Titulo>Software</Titulo>
 
-        <Paragrafo>
+        <Paragrafo visible={textDecore}>
           O software da <strong>Walk in Line</strong> possui uma{' '}
           <strong>versão web</strong> e uma <strong>versão mobile</strong>,
           tanto <strong>iOS</strong> como <strong>Android</strong> para sua
@@ -31,13 +76,17 @@ export const SectionFour = () => {
           monitoram seus ativos rastreáveis de qualquer lugar e a qualquer
           momento.
         </Paragrafo>
-        <ImagemPlataforma src={Plataforma} alt="Rastreio" />
+        <ImagemPlataforma visible={imgDecore} src={Plataforma} alt="Rastreio" />
       </SubSessaoQuarta>
 
       <SegundaSessaoQuarta>
-        <FundoSection src={FundoCar} alt="Fundo com carro" />
+        <FundoSection
+          visible={cardDecore}
+          src={FundoCar}
+          alt="Fundo com carro"
+        />
         <FundoCarMobile src={FundoCarmobile} alt="Fundo com carro pro mobile" />
-        <CardGrid>
+        <CardGrid visible={cardDecore}>
           <Card
             icon={'simcard'}
             title={'SimCard'}

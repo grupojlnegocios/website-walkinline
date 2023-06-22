@@ -1,10 +1,17 @@
 import styled from 'styled-components'
 
-export const Tabela = styled.table`
+interface VisibleProps {
+  visible: boolean
+}
+
+export const Tabela = styled.table<VisibleProps>`
   display: table;
   background: #fff;
   width: 65%;
   border-collapse: collapse;
+  opacity: ${(props) => (props.visible === true ? '1' : '0')};
+  visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 
   @media (max-width: 770px) {
     display: none;

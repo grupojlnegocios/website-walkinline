@@ -10,12 +10,30 @@ import {
 import { AiFillCheckCircle } from 'react-icons/ai'
 import { CgMoreO } from 'react-icons/cg'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export const TableMobile = () => {
   const [TableOpen1, setTableOpen1] = useState('closed')
   const [TableOpen2, setTableOpen2] = useState('closed')
   const [TableOpen3, setTableOpen3] = useState('closed')
+  const [tableMobile, setTableMobile] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTable = 3300
+
+      if (window.scrollY >= scrollTable) {
+        setTableMobile(true)
+      } else {
+        setTableMobile(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   function AbrirTabela(tabela: number) {
     if (tabela === 1) {
@@ -44,7 +62,7 @@ export const TableMobile = () => {
   }
 
   return (
-    <Tabela>
+    <Tabela visible={tableMobile}>
       <tbody>
         <CabecaTabela>
           <td>

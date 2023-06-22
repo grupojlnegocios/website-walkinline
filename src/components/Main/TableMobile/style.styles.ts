@@ -4,7 +4,11 @@ interface Table1 {
   TableOpen: string
 }
 
-export const Tabela = styled.table`
+interface VisibleProps {
+  visible: boolean
+}
+
+export const Tabela = styled.table<VisibleProps>`
   display: none;
   background: #fff;
   border-collapse: collapse;
@@ -13,6 +17,9 @@ export const Tabela = styled.table`
 
   @media (max-width: 770px) {
     display: flex;
+    opacity: ${(props) => (props.visible === true ? '1' : '0')};
+    visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+    transition: opacity 0.5s ease, visibility 0.5s ease;
   }
 
   tr td {

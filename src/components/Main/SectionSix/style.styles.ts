@@ -1,6 +1,10 @@
 import AwesomeSlider from 'react-awesome-slider'
 import styled from 'styled-components'
 
+interface VisibleProps {
+  visible: boolean
+}
+
 export const SessaoSexta = styled.section`
   padding: 2rem;
   display: flex;
@@ -8,26 +12,37 @@ export const SessaoSexta = styled.section`
   align-items: center;
 `
 
-export const SubSessaoSexta = styled.div`
+export const SubSessaoSexta = styled.div<VisibleProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  opacity: ${(props) => (props.visible === true ? '1' : '0')};
+  visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+
+  @media (max-width: 785px) {
+    opacity: 1;
+    visibility: visible;
+  }
 `
 
-export const Carousel = styled(AwesomeSlider)`
+export const Carousel = styled(AwesomeSlider)<VisibleProps>`
   width: 75%;
+  opacity: ${(props) => (props.visible === true ? '1' : '0')};
+  visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+
   nav {
     margin-top: 5px;
     display: flex;
     align-items: center;
   }
 
-  media {
-  }
-
   @media (max-width: 785px) {
     width: 100%;
+    opacity: 1;
+    visibility: visible;
   }
 `
 
@@ -39,6 +54,7 @@ export const Titulo = styled.h1`
   border-bottom: 2.5px solid ${(props) => props.theme['current-title']};
   margin-bottom: 1rem;
   margin-top: 1rem;
+
   @media (max-width: 960px) {
     font-size: 35px;
   }
@@ -46,15 +62,23 @@ export const Titulo = styled.h1`
     font-size: 30px;
   }
 `
-export const Paragrafo = styled.p`
+export const Paragrafo = styled.p<VisibleProps>`
   color: ${(props) => props.theme['current-text']};
   font-size: 1.5rem;
   text-align: center;
   float: left;
   padding: 0px 175px;
+  position: relative;
+  right: ${(props) => (props.visible === true ? '0' : '50%')};
+  opacity: ${(props) => (props.visible === true ? '1' : '0')};
+  visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+  transition: opacity 0.5s ease, visibility 0.5s ease, right 0.8s ease;
 
   @media (max-width: 960px) {
     font-size: 1.15rem;
     padding: 0px 10px;
+    right: 0;
+    opacity: 1;
+    visibility: visible;
   }
 `

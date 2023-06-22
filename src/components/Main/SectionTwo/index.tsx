@@ -15,9 +15,9 @@ export const SectionTwo = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollDiv = 247
+      const scrollValue = 247
 
-      if (window.scrollY >= scrollDiv) {
+      if (window.scrollY >= scrollValue) {
         setInfoSection(true)
       } else {
         setInfoSection(false)

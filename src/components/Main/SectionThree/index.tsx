@@ -10,10 +10,38 @@ import {
 } from './style.styles'
 
 import Rastreio from '../../assets/images/foto-veiculos.png'
+import { useState, useEffect } from 'react'
 
 export const SectionThree = () => {
+  const [infoSection, setInfoSection] = useState(false)
+  const [elementVisible, setElementVisible] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollValue = 787
+      const scrollElements = 1034
+
+      if (window.scrollY >= scrollValue) {
+        setInfoSection(true)
+      } else {
+        setInfoSection(false)
+      }
+
+      if (window.scrollY >= scrollElements) {
+        setElementVisible(true)
+      } else {
+        setElementVisible(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <SessaoTerceira id="nosso-diferencial">
+    <SessaoTerceira visible={infoSection} id="nosso-diferencial">
       <Titulo>Diferencial</Titulo>
 
       <Paragrafo>
@@ -22,10 +50,14 @@ export const SectionThree = () => {
         <u>software inteligente</u>!
       </Paragrafo>
 
-      <TextoLista>
-        <ImagemRastreio src={Rastreio} alt="Rastreio" />
+      <TextoLista visible={elementVisible}>
+        <ImagemRastreio
+          visible={elementVisible}
+          src={Rastreio}
+          alt="Rastreio"
+        />
 
-        <Listas>
+        <Listas visible={elementVisible}>
           <Titulo2>Vantagens</Titulo2>
           <ListaV>Mais de 70 rastreadores homologados</ListaV>
           <ListaV>Aceita customizações e integrações</ListaV>

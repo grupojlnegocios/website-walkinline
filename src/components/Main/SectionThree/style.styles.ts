@@ -1,11 +1,18 @@
 import styled from 'styled-components'
 import Check from '../../assets/images/check.svg'
 
-export const SessaoTerceira = styled.section`
+interface VisibleProps {
+  visible: boolean
+}
+
+export const SessaoTerceira = styled.section<VisibleProps>`
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 2rem;
+  opacity: ${(props) => (props.visible === true ? '1' : '0')};
+  visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+  transition: opacity 0.8s ease, visibility 0.8s ease;
 `
 
 // Chamando ao Elemento Titulo 3
@@ -42,10 +49,11 @@ export const Titulo2 = styled.h1`
 
 // Chamando ao Elemento Lista
 
-export const TextoLista = styled.div`
+export const TextoLista = styled.div<VisibleProps>`
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: ${(props) => (props.visible === true ? '1.5rem' : '20rem')};
+  transition: gap 0.5s ease;
 
   @media (max-width: 960px) {
     flex-direction: column;
@@ -54,8 +62,11 @@ export const TextoLista = styled.div`
 
 // Chamando a imagem da lista
 
-export const ImagemRastreio = styled.img`
+export const ImagemRastreio = styled.img<VisibleProps>`
   width: 28rem;
+  opacity: ${(props) => (props.visible === true ? '1' : '0')};
+  visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 
   @media (max-width: 960px) {
     width: 24rem;
@@ -70,12 +81,15 @@ export const ImagemRastreio = styled.img`
 
 // Chamando ao Elemento Listas
 
-export const Listas = styled.ul`
+export const Listas = styled.ul<VisibleProps>`
   margin: 0px;
   padding: 0px;
   list-style: none;
   width: 100%;
   display: block;
+  opacity: ${(props) => (props.visible === true ? '1' : '0')};
+  visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 `
 
 // Chamando ao Elementos da Lista

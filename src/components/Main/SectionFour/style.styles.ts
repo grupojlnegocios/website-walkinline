@@ -67,7 +67,8 @@ export const ImagemPlataforma = styled.img<VisibleProps>`
 
   @media (max-width: 960px) {
     width: 328rem;
-    left: 0;
+    left: ${(props) => (props.visible === true ? '0' : '-30%')};
+    transition: left 0.5s ease, opacity 0.5s ease;
   }
   @media (max-width: 785px) {
     width: 23rem;
@@ -108,7 +109,7 @@ export const FundoSection = styled.img<VisibleProps>`
     display: none;
   }
 `
-export const FundoCarMobile = styled.img`
+export const FundoCarMobile = styled.img<VisibleProps>`
   display: none;
 
   @media (max-width: 770px) {
@@ -117,6 +118,9 @@ export const FundoCarMobile = styled.img`
     width: 19rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
+    opacity: ${(props) => (props.visible === true ? '1' : '0')};
+    visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+    transition: opacity 0.5s ease, visibility 0.5s ease;
   }
 `
 

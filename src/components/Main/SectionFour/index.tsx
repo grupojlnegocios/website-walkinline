@@ -24,6 +24,7 @@ export const SectionFour = () => {
   const [textDecore, setTextDecore] = useState(false)
   const [imgDecore, setImgDecore] = useState(false)
   const [cardDecore, setCardDecore] = useState(false)
+  const [efectCard, setEfectCard] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,6 +32,7 @@ export const SectionFour = () => {
       const textVisible = 1480
       const imgVisible = 1668
       const cardVisible = 2300
+      const scrollCard = 2050
 
       if (window.scrollY >= scrollValue) {
         setInfoSection(true)
@@ -54,6 +56,12 @@ export const SectionFour = () => {
         setCardDecore(true)
       } else {
         setCardDecore(false)
+      }
+
+      if (window.scrollY >= scrollCard) {
+        setEfectCard(true)
+      } else {
+        setEfectCard(false)
       }
     }
 
@@ -85,7 +93,11 @@ export const SectionFour = () => {
           src={FundoCar}
           alt="Fundo com carro"
         />
-        <FundoCarMobile src={FundoCarmobile} alt="Fundo com carro pro mobile" />
+        <FundoCarMobile
+          visible={efectCard}
+          src={FundoCarmobile}
+          alt="Fundo com carro pro mobile"
+        />
         <CardGrid visible={cardDecore}>
           <Card
             icon={'simcard'}

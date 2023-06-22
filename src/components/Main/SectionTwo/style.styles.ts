@@ -62,7 +62,7 @@ export const MainImg = styled.img<VisibleSeProps>`
   margin-top: 1rem;
   height: auto;
   overflow: hidden;
-  margin-left: ${(props) => (props.visible === true ? '0' : '49rem')};
+  margin-left: ${(props) => (props.visible === true ? '0' : '25rem')};
   opacity: ${(props) => (props.visible === true ? '1' : '0')};
   visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
   transition: opacity 0.8s ease, visibility 0.8s ease, margin-left 0.8s ease;
@@ -70,6 +70,7 @@ export const MainImg = styled.img<VisibleSeProps>`
   @media (max-width: 960px) {
     width: 13rem;
     margin-bottom: 1rem;
+    margin-left: ${(props) => (props.visible === true ? '0' : '10rem')};
   }
   @media (max-width: 785px) {
     width: 10rem;

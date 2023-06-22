@@ -1,9 +1,30 @@
 import { Card } from '..'
 import { CardGrid } from './style.styles'
 
+import { useState, useEffect } from 'react'
+
 export const CardMobile = () => {
+  const [efectCard, setEfectCard] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollCard = 2100
+
+      if (window.scrollY >= scrollCard) {
+        setEfectCard(true)
+      } else {
+        setEfectCard(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <CardGrid>
+    <CardGrid visible={efectCard}>
       <Card
         icon={'simcard'}
         title={'SimCard'}

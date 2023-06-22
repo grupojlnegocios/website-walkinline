@@ -18,16 +18,45 @@ import { GrMail } from 'react-icons/gr'
 import { Forms } from '../Forms'
 import { AiFillPhone } from 'react-icons/ai'
 
+import { useState, useEffect } from 'react'
+
 export const SectionSeven = () => {
+  const [scrollSection, setScrollSection] = useState(false)
+  const [scrollForm, setScrollForm] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollScreen = 5940
+      const scrollFormSec = 6075
+
+      if (window.scrollY >= scrollScreen) {
+        setScrollSection(true)
+      } else {
+        setScrollSection(false)
+      }
+
+      if (window.scrollY >= scrollFormSec) {
+        setScrollForm(true)
+      } else {
+        setScrollForm(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
     <SessaoSetima id="contato">
-      <SubSessaoSetima>
+      <SubSessaoSetima visible={scrollSection}>
         <Titulo>Contato</Titulo>
 
-        <ParagrafoPrincipal>
+        <ParagrafoPrincipal visible={scrollSection}>
           <strong>Preenchimento Obrigatório (*)</strong>
         </ParagrafoPrincipal>
-        <SessaoFormulario>
+        <SessaoFormulario visible={scrollForm}>
           <SessaoFormularioInfo>
             <Paragrafo>
               Preencha todos os campos e entraremos em contato para{' '}

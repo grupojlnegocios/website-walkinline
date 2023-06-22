@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 import Fundo from '../../assets/images/fundo-parte4.jpg'
 
+interface VisibleProps {
+  visible: boolean
+}
+
 export const SessaoSetima = styled.section`
   padding: 2rem;
   background: url(${Fundo});
@@ -13,16 +17,21 @@ export const SessaoSetima = styled.section`
   align-items: center;
 `
 
-export const SubSessaoSetima = styled.div`
+export const SubSessaoSetima = styled.div<VisibleProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  opacity: ${(props) => (props.visible === true ? '1' : '0')};
+  visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 
   @media (max-width: 710px) {
     gap: 0rem;
     align-items: center;
     justify-content: center;
+    opacity: 1;
+    visibility: visible;
   }
 `
 export const Titulo = styled.h1`
@@ -41,28 +50,41 @@ export const Titulo = styled.h1`
   }
 `
 
-export const ParagrafoPrincipal = styled.p`
+export const ParagrafoPrincipal = styled.p<VisibleProps>`
   color: ${(props) => props.theme['current-text']};
   font-size: 1.5rem;
   margin-bottom: 2rem;
   text-align: center;
   float: left;
   padding: 0px 175px;
+  margin-top: ${(props) => (props.visible === true ? '0' : '3rem')};
+  opacity: ${(props) => (props.visible === true ? '1' : '0')};
+  visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+  transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0.5s ease;
 
   @media (max-width: 960px) {
     font-size: 1.15rem;
     padding: 0px 15px;
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
   }
 `
 
-export const SessaoFormulario = styled.div`
+export const SessaoFormulario = styled.div<VisibleProps>`
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: ${(props) => (props.visible === true ? '2rem' : '11rem')};
+  opacity: ${(props) => (props.visible === true ? '1' : '0')};
+  visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+  transition: opacity 0.5s ease, visibility 0.5s ease, gap 0.5s ease;
 
   @media (max-width: 960px) {
     align-items: center;
     flex-direction: column;
+    visibility: visible;
+    opacity: 1;
+    gap: 2rem;
   }
 `
 

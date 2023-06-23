@@ -24,19 +24,23 @@ export const SectionSix = () => {
       const textView = 5244
       const carousel = 5425
 
-      if (window.scrollY >= scrollScreen) {
+      const screenMobile = 3799
+      const textViewMobile = 3876
+      const carouselMobile = 3997
+
+      if (window.scrollY >= scrollScreen || window.scrollY >= screenMobile) {
         setScrollText(true)
       } else {
         setScrollText(false)
       }
 
-      if (window.scrollY >= textView) {
+      if (window.scrollY >= textView || window.scrollY >= textViewMobile) {
         setScrollArea(true)
       } else {
         setScrollArea(false)
       }
 
-      if (window.scrollY >= carousel) {
+      if (window.scrollY >= carousel || window.scrollY >= carouselMobile) {
         setScrollCarousel(true)
       } else {
         setScrollCarousel(false)

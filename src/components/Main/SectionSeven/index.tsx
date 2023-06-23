@@ -23,13 +23,19 @@ import { useState, useEffect } from 'react'
 export const SectionSeven = () => {
   const [scrollSection, setScrollSection] = useState(false)
   const [scrollForm, setScrollForm] = useState(false)
+  const [scrollMobile, setScrollMobile] = useState(false)
+  const [formsMobile, setFormsMobile] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollScreen = 5940
       const scrollFormSec = 6075
 
-      if (window.scrollY >= scrollScreen) {
+      const screenMobile = 4338
+      const infoFormsMobile = 4535
+      const formMobile = 4898
+
+      if (window.scrollY >= scrollScreen || window.scrollY >= screenMobile) {
         setScrollSection(true)
       } else {
         setScrollSection(false)
@@ -39,6 +45,18 @@ export const SectionSeven = () => {
         setScrollForm(true)
       } else {
         setScrollForm(false)
+      }
+
+      if (window.scrollY >= infoFormsMobile) {
+        setScrollMobile(true)
+      } else {
+        setScrollMobile(false)
+      }
+
+      if (window.scrollY >= formMobile) {
+        setFormsMobile(true)
+      } else {
+        setFormsMobile(false)
       }
     }
 
@@ -57,7 +75,7 @@ export const SectionSeven = () => {
           <strong>Preenchimento Obrigatório (*)</strong>
         </ParagrafoPrincipal>
         <SessaoFormulario visible={scrollForm}>
-          <SessaoFormularioInfo>
+          <SessaoFormularioInfo visible={scrollMobile}>
             <Paragrafo>
               Preencha todos os campos e entraremos em contato para{' '}
               <strong>MONTAR</strong> a sua{' '}
@@ -100,7 +118,7 @@ export const SectionSeven = () => {
             </Paragrafo>
           </SessaoFormularioInfo>
 
-          <FormularioArea>
+          <FormularioArea visible={formsMobile}>
             <Forms />
           </FormularioArea>
         </SessaoFormulario>

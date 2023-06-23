@@ -22,8 +22,9 @@ export const SubSessaoSexta = styled.div<VisibleProps>`
   transition: opacity 0.5s ease, visibility 0.5s ease;
 
   @media (max-width: 785px) {
-    opacity: 1;
-    visibility: visible;
+    oopacity: ${(props) => (props.visible === true ? '1' : '0')};
+    visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+    transition: opacity 0.5s ease, visibility 0.5s ease;
   }
 `
 
@@ -41,8 +42,9 @@ export const Carousel = styled(AwesomeSlider)<VisibleProps>`
 
   @media (max-width: 785px) {
     width: 100%;
-    opacity: 1;
-    visibility: visible;
+    opacity: ${(props) => (props.visible === true ? '1' : '0')};
+    visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+    transition: opacity 0.5s ease, visibility 0.5s ease;
   }
 `
 
@@ -77,8 +79,9 @@ export const Paragrafo = styled.p<VisibleProps>`
   @media (max-width: 960px) {
     font-size: 1.15rem;
     padding: 0px 10px;
-    right: 0;
-    opacity: 1;
-    visibility: visible;
+    right: ${(props) => (props.visible === true ? '0' : '50%')};
+    opacity: ${(props) => (props.visible === true ? '1' : '0')};
+    visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+    transition: opacity 0.5s ease, visibility 0.5s ease, right 0.8s ease;
   }
 `

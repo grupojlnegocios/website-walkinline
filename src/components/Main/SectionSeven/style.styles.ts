@@ -30,8 +30,9 @@ export const SubSessaoSetima = styled.div<VisibleProps>`
     gap: 0rem;
     align-items: center;
     justify-content: center;
-    opacity: 1;
-    visibility: visible;
+    opacity: ${(props) => (props.visible === true ? '1' : '0')};
+    visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+    transition: opacity 0.5s ease, visibility 0.5s ease;
   }
 `
 export const Titulo = styled.h1`
@@ -65,9 +66,10 @@ export const ParagrafoPrincipal = styled.p<VisibleProps>`
   @media (max-width: 960px) {
     font-size: 1.15rem;
     padding: 0px 15px;
-    margin-top: 0;
-    opacity: 1;
-    visibility: visible;
+    margin-top: ${(props) => (props.visible === true ? '0' : '3rem')};
+    opacity: ${(props) => (props.visible === true ? '1' : '0')};
+    visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+    transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0.5s ease;
   }
 `
 
@@ -88,9 +90,15 @@ export const SessaoFormulario = styled.div<VisibleProps>`
   }
 `
 
-export const FormularioArea = styled.div``
+export const FormularioArea = styled.div<VisibleProps>`
+  @media (max-width: 960px) {
+    opacity: ${(props) => (props.visible === true ? '1' : '0')};
+    visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+`
 
-export const SessaoFormularioInfo = styled.div`
+export const SessaoFormularioInfo = styled.div<VisibleProps>`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -98,6 +106,11 @@ export const SessaoFormularioInfo = styled.div`
 
   @media (max-width: 960px) {
     gap: 0rem;
+    position: relative;
+    opacity: ${(props) => (props.visible === true ? '1' : '0')};
+    visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
+    right: ${(props) => (props.visible === true ? '0' : '60%')};
+    transition: right 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
   }
 `
 

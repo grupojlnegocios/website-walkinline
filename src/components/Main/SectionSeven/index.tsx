@@ -28,9 +28,11 @@ export const SectionSeven = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      // valores do scrollY no PC
       const scrollScreen = 5940
       const scrollFormSec = 6075
 
+      // valores do scrollY na versão Mobile
       const screenMobile = 4338
       const infoFormsMobile = 4535
       const formMobile = 4898
@@ -47,6 +49,7 @@ export const SectionSeven = () => {
         setScrollForm(false)
       }
 
+      // Para versão Mobile
       if (window.scrollY >= infoFormsMobile) {
         setScrollMobile(true)
       } else {

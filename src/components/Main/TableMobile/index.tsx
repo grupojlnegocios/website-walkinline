@@ -20,7 +20,7 @@ export const TableMobile = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTable = 3300
+      const scrollTable = 3381
 
       if (window.scrollY >= scrollTable) {
         setTableMobile(true)

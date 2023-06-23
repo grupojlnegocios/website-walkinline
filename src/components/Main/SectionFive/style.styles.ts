@@ -4,6 +4,7 @@ import Fundo from '../../assets/images/fundo-parte4.jpg'
 
 interface VisibleProps {
   visible: boolean
+  visibleMobile?: boolean
 }
 
 export const SessaoQuinta = styled.section`
@@ -59,5 +60,8 @@ export const Paragrafo = styled.p<VisibleProps>`
   @media (max-width: 960px) {
     font-size: 1.15rem;
     padding: 0px 10px;
+    right: ${(props) => (props.visibleMobile === true ? '0%' : '98%')};
+    opacity: ${(props) => (props.visibleMobile === true ? '1' : '0')};
+    transition: right 0.5s ease, opacity 0.5s ease;
   }
 `

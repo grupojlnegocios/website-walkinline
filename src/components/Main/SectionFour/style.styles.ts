@@ -4,6 +4,7 @@ import Fundo from '../../assets/images/fundo-parte4.jpg'
 
 interface VisibleProps {
   visible: boolean
+  visibleMobile?: boolean
 }
 
 export const SessaoQuarta = styled.section<VisibleProps>`
@@ -55,6 +56,10 @@ export const Paragrafo = styled.p<VisibleProps>`
   @media (max-width: 960px) {
     font-size: 1.15rem;
     padding: 1rem 0rem;
+    visibility: ${(props) =>
+      props.visibleMobile === true ? 'visible' : 'hidden'};
+    opacity: ${(props) => (props.visibleMobile === true ? '1' : '0')};
+    transition: right 0.5s ease, opacity 0.5s ease;
   }
 `
 
@@ -67,14 +72,12 @@ export const ImagemPlataforma = styled.img<VisibleProps>`
 
   @media (max-width: 960px) {
     width: 328rem;
-    left: ${(props) => (props.visible === true ? '0' : '-30%')};
+    opacity: ${(props) => (props.visibleMobile === true ? '1' : '0')};
+    left: ${(props) => (props.visibleMobile === true ? '0' : '-30%')};
     transition: left 0.5s ease, opacity 0.5s ease;
   }
   @media (max-width: 785px) {
     width: 23rem;
-  }
-  @media (max-width: 365px) {
-    width: 19rem;
   }
 `
 

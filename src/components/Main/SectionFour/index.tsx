@@ -25,14 +25,21 @@ export const SectionFour = () => {
   const [imgDecore, setImgDecore] = useState(false)
   const [cardDecore, setCardDecore] = useState(false)
   const [efectCard, setEfectCard] = useState(false)
+  const [imgMobile, setImgMobile] = useState(false)
+  const [textMobile, setTextMobile] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
+      // valores do scrollY no PC
       const scrollValue = 1457
       const textVisible = 1480
       const imgVisible = 1668
       const cardVisible = 2300
       const scrollCard = 2050
+
+      //  valores do scrollY no Mobile
+      const imgMobile = 1833
+      const textMobile = 1560
 
       if (window.scrollY >= scrollValue) {
         setInfoSection(true)
@@ -46,10 +53,22 @@ export const SectionFour = () => {
         setTextDecore(false)
       }
 
+      if (window.scrollY >= textMobile) {
+        setTextMobile(true)
+      } else {
+        setTextMobile(false)
+      }
+
       if (window.scrollY >= imgVisible) {
         setImgDecore(true)
       } else {
         setImgDecore(false)
+      }
+
+      if (window.scrollY >= imgMobile) {
+        setImgMobile(true)
+      } else {
+        setImgMobile(false)
       }
 
       if (window.scrollY >= cardVisible) {
@@ -76,7 +95,7 @@ export const SectionFour = () => {
       <SubSessaoQuarta>
         <Titulo>Software</Titulo>
 
-        <Paragrafo visible={textDecore}>
+        <Paragrafo visibleMobile={textMobile} visible={textDecore}>
           O software da <strong>Walk in Line</strong> possui uma{' '}
           <strong>versão web</strong> e uma <strong>versão mobile</strong>,
           tanto <strong>iOS</strong> como <strong>Android</strong> para sua
@@ -84,7 +103,12 @@ export const SectionFour = () => {
           monitoram seus ativos rastreáveis de qualquer lugar e a qualquer
           momento.
         </Paragrafo>
-        <ImagemPlataforma visible={imgDecore} src={Plataforma} alt="Rastreio" />
+        <ImagemPlataforma
+          visibleMobile={imgMobile}
+          visible={imgDecore}
+          src={Plataforma}
+          alt="Rastreio"
+        />
       </SubSessaoQuarta>
 
       <SegundaSessaoQuarta>

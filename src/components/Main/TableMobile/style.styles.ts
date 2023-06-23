@@ -19,7 +19,7 @@ export const Tabela = styled.table<VisibleProps>`
     display: flex;
     opacity: ${(props) => (props.visible === true ? '1' : '0')};
     visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
   }
 
   tr td {

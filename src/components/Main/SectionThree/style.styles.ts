@@ -3,6 +3,7 @@ import Check from '../../assets/images/check.svg'
 
 interface VisibleProps {
   visible: boolean
+  visibleMobile?: boolean
 }
 
 export const SessaoTerceira = styled.section<VisibleProps>`
@@ -70,6 +71,12 @@ export const ImagemRastreio = styled.img<VisibleProps>`
 
   @media (max-width: 960px) {
     width: 24rem;
+    position: relative;
+    right: ${(props) => (props.visibleMobile === true ? '0' : '50%')};
+    opacity: ${(props) => (props.visibleMobile === true ? '1' : '0')};
+    visibility: ${(props) =>
+      props.visibleMobile === true ? 'visible' : 'hidden'};
+    transition: opacity 0.5s ease, visibility 0.5s ease, right 0.5s ease;
   }
   @media (max-width: 785px) {
     width: 20rem;
@@ -90,6 +97,13 @@ export const Listas = styled.ul<VisibleProps>`
   opacity: ${(props) => (props.visible === true ? '1' : '0')};
   visibility: ${(props) => (props.visible === true ? 'visible' : 'hidden')};
   transition: opacity 0.5s ease, visibility 0.5s ease;
+
+  @media (max-width: 960px) {
+    opacity: ${(props) => (props.visibleMobile === true ? '1' : '0')};
+    visibility: ${(props) =>
+      props.visibleMobile === true ? 'visible' : 'hidden'};
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
 `
 
 // Chamando ao Elementos da Lista

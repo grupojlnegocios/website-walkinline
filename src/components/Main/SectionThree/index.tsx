@@ -15,11 +15,16 @@ import { useState, useEffect } from 'react'
 export const SectionThree = () => {
   const [infoSection, setInfoSection] = useState(false)
   const [elementVisible, setElementVisible] = useState(false)
+  const [imgMobile, setImgMobile] = useState(false)
+  const [listaMobile, setListaMobile] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollValue = 787
+
       const scrollElements = 1034
+      const scrollImg = 1053
+      const listaMobileScreen = 1177
 
       if (window.scrollY >= scrollValue) {
         setInfoSection(true)
@@ -27,10 +32,18 @@ export const SectionThree = () => {
         setInfoSection(false)
       }
 
-      if (window.scrollY >= scrollElements) {
+      if (window.scrollY >= scrollElements || window.scrollY >= scrollImg) {
         setElementVisible(true)
+        setImgMobile(true)
       } else {
         setElementVisible(false)
+        setImgMobile(false)
+      }
+
+      if (window.scrollY >= listaMobileScreen) {
+        setListaMobile(true)
+      } else {
+        setListaMobile(false)
       }
     }
 
@@ -52,12 +65,13 @@ export const SectionThree = () => {
 
       <TextoLista visible={elementVisible}>
         <ImagemRastreio
+          visibleMobile={imgMobile}
           visible={elementVisible}
           src={Rastreio}
           alt="Rastreio"
         />
 
-        <Listas visible={elementVisible}>
+        <Listas visibleMobile={listaMobile} visible={elementVisible}>
           <Titulo2>Vantagens</Titulo2>
           <ListaV>Mais de 70 rastreadores homologados</ListaV>
           <ListaV>Aceita customizações e integrações</ListaV>

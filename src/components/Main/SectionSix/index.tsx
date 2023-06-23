@@ -14,36 +14,64 @@ import CarrosselTres from '../../assets/images/carousel-3.png'
 import CarrosselQuatro from '../../assets/images/carousel-4.png'
 
 export const SectionSix = () => {
+  // valor para PC
   const [scrollArea, setScrollArea] = useState(false)
   const [scrollText, setScrollText] = useState(false)
   const [scrollCarousel, setScrollCarousel] = useState(false)
 
+  // valor para Mobile
+  const [scrollAreaMobile, setScrollAreaMobile] = useState(false)
+  const [scrollTextMobile, setScrollTextMobile] = useState(false)
+  const [scrollCarouselMobile, setScrollCarouselMobile] = useState(false)
+
   useEffect(() => {
     const handleScroll = () => {
-      const scrollScreen = 5200
+      // valor do scrollY no PC
+      const scrollScreen = 5169
       const textView = 5244
       const carousel = 5425
 
-      const screenMobile = 3799
+      //  valor do scrollY no Mobile
+      const screenMobile = 3795
       const textViewMobile = 3876
       const carouselMobile = 3997
 
-      if (window.scrollY >= scrollScreen || window.scrollY >= screenMobile) {
+      //  verificação do valor no PC
+      if (window.scrollY >= scrollScreen) {
         setScrollText(true)
       } else {
         setScrollText(false)
       }
 
-      if (window.scrollY >= textView || window.scrollY >= textViewMobile) {
+      if (window.scrollY >= textView) {
         setScrollArea(true)
       } else {
         setScrollArea(false)
       }
 
-      if (window.scrollY >= carousel || window.scrollY >= carouselMobile) {
+      if (window.scrollY >= carousel) {
         setScrollCarousel(true)
       } else {
         setScrollCarousel(false)
+      }
+
+      // verificação do valor no Mobile
+      if (window.scrollY >= screenMobile) {
+        setScrollTextMobile(true)
+      } else {
+        setScrollTextMobile(false)
+      }
+
+      if (window.scrollY >= textViewMobile) {
+        setScrollAreaMobile(true)
+      } else {
+        setScrollAreaMobile(false)
+      }
+
+      if (window.scrollY >= carouselMobile) {
+        setScrollCarouselMobile(true)
+      } else {
+        setScrollCarouselMobile(false)
       }
     }
 
@@ -55,12 +83,12 @@ export const SectionSix = () => {
 
   return (
     <SessaoSexta id="monte-sua-central">
-      <SubSessaoSexta visible={scrollText}>
+      <SubSessaoSexta visibleMobile={scrollTextMobile} visible={scrollText}>
         <Titulo>Monte sua Central</Titulo>
-        <Paragrafo visible={scrollArea}>
+        <Paragrafo visibleMobile={scrollAreaMobile} visible={scrollArea}>
           Tudo que você precisa para abrir sua empresa de forma rápida e fácil.
         </Paragrafo>
-        <Carousel visible={scrollCarousel}>
+        <Carousel visibleMobile={scrollCarouselMobile} visible={scrollCarousel}>
           <div style={{ zIndex: 2, backgroundColor: 'white' }}>
             <div>
               <img

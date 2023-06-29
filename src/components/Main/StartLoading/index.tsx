@@ -2,8 +2,16 @@ import { ContainerLoader, Loading, Img } from './style.styles'
 import LoaderIcon from '../../assets/images/incologin.png'
 import { useState } from 'react'
 
-export const StartLoading = () => {
+interface Props {
+  setLgpd: () => void
+}
+
+export const StartLoading = ({ setLgpd }: Props) => {
   const [loading, setLoading] = useState(true)
+
+  function handleLgpd() {
+    setLgpd()
+  }
 
   return (
     <ContainerLoader
@@ -11,7 +19,8 @@ export const StartLoading = () => {
       onLoad={() =>
         setTimeout(() => {
           setLoading(false)
-        }, 3000)
+          handleLgpd()
+        }, 2000)
       }
     >
       <Loading>

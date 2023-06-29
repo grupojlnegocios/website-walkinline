@@ -6,10 +6,10 @@ interface LoaderProps {
 
 export const ContainerLoader = styled.div<LoaderProps>`
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: #0f1c2f;
-  z-index: 30;
+  z-index: 100;
   opacity: ${(props) => (props.loading === true ? '1' : '0')};
   visibility: ${(props) => (props.loading === true ? 'visible' : 'hidden')};
   transition: opacity 0.3s ease, visibility 0.3s ease;

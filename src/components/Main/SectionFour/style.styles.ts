@@ -71,7 +71,7 @@ export const ImagemPlataforma = styled.img<VisibleProps>`
   transition: left 0.5s ease, opacity 0.5s ease;
 
   @media (max-width: 960px) {
-    width: 328rem;
+    width: 32rem;
     opacity: ${(props) => (props.visibleMobile === true ? '1' : '0')};
     left: ${(props) => (props.visibleMobile === true ? '0' : '-30%')};
     transition: left 0.5s ease, opacity 0.5s ease;

@@ -8,12 +8,18 @@ import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 import { StartLoading } from './components/Main/StartLoading'
 
+import { useState } from 'react'
+
 function App() {
+  const [cookie, setCookie] = useState(false)
+  function handleLgpd() {
+    setCookie(true)
+  }
   return (
     <ThemeProvider theme={lightTheme}>
-      <StartLoading />
+      <StartLoading setLgpd={handleLgpd} />
       <Header />
-      <Main />
+      <Main cookie={cookie} />
       <Footer />
       <Contact />
       <GlobalStyle />

@@ -10,12 +10,18 @@ import { SectionFour } from './SectionFour'
 import { SectionFive } from './SectionFive'
 import { SectionSix } from './SectionSix'
 import { SectionSeven } from './SectionSeven'
+import { Lgpd } from './Lgpd'
 
-export const Main = () => {
+interface Props {
+  cookie: boolean
+}
+
+export const Main = ({ cookie }: Props) => {
   const [buttonOnTop, setButtonOnTop] = useState(false)
   const [cursor, setCursor] = useState(false)
   const [buttonUp, setButtonUp] = useState(false)
   const [oldScroll, setOldScroll] = useState<number>(window.scrollY)
+
   console.log(oldScroll)
 
   useEffect(() => {
@@ -62,6 +68,8 @@ export const Main = () => {
       <SectionSix />
 
       <SectionSeven />
+
+      <Lgpd cookie={cookie} />
 
       <BotaoUp opacidade={buttonOnTop} cursor={cursor} subir={buttonUp}>
         <BotaoSobe size={45} onClick={subirTela} />

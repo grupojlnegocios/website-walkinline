@@ -2,16 +2,17 @@ import styled from 'styled-components'
 
 interface CookieProps {
   cookie: boolean
+  fechar?: boolean
 }
 
 export const CampoCookie = styled.div<CookieProps>`
-  display: flex;
   position: fixed;
   z-index: 50;
+  display: ${(props) => (props.fechar === true ? 'none' : 'flex')};
   bottom: ${(props) => (props.cookie === true ? '0' : '-20%')};
   right: 0;
   left: 0;
-  transition: bottom 0.5s ease;
+  transition: bottom 0.6s ease;
 `
 
 export const SessaoCookie = styled.div`
@@ -61,7 +62,11 @@ export const ButtonArea = styled.div`
   align-items: center;
   justify-content: space-around;
   gap: 1.5rem;
-  padding: 1rem;
+  padding: 1rem 4rem;
+
+  @media (max-width: 900px) {
+    padding: 1rem;
+  }
 `
 
 export const Button = styled.button`
@@ -69,6 +74,7 @@ export const Button = styled.button`
   color: white;
   padding: 0.3rem;
   width: 8rem;
+  font-size: 1rem;
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -79,7 +85,12 @@ export const Button = styled.button`
     box-shadow: 1px 1px 5px 2px rgb(0 0 0 / 40%);
   }
 
+  @media (max-width: 900px) {
+    font-size: 0.8rem;
+  }
+
   @media (max-width: 500px) {
     width: 6rem;
+    font-size: 0.8rem;
   }
 `

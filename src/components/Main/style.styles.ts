@@ -26,11 +26,10 @@ export const BotaoUp = styled.button<HeaderProps>`
   position: fixed;
   bottom: 5rem;
   left: 25px;
-
-  transition: 0.3s ease;
   cursor: ${(props) => (props.cursor === true ? 'pointer' : 'default')};
   opacity: ${(props) => (props.opacidade === true ? '1' : '0')};
   display: ${(props) => (props.subir === true ? 'inline-block' : 'none')};
+  transition: opacity 0.5s ease, display 0.5s ease;
 `
 export const BotaoSobe = styled(IoIosArrowUp)`
   display: block;
@@ -39,11 +38,13 @@ export const BotaoSobe = styled(IoIosArrowUp)`
   border-radius: 50%;
   border: 3px solid white;
   background-color: white;
-  transition: 0.9s ease;
+  transition: background-color 0.9s ease, color 0.9s ease, border 0.9s ease,
+    box-shadow 0.5s ease;
 
   &:hover {
     color: white;
     background-color: #1d3557;
     border: 3px solid #1d3557;
+    box-shadow: 0px 0px 13px 6px rgb(0 0 0 / 40%);
   }
 `

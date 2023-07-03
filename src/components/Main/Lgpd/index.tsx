@@ -1,3 +1,4 @@
+import axios from 'axios'
 import {
   CampoCookie,
   SessaoCookie,
@@ -7,12 +8,36 @@ import {
   Button,
 } from './style.styles'
 
+import { useState } from 'react'
+
 interface Props {
   cookie: boolean
 }
 export const Lgpd = ({ cookie }: Props) => {
+  const [fecharLgpd, setFecharLgpd] = useState(false)
+
+  // função para fechar o LGPD
+  const closeCookie = () => {
+    setFecharLgpd(true)
+  }
+
+  // armazena mais de uma função dentro do onClick
+  const fecharCookie = async () => {
+    // Função que fecha o LGPD
+    closeCookie()
+
+    // Função que pega o UUID
+    const novaUuid = self.crypto.randomUUID()
+    console.log(novaUuid)
+
+    // Função que pega o Ip do usuario
+    const data = await axios.get('https://api.ipify.org/?format=json')
+    const ip = data.data.ip
+    console.log(ip)
+  }
+
   return (
-    <CampoCookie cookie={cookie}>
+    <CampoCookie fechar={fecharLgpd} cookie={cookie}>
       <SessaoCookie>
         <TextoCookie>
           <Paragrafo>
@@ -27,7 +52,7 @@ export const Lgpd = ({ cookie }: Props) => {
         </TextoCookie>
 
         <ButtonArea>
-          <Button>Aceitar</Button>
+          <Button onClick={fecharCookie}>Aceitar</Button>
         </ButtonArea>
       </SessaoCookie>
     </CampoCookie>

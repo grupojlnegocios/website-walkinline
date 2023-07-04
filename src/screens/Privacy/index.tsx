@@ -4,13 +4,19 @@ import {
   Titulo,
   CampoTexto,
   Paragrafo,
+  ParagrafoDois,
+  Footer,
+  Img,
 } from './style.styles'
+
+import Logo from '../../components/assets/images/logo.png'
 
 export const Privacy = () => {
   return (
     <CampoPrincipal>
       <CampoTitulo>
-        <Titulo>Política Privacidade</Titulo>
+        <Img src={Logo} />
+        <Titulo>Política de Privacidade</Titulo>
       </CampoTitulo>
       <CampoTexto>
         <Paragrafo>
@@ -78,6 +84,45 @@ export const Privacy = () => {
           e, quando aplicável, permitir que nossos parceiros afiliados ofereçam
           qualquer promoção que pode fornecê-lo para fazer uma compra.
         </Paragrafo>
+
+        <Paragrafo>
+          Compromisso do Usuário O usuário se compromete a fazer uso adequado
+          dos conteúdos e da informação que o Walk in Line oferece no site e com
+          caráter enunciativo, mas não limitativo:
+        </Paragrafo>
+
+        <ParagrafoDois>
+          <strong>A)</strong> Não se envolver em atividades que sejam ilegais ou
+          contrárias à boa fé a à ordem pública;
+        </ParagrafoDois>
+        <ParagrafoDois>
+          {' '}
+          <strong>B)</strong> Não difundir propaganda ou conteúdo de natureza
+          racista, xenofóbica, jogos de sorte ou azar, qualquer tipo de
+          pornografia ilegal, de apologia ao terrorismo ou contra os direitos
+          humanos;
+        </ParagrafoDois>
+        <ParagrafoDois>
+          {' '}
+          <strong>C)</strong> Não causar danos aos sistemas físicos (hardwares)
+          e lógicos (softwares) do Walk in Line, de seus fornecedores ou
+          terceiros, para introduzir ou disseminar vírus informáticos ou
+          quaisquer outros sistemas de hardware ou software que sejam capazes de
+          causar danos anteriormente mencionados. Mais informações Esperemos que
+          esteja esclarecido e, como mencionado anteriormente, se houver algo
+          que você não tem certeza se precisa ou não, geralmente é mais seguro
+          deixar os cookies ativados, caso interaja com um dos recursos que você
+          usa em nosso site.
+        </ParagrafoDois>
+        <Footer>
+          <Paragrafo>
+            {' '}
+            <strong>
+              Esta política é efetiva a partir de 29 Junho de 2023 por Walk in
+              Line
+            </strong>
+          </Paragrafo>
+        </Footer>
       </CampoTexto>
     </CampoPrincipal>
   )

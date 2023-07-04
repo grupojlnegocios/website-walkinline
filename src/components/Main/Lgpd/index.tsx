@@ -16,24 +16,30 @@ interface Props {
 export const Lgpd = ({ cookie }: Props) => {
   const [fecharLgpd, setFecharLgpd] = useState(false)
 
-  // função para fechar o LGPD
-  const closeCookie = () => {
-    setFecharLgpd(true)
-  }
-
   // Funções de dentro do onClick
   const fecharCookie = async () => {
     // Função que fecha o LGPD
-    closeCookie()
+    setFecharLgpd(true)
 
     // Função que pega o UUID
     const novaUuid = self.crypto.randomUUID()
     console.log(novaUuid)
 
     // Função que pega o Ip do usuario
-    const data = await axios.get('https://api.ipify.org/?format=json')
-    const ip = data.data.ip
+    const dataOne = await axios.get('https://api.ipify.org/?format=json')
+    const ip = dataOne.data.ip
     console.log(ip)
+
+    const data = {
+      ip,
+      uuid: novaUuid,
+    }
+
+    axios
+      .post('https://api.walkinline.com.br/cookie', data)
+      .then((response) => {
+        console.log(response.data)
+      })
   }
 
   return (

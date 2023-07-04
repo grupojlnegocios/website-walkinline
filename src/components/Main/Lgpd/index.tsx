@@ -10,7 +10,6 @@ import {
 
 import axios from 'axios'
 import { useState } from 'react'
-// import { BrowserRouter as Router } from 'react-router-dom'
 
 interface Props {
   cookie: boolean
@@ -53,7 +52,7 @@ export const Lgpd = ({ cookie }: Props) => {
           <Paragrafo>
             Este site utiliza cookies para garantir a melhor experiência de
             navegação. Ao continuar, você concorda com o uso de cookies de
-            acordo com nossa{' '}
+            acordo com nossa
             <Link>
               <strong>política de privacidade</strong>
             </Link>

@@ -12,8 +12,6 @@ import { SectionSix } from './SectionSix'
 import { SectionSeven } from './SectionSeven'
 import { Lgpd } from './Lgpd'
 
-import { BrowserRouter as Router } from 'react-router-dom'
-
 interface Props {
   cookie: boolean
 }

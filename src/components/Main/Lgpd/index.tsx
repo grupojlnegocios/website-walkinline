@@ -5,10 +5,12 @@ import {
   Paragrafo,
   ButtonArea,
   Button,
+  Link,
 } from './style.styles'
 
 import axios from 'axios'
 import { useState } from 'react'
+// import { BrowserRouter as Router } from 'react-router-dom'
 
 interface Props {
   cookie: boolean
@@ -26,14 +28,16 @@ export const Lgpd = ({ cookie }: Props) => {
     console.log(novaUuid)
 
     // Função que pega o Ip do usuario
-    const dataOne = await axios.get('https://api.ipify.org/?format=json')
-    const ip = dataOne.data.ip
+    const dataIp = await axios.get('https://api.ipify.org/?format=json')
+    const ip = dataIp.data.ip
     console.log(ip)
 
     const data = {
       ip,
       uuid: novaUuid,
     }
+    console.log(data)
+    console.log(data.ip)
 
     axios
       .post('https://api.walkinline.com.br/cookie', data)
@@ -50,9 +54,9 @@ export const Lgpd = ({ cookie }: Props) => {
             Este site utiliza cookies para garantir a melhor experiência de
             navegação. Ao continuar, você concorda com o uso de cookies de
             acordo com nossa{' '}
-            <a href="#">
+            <Link>
               <strong>política de privacidade</strong>
-            </a>
+            </Link>
             .
           </Paragrafo>
         </TextoCookie>

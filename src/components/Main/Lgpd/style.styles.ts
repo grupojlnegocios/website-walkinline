@@ -42,17 +42,18 @@ export const Paragrafo = styled.p`
   color: black;
   font-size: 1rem;
 
-  a {
-    text-decoration: none;
-    color: #1d3557;
-
-    &:hover {
-      text-decoration: revert;
-    }
-  }
-
   @media (max-width: 900px) {
     font-size: 0.8rem;
+  }
+`
+export const Link = styled.a`
+  text-decoration: none;
+  color: #1d3557;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
   }
 `
 

@@ -1,4 +1,3 @@
-import axios from 'axios'
 import {
   CampoCookie,
   SessaoCookie,
@@ -8,6 +7,7 @@ import {
   Button,
 } from './style.styles'
 
+import axios from 'axios'
 import { useState } from 'react'
 
 interface Props {
@@ -21,7 +21,7 @@ export const Lgpd = ({ cookie }: Props) => {
     setFecharLgpd(true)
   }
 
-  // armazena mais de uma função dentro do onClick
+  // Funções de dentro do onClick
   const fecharCookie = async () => {
     // Função que fecha o LGPD
     closeCookie()

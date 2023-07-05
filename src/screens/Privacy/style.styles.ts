@@ -42,6 +42,7 @@ export const CampoTexto = styled.div`
 export const Paragrafo = styled.p`
   font-size: 1rem;
   padding: 1rem;
+  text-align: justify;
 `
 export const ParagrafoDois = styled.p`
   font-size: 1rem;
@@ -54,4 +55,10 @@ export const Footer = styled.div`
   align-items: center;
   justify-content: center;
   text-decoration: underline;
+`
+export const ParagrafoP = styled.p`
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: justify;
 `

@@ -10,6 +10,7 @@ import {
 
 import axios from 'axios'
 import { useState } from 'react'
+// import { Privacy } from '../../../screens/Privacy'
 
 interface Props {
   cookie: boolean
@@ -45,6 +46,10 @@ export const Lgpd = ({ cookie }: Props) => {
       })
   }
 
+  const newTab = (url: string) => {
+    window.open(url, '_blank')
+  }
+
   return (
     <CampoCookie fechar={fecharLgpd} cookie={cookie}>
       <SessaoCookie>
@@ -53,8 +58,8 @@ export const Lgpd = ({ cookie }: Props) => {
             Este site utiliza cookies para garantir a melhor experiência de
             navegação. Ao continuar, você concorda com o uso de cookies de
             acordo com nossa
-            <Link>
-              <strong>política de privacidade</strong>
+            <Link onClick={() => newTab('/pt-br/privacy')}>
+              <strong> política de privacidade</strong>
             </Link>
             .
           </Paragrafo>

@@ -19,6 +19,7 @@ export const SessaoCookie = styled.div`
   width: 100vw;
   height: 15vh;
   background-color: white;
+  border-top: 1px solid #00000070;
   display: flex;
 
   @media (max-width: 500px) {

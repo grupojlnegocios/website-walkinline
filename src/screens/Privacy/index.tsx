@@ -7,6 +7,7 @@ import {
   ParagrafoDois,
   Footer,
   Img,
+  ParagrafoP,
 } from './style.styles'
 
 import Logo from '../../components/assets/images/logo.png'
@@ -115,13 +116,13 @@ export const Privacy = () => {
           usa em nosso site.
         </ParagrafoDois>
         <Footer>
-          <Paragrafo>
+          <ParagrafoP>
             {' '}
             <strong>
               Esta política é efetiva a partir de 29 Junho de 2023 por Walk in
-              Line
+              Line.
             </strong>
-          </Paragrafo>
+          </ParagrafoP>
         </Footer>
       </CampoTexto>
     </CampoPrincipal>

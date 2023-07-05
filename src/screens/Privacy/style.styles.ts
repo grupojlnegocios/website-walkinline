@@ -28,6 +28,7 @@ export const Titulo = styled.h1`
   font-size: 3rem;
   color: #1d3557;
   text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
 `
 
 export const CampoTexto = styled.div`
@@ -43,10 +44,12 @@ export const Paragrafo = styled.p`
   font-size: 1rem;
   padding: 1rem;
   text-align: justify;
+  font-family: 'Roboto', sans-serif;
 `
 export const ParagrafoDois = styled.p`
   font-size: 1rem;
   padding: 0.3rem 1rem;
+  font-family: 'Roboto', sans-serif;
 `
 
 export const Footer = styled.div`
@@ -61,4 +64,5 @@ export const ParagrafoP = styled.p`
   font-size: 1rem;
   padding: 1rem;
   text-align: justify;
+  font-family: 'Roboto', sans-serif;
 `

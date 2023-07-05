@@ -21,7 +21,7 @@ export const ContactIconArea = styled.div`
 
   ${ContactContainer}:hover & {
     background-color: #1f845a;
-    box-shadow: 0px 11px 18px 1px rgb(0 0 0 / 95%);
+    box-shadow: 1px 5px 18px 1px rgb(0 0 0 / 95%);
   }
 `
 

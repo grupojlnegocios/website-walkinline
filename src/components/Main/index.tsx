@@ -20,9 +20,7 @@ export const Main = ({ cookie }: Props) => {
   const [buttonOnTop, setButtonOnTop] = useState(false)
   const [cursor, setCursor] = useState(false)
   const [buttonUp, setButtonUp] = useState(false)
-  const [oldScroll, setOldScroll] = useState<number>(window.scrollY)
-
-  console.log(oldScroll)
+  const [, setOldScroll] = useState<number>(window.scrollY)
 
   useEffect(() => {
     const handleScroll = () => {

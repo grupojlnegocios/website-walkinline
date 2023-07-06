@@ -6,6 +6,7 @@ import {
   Paragrafo,
   ParagrafoDois,
   Footer,
+  Button,
   Img,
   ParagrafoP,
 } from './style.styles'
@@ -16,9 +17,13 @@ export const Privacy = () => {
   return (
     <CampoPrincipal>
       <CampoTitulo>
-        <Img src={Logo} />
+        <Button onClick={() => (window.location.href = '/pt-br')}>
+          <Img src={Logo} />
+        </Button>
+
         <Titulo>Política de Privacidade</Titulo>
       </CampoTitulo>
+
       <CampoTexto>
         <Paragrafo>
           A sua privacidade é importante para nós. É política do Walk in Line

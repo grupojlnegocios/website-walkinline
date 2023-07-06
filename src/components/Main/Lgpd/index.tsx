@@ -25,25 +25,20 @@ export const Lgpd = ({ cookie }: Props) => {
 
     // Função que pega o UUID
     const novaUuid = self.crypto.randomUUID()
-    console.log(novaUuid)
 
     // Função que pega o Ip do usuario
     const dataIp = await axios.get('https://api.ipify.org/?format=json')
     const ip = dataIp.data.ip
-    console.log(ip)
 
     const data = {
       ip,
       uuid: novaUuid,
     }
-    console.log(data)
-    console.log(data.ip)
 
-    axios
-      .post('https://api.walkinline.com.br/cookie', data)
-      .then((response) => {
-        console.log(response.data)
-      })
+    axios.post('https://api.walkinline.com.br/cookies/', data)
+
+    localStorage.setItem('UUID', data.uuid)
+    localStorage.setItem('IP', data.ip)
   }
 
   const newTab = (url: string) => {

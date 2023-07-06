@@ -10,14 +10,20 @@ export const CampoPrincipal = styled.section`
   justify-content: center;
   flex-direction: column;
 `
+export const Button = styled.button`
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+`
+
 export const Img = styled.img`
-  width: 8rem;
+  width: 10rem;
   height: auto;
 `
 
 export const CampoTitulo = styled.div`
   width: 100vw;
-  padding: 3rem;
+  padding: 1rem 2rem 3rem 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;

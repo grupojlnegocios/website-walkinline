@@ -7,9 +7,17 @@ import { useState } from 'react'
 
 export const Home = () => {
   const [cookie, setCookie] = useState(false)
+
   function handleLgpd() {
-    setCookie(true)
+    const uuid = localStorage.getItem('UUID')
+    const ip = localStorage.getItem('IP')
+    if (uuid !== null && ip !== null) {
+      setCookie(false)
+    } else {
+      setCookie(true)
+    }
   }
+
   return (
     <>
       <StartLoading setLgpd={handleLgpd} />

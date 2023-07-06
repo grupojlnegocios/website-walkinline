@@ -43,6 +43,11 @@ export const FooterImg = styled.img`
     height: auto;
   }
 `
+export const ButtonImg = styled.button`
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+`
 
 export const SubFooterDois = styled.footer`
   display: flex;

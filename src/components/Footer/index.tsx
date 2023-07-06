@@ -5,6 +5,7 @@ import {
   FooterImg,
   SubFooterDois,
   ParagrafoFooter,
+  ButtonImg,
 } from './style.styles'
 
 import logoBranca from '../assets/images/logo-branca.png'
@@ -15,7 +16,9 @@ export const Footer = () => {
         <TextoFooter href="#" target="_blanck">
           Desenvolvido por:
         </TextoFooter>
-        <FooterImg src={logoBranca} alt="LogoTipo" />
+        <ButtonImg onClick={() => (window.location.href = '/pt-br')}>
+          <FooterImg src={logoBranca} alt="LogoTipo" />
+        </ButtonImg>
       </SubFooter>
 
       <SubFooterDois>

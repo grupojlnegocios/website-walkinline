@@ -9,6 +9,7 @@ import {
   HamburgerMenuIcon,
   BotaoAbrirNavBar,
   Progresso,
+  ButtonImg,
 } from './style.styles'
 
 import { SideBar } from '../SideBar'
@@ -67,7 +68,9 @@ export const Header = () => {
   return (
     <HeaderContainer background={backgroundOnTop}>
       <HeaderDiv>
-        <HeaderImg src={logo} alt="Logo" />
+        <ButtonImg onClick={() => (window.location.href = '/pt-br')}>
+          <HeaderImg src={logo} alt="Logo" />
+        </ButtonImg>
 
         <Listas>
           <ListaItens>

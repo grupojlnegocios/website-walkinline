@@ -32,6 +32,12 @@ export const HeaderImg = styled.img`
   height: 4rem;
   margin-top: -0.5rem;
 `
+
+export const ButtonImg = styled.button`
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+`
 export const Listas = styled.ul`
   display: flex;
   width: 100%;

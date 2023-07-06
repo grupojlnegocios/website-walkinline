@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import FundoImg from '../../assets/images/fundo-parte4.jpg'
 
 interface CookieProps {
   cookie: boolean
@@ -18,7 +19,9 @@ export const CampoCookie = styled.div<CookieProps>`
 export const SessaoCookie = styled.div`
   width: 100vw;
   height: 15vh;
-  background-color: white;
+  background: url(${FundoImg});
+  background-size: cover;
+  background-repeat: no-repeat;
   border-top: 1px solid #00000070;
   display: flex;
 

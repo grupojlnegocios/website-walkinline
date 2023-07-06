@@ -59,6 +59,10 @@ export const Link = styled.a`
   &:hover {
     text-decoration: underline;
   }
+
+  @media (max-width: 900px) {
+    font-size: 0.8rem;
+  }
 `
 
 export const ButtonArea = styled.div`

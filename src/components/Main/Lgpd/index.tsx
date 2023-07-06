@@ -51,8 +51,8 @@ export const Lgpd = ({ cookie }: Props) => {
         <TextoCookie>
           <Paragrafo>
             Este site utiliza cookies para garantir a melhor experiência de
-            navegação. Ao continuar, você concorda com o uso de cookies de
-            acordo com nossa
+            navegação. Ao Aceitar, você concorda com o uso de cookies de acordo
+            com nossa
             <Link onClick={() => newTab('/pt-br/privacy')}>
               <strong> política de privacidade</strong>
             </Link>

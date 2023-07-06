@@ -23,24 +23,27 @@ export const Lgpd = ({ cookie }: Props) => {
     // Função que fecha o LGPD
     setFecharLgpd(true)
 
-    // Função que pega o UUID
+    // Variavel que pega o UUID
     const novaUuid = self.crypto.randomUUID()
 
-    // Função que pega o Ip do usuario
+    // Variavel que pega o Ip do usuario
     const dataIp = await axios.get('https://api.ipify.org/?format=json')
     const ip = dataIp.data.ip
 
+    // Variavel que armazena o valor do Uuid e do IP
     const data = {
       ip,
       uuid: novaUuid,
     }
-
+    // Faz requisição na api
     axios.post('https://api.walkinline.com.br/cookies/', data)
 
+    //  Adiciona um Uuid e um IP no localStorage quando clicar em Aceitar
     localStorage.setItem('UUID', data.uuid)
     localStorage.setItem('IP', data.ip)
   }
 
+  // Variavel que adiciona o target:_blak no onclick para abrir uma nova tela usando routes
   const newTab = (url: string) => {
     window.open(url, '_blank')
   }

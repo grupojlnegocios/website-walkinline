@@ -5,8 +5,8 @@ import {
   Paragrafo,
   ButtonArea,
   Button,
-  Link,
 } from './style.styles'
+import { Link } from 'react-router-dom'
 
 import axios from 'axios'
 import { useState } from 'react'
@@ -44,9 +44,9 @@ export const Lgpd = ({ cookie }: Props) => {
   }
 
   // Variavel que adiciona o target:_blak no onclick para abrir uma nova tela usando routes
-  const newTab = (url: string) => {
-    window.open(url, '_blank')
-  }
+  // const newTab = (url: string) => {
+  //   window.open(url, '_blank')
+  // }
 
   return (
     <CampoCookie fechar={fecharLgpd} cookie={cookie}>
@@ -56,7 +56,7 @@ export const Lgpd = ({ cookie }: Props) => {
             Este site utiliza cookies para garantir a melhor experiência de
             navegação. Ao Aceitar, você concorda com o uso de cookies de acordo
             com nossa
-            <Link onClick={() => newTab('/pt-br/privacy')}>
+            <Link to="privacy">
               <strong> política de privacidade</strong>
             </Link>
             .

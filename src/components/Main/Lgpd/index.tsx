@@ -6,11 +6,11 @@ import {
   ButtonArea,
   Button,
 } from './style.styles'
+
 import { Link } from 'react-router-dom'
 
 import axios from 'axios'
 import { useState } from 'react'
-// import { Privacy } from '../../../screens/Privacy'
 
 interface Props {
   cookie: boolean

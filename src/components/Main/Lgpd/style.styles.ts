@@ -52,7 +52,7 @@ export const Paragrafo = styled.p`
 `
 export const Link = styled.a`
   text-decoration: none;
-  color: #1d3557;
+  color: green;
   font-size: 1rem;
   cursor: pointer;
 

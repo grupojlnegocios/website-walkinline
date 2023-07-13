@@ -13,7 +13,7 @@ export const CampoCookie = styled.div<CookieProps>`
   bottom: ${(props) => (props.cookie === true ? '0' : '-20%')};
   right: 0;
   left: 0;
-  transition: bottom 0.6s ease;
+  transition: bottom 0.8s ease, display 0.8s ease;
 `
 
 export const SessaoCookie = styled.div`

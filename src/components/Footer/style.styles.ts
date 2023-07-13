@@ -23,7 +23,7 @@ export const SubFooter = styled.footer`
   }
 `
 
-export const TextoFooter = styled.a`
+export const TextoFooter = styled.p`
   color: ${(props) => props.theme.white};
   font-size: 1.2rem;
   text-decoration: none;

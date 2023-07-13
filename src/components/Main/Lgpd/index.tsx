@@ -20,7 +20,6 @@ export const Lgpd = ({ cookie }: Props) => {
 
   // Funções de dentro do onClick
   const fecharCookie = async () => {
-    // Função que fecha o LGPD
     setFecharLgpd(true)
 
     // Variavel que pega o UUID
